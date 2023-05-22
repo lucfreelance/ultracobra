@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import './App.css';
 import imagenProgramacion from './img/ruta-de-la-imagen-programacion.jpg';
 import imagenContenidos from './img/ruta-de-la-imagen-contenidos.jpg';
@@ -83,7 +83,7 @@ export const App = () => {
       </section>
 
       <footer>
-        <p>2023 Ⓤ ultracobra &copy; Servicios Digitales</p>
+        <p>2023 Ⓤ ultracobra&copy; Servicios Digitales</p>
         <small>Si estás interesado/a en nuestros servicios o tienes alguna pregunta, no dudes en ponerte en contacto vía:</small>
         <ul style={{ listStyleType: 'none', padding: 0 }}>
           <li>
