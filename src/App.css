@@ -27,6 +27,32 @@
   margin-left: 20px; /* Ajusta el valor según el margen deseado */
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.service {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.cta-button {
+  background-color: #6c9a2b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #8cc63e;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -62,3 +88,59 @@
   border-top: 1px solid #ccc;
   margin: 20px 0;
 }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.column {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+}
+
+.intro-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.intro-description {
+  font-size: 16px;
+}
+
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer li {
+  margin-bottom: 5px;
+}
+
+.newsletter-form {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 20px;
+}
+

@@ -3,6 +3,7 @@ import './App.css';
 import imagenProgramacion from './img/ruta-de-la-imagen-programacion.jpg';
 import imagenContenidos from './img/ruta-de-la-imagen-contenidos.jpg';
 import imagenAsistencia from './img/ruta-de-la-imagen-asistencia.jpg';
+import imagenArtisticos from './img/ruta-de-la-imagen-artisticos.jpg';
 import '@fortawesome/fontawesome-free/css/all.css'; 
 
 const NewsletterForm = () => {
@@ -30,9 +31,21 @@ export const App = () => {
         <p>Proveedor de servicios digitales en Español</p>
       </header>
 
-      <section id="services">
-        <h2>Nuestros Servicios</h2>
 
+
+      <section id="services" className="grid-container">
+  <div className="column">
+    <h3 className="intro-title">Mejora tus productividad</h3>
+    <p className="intro-description">En ultracobra, ofrecemos una amplia gama de servicios digitales diseñados para impulsar tu éxito en línea.</p>
+  </div>
+  <div className="column">
+    <h3 className="intro-title">Potencializa tu presencia en línea</h3>
+    <p className="intro-description">Desde desarrollo de aplicaciones web y móviles hasta generación de contenido atractivo, estamos aquí para ayudarte a mejorar tus proyectos.</p>
+  </div>
+        <div className="service-intro">
+  <div className="intro-text">
+  </div>
+</div>
         <div className="service">
           <img src={imagenProgramacion} alt="Programación" style={{ width: '200px' }} />
           <a href="/servicios">
@@ -47,6 +60,7 @@ export const App = () => {
             <li className="list-item">Migración de sitios</li>
           </ul>
           <hr className="service-separator" />
+          <button className="cta-button">Saber más</button>
         </div>
 
         <div className="service">
@@ -63,6 +77,7 @@ export const App = () => {
             <li className="list-item">Estrategias de marketing de contenidos</li>
           </ul>
           <hr className="service-separator" />
+          <button className="cta-button">Saber más</button>
         </div>
 
         <div className="service">
@@ -79,26 +94,47 @@ export const App = () => {
             <li className="list-item">Tareas de asistencia virtual</li>
           </ul>
           <hr className="service-separator" />
+          <button className="cta-button">Saber más</button>
         </div>
-      </section>
 
-      <footer>
-        <p>2023 Ⓤ ultracobra&copy; Servicios Digitales</p>
-        <small>Si estás interesado/a en nuestros servicios o tienes alguna pregunta, no dudes en ponerte en contacto vía:</small>
-        <ul style={{ listStyleType: 'none', padding: 0 }}>
-          <li>
-            <i className="fab fa-twitter"></i> <a href="https://twitter.com/cobraultra" target="_blank" rel="noopener noreferrer">@cobraultra</a>
-          </li>
-          <li>
-            <i className="far fa-envelope"></i> <a href="mailto:ultracobre@gmail.com" target="_blank" rel="noopener noreferrer">ultracobre@gmail.com</a>
-          </li>
-          <li>
-            <i className="fab fa-whatsapp"></i> <a href="https://wa.me/573166054533" target="_blank" rel="noopener noreferrer">Chatea con Ⓤultracobra:</a>
-          </li>
-        </ul>
-        <p>¡Estaremos encantados de atenderte y trabajar en tus proyectos digitales!</p>
-        <NewsletterForm /> {/* Agregamos el componente NewsletterForm aquí */}
-      </footer>
+        <div className="service">
+          <img src={imagenArtisticos} alt="Artísticos" style={{ width: '200px' }} />
+          <a href="/servicios">
+            <h3 className="service-title">ARTÍSTICOS 🎨</h3>
+          </a>
+          <small>Explora nuestros servicios de despliegues artísticos</small>
+          <ul className="service-description">
+            <li className="list-item">Diseño gráfico POD</li>
+            <li className="list-item">Ilustración digital</li>
+            <li className="list-item">Arte conceptual</li>
+            <li className="list-item">Pintura creativa</li>
+            <li className="list-item">Fotografía creativa</li>
+          </ul>
+          <hr className="service-separator" />
+          <button className="cta-button">Saber más</button>
+        </div>
+
+      </section>
+      <footer className="grid-container footer">
+  <ul style={{ listStyleType: 'none', padding: 0 }}>
+    <li>
+      <i className="fab fa-twitter"></i> <a href="https://twitter.com/cobraultra" target="_blank" rel="noopener noreferrer">Twitter @cobraultra</a>
+    </li>
+    <li>
+      <i className="fab fa-whatsapp"></i> <a href="https://wa.me/573166054533" target="_blank" rel="noopener noreferrer">WhatsApp Ⓤultracobra:</a>
+    </li>
+    <li>
+      <i className="far fa-envelope"></i> <a href="mailto:ultracobre@gmail.com" target="_blank" rel="noopener noreferrer">ultracobre@gmail.com</a>
+    </li>
+  </ul>
+  
+  <p>2023 Ⓤ ultracobra 🐍 Servicios Digitales</p>
+  <div className="newsletter-form" style={{ gridColumn: '1 / -1' }}>
+    <NewsletterForm /> {/* Agregamos el componente NewsletterForm aquí */}
+  </div>
+</footer>
+
+
     </div>
   );
 };
