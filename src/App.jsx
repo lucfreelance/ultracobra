@@ -26,32 +26,31 @@ const NewsletterForm = () => {
 export const App = () => {
   return (
     <div style={{ marginLeft: '20px' }}>
-      <header>
-        <h1>Ⓤ ultracobra Ⓤ</h1>
-        <p>Proveedores de servicios via digital</p>
+      <header class="header">
+        <h1>Ⓤ ultracobra 🐍</h1>
+        <p class="header-prompt">Servicios digitales vía <a href="https://forobeta.com/?ref=179278" target="_blank" alt="ultracobra en ForoBeta" title="ultracobra en ForoBeta">ForoBeta</a></p>
       </header>
-
-
-
+      
       <section id="services" className="grid-container">
-  <div className="column">
-    <h3 className="intro-title">Mejora tus productividad</h3>
-    <p className="intro-description">En ultracobra, ofrecemos una amplia gama de servicios digitales diseñados para impulsar tu éxito en línea.</p>
-  </div>
-  <div className="column">
-    <h3 className="intro-title">Potencializa tu presencia en línea</h3>
-    <p className="intro-description">Desde desarrollo de aplicaciones web y móviles hasta generación de contenido atractivo, estamos aquí para ayudarte a mejorar tus proyectos.</p>
-  </div>
+        <div className="column">
+          <h3 className="intro-title">Mejora tu productividad</h3>
+          <p className="intro-description">Ofrecemos una diversa gama de servicios digitales diseñados para construir tu proyecto desde cero o impulsar tus emprendimientos en línea.</p>
+        </div>
+        <div className="column">
+          <h3 className="intro-title">Potencializa tu presencia en línea</h3>
+          <p className="intro-description">Desde desarrollo de aplicaciones hasta generación de contenido atractivo, pasando por servicios de asistencia, entre otros. Contáctanos.</p>
+        </div>
+        
         <div className="service-intro">
-  <div className="intro-text">
-  </div>
-</div>
+          <div className="intro-text"></div>
+        </div>
+        
         <div className="service">
           <img src={imagenProgramacion} alt="Programación" style={{ width: '200px' }} />
           <a href="/servicios">
             <h3 className="service-title">PROGRAMACIÓN 💻</h3>
           </a>
-          <small>Desarrollamos aplicaciones web y móviles, creamos sitios web modernos, optimizamos páginas web y ofrecemos servicios de migración e integración de accesibilidad.</small>
+          <small>Desarrollamos programas con herramientas de código y proveedores de primera calidad, para que seas tú el dueño de tu proyecto, y no plataformas de alojamiento gratuito.</small>
           <ul className="service-description">
             <li className="list-item">Creación de sitios web modernos</li>
             <li className="list-item">Desarrollo de componentes web</li>
@@ -67,7 +66,7 @@ export const App = () => {
           <a href="/servicios">
             <h3 className="service-title">CONTENIDOS 📝</h3>
           </a>
-          <small>Generamos contenido atractivo y de calidad para blogs, redes sociales y sitios web. También nos encargamos de la redacción y edición de textos, y creamos estrategias de marketing de contenidos.</small>
+          <small>Ofrecemos contenido atractivo y de calidad para blogs, redes sociales, sitios web. Desde un nombre de marca / producto hasta la escritura de una enciclopedia. Podemos con todo.</small>
           <ul className="service-description">
             <li className="list-item">Contenidos para blogs, web y social</li>
             <li className="list-item">Imágenes generadas para ilustración</li>
@@ -83,11 +82,11 @@ export const App = () => {
           <a href="/servicios">
             <h3 className="service-title">ASISTENCIA 🤝</h3>
           </a>
-          <small>Proporcionamos soporte administrativo remoto, gestionamos correos electrónicos, programamos citas, brindamos atención al cliente y realizamos diversas tareas de asistencia virtual.</small>
+          <small>Proporcionamos soporte remoto, gestionamos cuentas sociales y de correo electrónico; programamos citas, brindamos atención al cliente y realizamos diversas asistencias virtuales.</small>
           <ul className="service-description">
             <li className="list-item">Asistencia virtual</li>
             <li className="list-item">Gestión de correos</li>
-            <li className="list-item">Community Nanager</li>
+            <li className="list-item">Community Manager</li>
             <li className="list-item">Escritorio remoto</li>
           </ul>
           <hr className="service-separator" />
@@ -99,41 +98,40 @@ export const App = () => {
           <a href="/servicios">
             <h3 className="service-title">ARTÍSTICOS 🎨</h3>
           </a>
-          <small>Explora nuestros servicios de despliegues artísticos</small>
+          <small>Como lo digital no lo es todo, damos espacio para la creación visual orgánica en pinturas, ilustraciones, murales, fotografía y otros servicios de consumo pictográfico.</small>
           <ul className="service-description">
-            <li className="list-item">Patrones de Diseño POD</li>
-            <li className="list-item">Ilustración digital</li>
-            <li className="list-item">Arte conceptual</li>
+            <li className="list-item">Pintura de murales</li>
+            <li className="list-item">Pintura de cuadros</li>
+            <li className="list-item">Ilustración / dibujo</li>
             <li className="list-item">Fotografía creativa</li>
           </ul>
           <hr className="service-separator" />
           <button className="cta-button">Saber más</button>
         </div>
-
       </section>
+      
       <footer className="grid-container footer">
-  <ul style={{ listStyleType: 'none', padding: 0 }}>
-  <li>
-    <i className="fab fa-twitter"></i> <a href="https://twitter.com/cobraultra" target="_blank" rel="noopener noreferrer">Twitter @cobraultra</a>
-  </li>
-  <li>
-    <i className="fab fa-whatsapp"></i> <a href="https://wa.me/573166054533" target="_blank" rel="noopener noreferrer">WhatsApp Ⓤultracobra</a>
-  </li>
-  <li>
-    <i className="far fa-envelope"></i> <a href="mailto:ultracobre@gmail.com" target="_blank" rel="noopener noreferrer">ultracobre@gmail.com</a>
-  </li>
-  <li>
-    <i className="fab fa-forumbee"></i> <a href="https://forobeta.com/?ref=179278" target="_blank" rel="noopener noreferrer">Contacto en ForoBeta</a>
-  </li>
-  </ul>
-  
-  <p>2023 Ⓤ ultracobra 🐍 Proveedores de servicios via digital</p>
-  <div className="newsletter-form" style={{ gridColumn: '1 / -1' }}>
-    <NewsletterForm /> {/* Agregamos el componente NewsletterForm aquí */}
-  </div>
-</footer>
-
-
+        <ul style={{ listStyleType: 'none', padding: 0 }}>
+          <li>
+            <i className="fab fa-whatsapp"></i> <a href="https://wa.me/573166054533" target="_blank" rel="noopener noreferrer" alt="WhatsApp ultracobra" title="WhatsApp @ultracobra">WhatsApp</a>
+          </li>
+          
+          <li>
+            <i className="fab fa-twitter"></i> <a href="https://twitter.com/cobraultra" target="_blank" rel="noopener noreferrer" alt="Twitter ultracobra" title="Twitter @ultracobra">@cobraultra</a>
+          </li>
+          <li>
+            <i className="fab fa-instagram"></i> <a href="https://instagram.com/ultracobra.es/" target="_blank" rel="noopener noreferrer" alt="Instagram ultracobra" title="Instagram @ultracobra">@ultracobra.es</a>
+          </li>
+          <li>
+            <i className="far fa-envelope"></i> <a href="mailto:ultracobre@gmail.com" target="_blank" rel="noopener noreferrer" alt="Email ultracobra" title="Email @ultracobra">ultracobre@gmail</a>
+          </li>
+        </ul>
+        
+        <p>2023 Ⓤ Servicios digitales vía <a href="https://forobeta.com/?ref=179278" target="_blank" alt="ultracobra en Forobeta" title="ultracobra en ForoBeta">ForoBeta</a></p>
+        <div className="newsletter-form" style={{ gridColumn: '1 / -1' }}>
+          <NewsletterForm /> {/* Agregamos el componente NewsletterForm aquí */}
+        </div>
+      </footer>
     </div>
   );
 };
