@@ -17,7 +17,7 @@ const NewsletterForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="email" name="email" placeholder="Ingresa tu correo electrónico" />
+      <input type="email" name="email" placeholder="Ingresa tu email" />
       <button type="submit">Suscríbete al Boletín</button>
     </form>
   );
@@ -27,8 +27,8 @@ export const App = () => {
   return (
     <div style={{ marginLeft: '20px' }}>
       <header>
-        <h1>Ⓤultracobra</h1>
-        <p>Proveedor de servicios digitales en Español</p>
+        <h1>Ⓤ ultracobra Ⓤ</h1>
+        <p>Proveedores de servicios via digital</p>
       </header>
 
 
@@ -53,11 +53,10 @@ export const App = () => {
           </a>
           <small>Desarrollamos aplicaciones web y móviles, creamos sitios web modernos, optimizamos páginas web y ofrecemos servicios de migración e integración de accesibilidad.</small>
           <ul className="service-description">
-            <li className="list-item">Desarrollo de aplicaciones web</li>
             <li className="list-item">Creación de sitios web modernos</li>
+            <li className="list-item">Desarrollo de componentes web</li>
             <li className="list-item">Optimización de páginas web</li>
-            <li className="list-item">Integración de accesibilidad</li>
-            <li className="list-item">Migración de sitios</li>
+            <li className="list-item">Integraciones de Accesibilidad</li>
           </ul>
           <hr className="service-separator" />
           <button className="cta-button">Saber más</button>
@@ -70,11 +69,10 @@ export const App = () => {
           </a>
           <small>Generamos contenido atractivo y de calidad para blogs, redes sociales y sitios web. También nos encargamos de la redacción y edición de textos, y creamos estrategias de marketing de contenidos.</small>
           <ul className="service-description">
-            <li className="list-item">Creación de contenido para blogs, social y web</li>
-            <li className="list-item">Imágenes generadas por computador</li>
-            <li className="list-item">Estrategias de marketing de contenidos</li>
-            <li className="list-item">Imágenes generadas por computador</li>
-            <li className="list-item">Estrategias de marketing de contenidos</li>
+            <li className="list-item">Contenidos para blogs, web y social</li>
+            <li className="list-item">Imágenes generadas para ilustración</li>
+            <li className="list-item">Sonidos, voces y canciones generadas</li>
+            <li className="list-item">Creación y actualización de blogs</li>
           </ul>
           <hr className="service-separator" />
           <button className="cta-button">Saber más</button>
@@ -87,11 +85,10 @@ export const App = () => {
           </a>
           <small>Proporcionamos soporte administrativo remoto, gestionamos correos electrónicos, programamos citas, brindamos atención al cliente y realizamos diversas tareas de asistencia virtual.</small>
           <ul className="service-description">
-            <li className="list-item">Asistente virtual</li>
-            <li className="list-item">Gestión de correos electrónicos</li>
-            <li className="list-item">Programación de citas</li>
-            <li className="list-item">Atención al cliente</li>
-            <li className="list-item">Tareas de asistencia virtual</li>
+            <li className="list-item">Asistencia virtual</li>
+            <li className="list-item">Gestión de correos</li>
+            <li className="list-item">Community Nanager</li>
+            <li className="list-item">Escritorio remoto</li>
           </ul>
           <hr className="service-separator" />
           <button className="cta-button">Saber más</button>
@@ -104,10 +101,9 @@ export const App = () => {
           </a>
           <small>Explora nuestros servicios de despliegues artísticos</small>
           <ul className="service-description">
-            <li className="list-item">Diseño gráfico POD</li>
+            <li className="list-item">Patrones de Diseño POD</li>
             <li className="list-item">Ilustración digital</li>
             <li className="list-item">Arte conceptual</li>
-            <li className="list-item">Pintura creativa</li>
             <li className="list-item">Fotografía creativa</li>
           </ul>
           <hr className="service-separator" />
@@ -117,15 +113,18 @@ export const App = () => {
       </section>
       <footer className="grid-container footer">
   <ul style={{ listStyleType: 'none', padding: 0 }}>
-    <li>
-      <i className="fab fa-twitter"></i> <a href="https://twitter.com/cobraultra" target="_blank" rel="noopener noreferrer">Twitter @cobraultra</a>
-    </li>
-    <li>
-      <i className="fab fa-whatsapp"></i> <a href="https://wa.me/573166054533" target="_blank" rel="noopener noreferrer">WhatsApp Ⓤultracobra:</a>
-    </li>
-    <li>
-      <i className="far fa-envelope"></i> <a href="mailto:ultracobre@gmail.com" target="_blank" rel="noopener noreferrer">ultracobre@gmail.com</a>
-    </li>
+  <li>
+    <i className="fab fa-twitter"></i> <a href="https://twitter.com/cobraultra" target="_blank" rel="noopener noreferrer">Twitter @cobraultra</a>
+  </li>
+  <li>
+    <i className="fab fa-whatsapp"></i> <a href="https://wa.me/573166054533" target="_blank" rel="noopener noreferrer">WhatsApp Ⓤultracobra</a>
+  </li>
+  <li>
+    <i className="far fa-envelope"></i> <a href="mailto:ultracobre@gmail.com" target="_blank" rel="noopener noreferrer">ultracobre@gmail.com</a>
+  </li>
+  <li>
+    <i className="fab fa-forumbee"></i> <a href="https://forobeta.com/members/ultracobra.179278/" target="_blank" rel="noopener noreferrer">Contacto en ForoBeta</a>
+  </li>
   </ul>
   
   <p>2023 Ⓤ ultracobra 🐍 Servicios Digitales</p>
