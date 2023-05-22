@@ -123,11 +123,11 @@ export const App = () => {
     <i className="far fa-envelope"></i> <a href="mailto:ultracobre@gmail.com" target="_blank" rel="noopener noreferrer">ultracobre@gmail.com</a>
   </li>
   <li>
-    <i className="fab fa-forumbee"></i> <a href="https://forobeta.com/members/ultracobra.179278/" target="_blank" rel="noopener noreferrer">Contacto en ForoBeta</a>
+    <i className="fab fa-forumbee"></i> <a href="https://forobeta.com/?ref=179278" target="_blank" rel="noopener noreferrer">Contacto en ForoBeta</a>
   </li>
   </ul>
   
-  <p>2023 Ⓤ ultracobra 🐍 Servicios Digitales</p>
+  <p>2023 Ⓤ ultracobra 🐍 Proveedores de servicios via digital</p>
   <div className="newsletter-form" style={{ gridColumn: '1 / -1' }}>
     <NewsletterForm /> {/* Agregamos el componente NewsletterForm aquí */}
   </div>
