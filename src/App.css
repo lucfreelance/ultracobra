@@ -68,15 +68,14 @@ header {
   background-color: #8cc63e;
 }
 
-
 .highlighted-text {
   font-size: 14px;
   color:#6c9a2b;
 }
 
-.card {
+/* .card {
   padding: 2em;
-}
+} */
 
 .read-the-docs {
   color: #ebbfbf;
@@ -105,9 +104,9 @@ header {
 
 .column {
   padding: 20px;
-  border: 1px solid #666;
+  border: 1px solid #21be23;
   border-radius: 10px;
-  background-color: #ccc;
+  background-color: #e1f0dd;
 }
 
 .newsletter-form {
@@ -145,9 +144,6 @@ header {
 }
 
 @media (min-width: 768px) {
-  .header h1 {
-    text-align: left;
-  }
   .slogan-prompt {
     text-align: left;
   }
