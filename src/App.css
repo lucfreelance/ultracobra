@@ -5,29 +5,25 @@
   text-align: center;
 }
 
-
-.header h1 {
+header {
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  .header h1 {
-    text-align: left;
-  }
-}
-
-.header-prompt {
+.slogan-prompt {
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  .header-prompt {
-    text-align: left;
-  }
+.intro-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #6c9a2b;
 }
 
-
-
+.intro-description {
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
 
 .logo {
   height: 6em;
@@ -35,31 +31,26 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-.service-title {
-  margin-left: 20px; /* Ajusta el valor según el margen deseado */
-  
-}
-
-.service-description {
-  margin-left: 20px; /* Ajusta el valor según el margen deseado */
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
 }
 
 .service {
   border: 1px solid #ccc;
   padding: 20px;
+}
+
+.service-title {
+  margin-left: 20px;
+}
+
+.service-description {
+  margin-left: 20px;
 }
 
 .cta-button {
@@ -77,22 +68,9 @@
   background-color: #8cc63e;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.small-text {
+.highlighted-text {
+  font-size: 14px;
   color:#6c9a2b;
 }
 
@@ -101,7 +79,7 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: #ebbfbf;
 }
 
 .list-item {
@@ -118,38 +96,25 @@
   margin: 20px 0;
 }
 
-
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   color: #addcad;
 }
 
-@media (min-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr 1fr;
-    color: #addcad;
-  }
-}
-
 .column {
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #666;
   border-radius: 10px;
-  background-color: #666;
+  background-color: #ccc;
 }
 
-.intro-title {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #6c9a2b;
+.newsletter-form {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 20px;
 }
-
-.intro-description {
-  font-size: 16px;
-}
-
 
 .footer {
   display: grid;
@@ -170,9 +135,30 @@
   margin-bottom: 5px;
 }
 
-.newsletter-form {
-  grid-column: 1 / -1;
-  text-align: center;
-  margin-top: 20px;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
+@media (min-width: 768px) {
+  .header h1 {
+    text-align: left;
+  }
+  .slogan-prompt {
+    text-align: left;
+  }
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    color: #addcad;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
