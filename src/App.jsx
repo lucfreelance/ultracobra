@@ -85,8 +85,8 @@ export const App = () => {
           </a>
           <ul className="service-description">
             <li className="list-item">Asistencia virtual</li>
-            <li className="list-item">Gestión de correos</li>
-            <li className="list-item">Community Manager</li>
+            <li className="list-item">Gestión de mensajes</li>
+            <li className="list-item">Agendado / Booking</li>
             <li className="list-item">Escritorio remoto</li>
           </ul>
           <span class="highlighted-text">Proporcionamos soporte remoto, gestionamos cuentas sociales y de correo electrónico; programamos citas, brindamos atención al cliente y realizamos diversas asistencias virtuales.</span>
