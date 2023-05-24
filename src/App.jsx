@@ -31,7 +31,7 @@ export const App = () => {
     <BrowserRouter>
       <div style={{ marginLeft: '20px' }}>
         <header>
-          <h1>Ⓤ ultracobra 🐍</h1>
+        <h1> <span class="highlight">Ⓤ</span> ultracobra <span class="emoji">🐍</span></h1>
           <p className="slogan-prompt">
             Servicios digitales y soluciones vía{' '}
             <a
@@ -65,46 +65,96 @@ export const App = () => {
           </div>
 
           <div className="service">
-            <img src={imagenProgramacion} alt="Programación" style={{ width: '250px' }} />
-            <Link to="./components/Servicios">
-              <h3 className="service-title">PROGRAMACIÓN 💻</h3>
-            </Link>
-            <ul className="service-description">
-              <li className="list-item">Creación de sitios web modernos</li>
-              <li className="list-item">Desarrollo de componentes web</li>
-              <li className="list-item">Optimización de páginas web</li>
-              <li className="list-item">Integraciones de Accesibilidad</li>
-            </ul>
-            <span>
-              Desarrollo de web app, módulos, componentes y otras soluciones de software.</span>
-              <br />
-              <br />
-              <span>Con herramientas y proveedores de primera, para mejor rendimiento, seguridad y accesibilidad.
-            </span>
-            <hr className="service-separator" />
-            <button className="cta-button">Servicios</button>
-          </div>
-
-          <div className="service">
             <img src={imagenContenidos} alt="Contenidos" style={{ width: '250px' }} />
             <Link to="./components/Servicios">
               <h3 className="service-title">CONTENIDOS 📝</h3>
             </Link>
             <ul className="service-description">
-              <li className="list-item">Contenidos para blogs, web y social</li>
-              <li className="list-item">Imágenes generadas para ilustración</li>
-              <li className="list-item">Sonidos, voces y canciones generadas</li>
-              <li className="list-item">Creación y actualización de blogs</li>
-            </ul>
+              <li className="list-item">Post Pack temático</li>
             <span>
               Ofrecemos contenido atractivo y de calidad para blogs, redes sociales, sitios web. </span>
+              <li className="list-item">Traducciones ES-EN-ES</li>
+            <span>
+              Ofrecemos contenido atractivo y de calidad para blogs, redes sociales, sitios web. </span>
+              <li className="list-item">Imágenes generadas por IA</li>
+            <span>
+              Ofrecemos contenido atractivo y de calidad para blogs, redes sociales, sitios web. </span>
+              <li className="list-item">Sonidos, voces y canciones generadas</li>
+            <span>
+            Desde un nombre de marca / producto hasta la escritura de una enciclopedia. Podemos con todo.</span>
+              <li className="list-item">Creación y actualización de blogs</li>
+            </ul>
               <br />
-              <br />
-              <span>Desde un nombre de marca / producto hasta la escritura de una enciclopedia. Podemos con todo.
-            </span>
             <hr className="service-separator" />
             <button className="cta-button">Servicios</button>
           </div>
+
+<div className="service">
+  <img src={imagenProgramacion} alt="Programación" style={{ width: '250px' }} />
+    <h3 className="service-title">PROGRAMACIÓN 💻</h3>
+    <p className='service-title'>
+    {' '}
+    <a
+    href="/"
+    alt="Diseño web en marco de desarrollo"
+    title="Diseño web en marco de desarrollo"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Diseño web en marco de desarrollo
+  </a>
+  <br />
+  <span>
+    Desarrollo de web app, módulos, componentes y otras soluciones de software.</span>
+    </p>
+    <p className='service-title'>
+    {' '}
+    <a
+    href="/"
+    alt="Desarrollo de componentes web"
+    title="Desarrollo de componentes web"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Desarrollo de componentes web
+  </a>
+  <br />       
+  <span>
+    Desarrollo de web app, módulos, componentes y otras soluciones de software.</span>
+    </p>
+    <p className='service-title'>
+    {' '}
+    <a
+    href="/"
+    alt="Optimización de páginas web"
+    title="Optimización de páginas web"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Optimización de páginas web
+  </a>
+  <br />
+  <span>
+    Favorece la velocidad de tu proyecto para evitar rebotes.</span>
+    </p>
+    <p className='service-title'>
+    {' '}
+    <a
+    href="/"
+    alt="Integraciones de Accesibilidad"
+    title="Integraciones de Accesibilidad"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Integraciones de Accesibilidad
+  </a>
+  <br />
+  <span>
+    Que tu web / app llegue a la mayor cantidad de personas posible con Accesibilidad.</span>
+    </p>
+  <hr className="service-separator" />
+  <button className="cta-button">Servicios</button>
+</div>
 
           <div className="service">
             <img src={imagenAsistencia} alt="Asistencia" style={{ width: '250px' }} />
@@ -113,9 +163,17 @@ export const App = () => {
             </Link>
             <ul className="service-description">
               <li className="list-item">Asistencia virtual</li>
-              <li className="list-item">Gestión de mensajes</li>
+            <span>
+              Proporcionamos soporte remoto, gestionamos cuentas sociales y de email; programamos citas, brindamos help desk al cliente y realizamos diversas asistencias virtuales y acciones sociales a tu favor.
+            </span>
+              <li className="list-item">Respondedor Email</li>
+            <span>
+              Proporcionamos soporte remoto, gestionamos cuentas sociales y de email; programamos citas, brindamos help desk al cliente y realizamos diversas asistencias virtuales y acciones sociales a tu favor.
+            </span>
               <li className="list-item">Agendado / Booking</li>
-              <li className="list-item">Escritorio remoto</li>
+            <span>
+              Proporcionamos soporte remoto, gestionamos cuentas sociales y de email; programamos citas, brindamos help desk al cliente y realizamos diversas asistencias virtuales y acciones sociales a tu favor.
+            </span>
             </ul>
             <span>
               Proporcionamos soporte remoto, gestionamos cuentas sociales y de email; programamos citas, brindamos help desk al cliente y realizamos diversas asistencias virtuales y acciones sociales a tu favor.
@@ -130,14 +188,15 @@ export const App = () => {
               <h3 className="service-title">ARTÍSTICA 🎨</h3>
             </Link>
             <ul className="service-description">
-              <li className="list-item">Pintura de cuadros</li>
-              <li className="list-item">Pintura de murales</li>
-              <li className="list-item">Ilustración / dibujo</li>
-              <li className="list-item">Fotografía creativa</li>
-            </ul>
+              <li className="list-item">Cuadros artísticos 1</li>
             <span>
               Como lo digital no lo es todo, ofreceremos ocasionalmente piezas de arte echas a  mano, desde cuadros hasta murales, pasando por fotografías...
             </span>
+              <li className="list-item">Cuadros artísticos 2</li>
+            <span>
+              Como lo digital no lo es todo, ofreceremos ocasionalmente piezas de arte echas a  mano, desde cuadros hasta murales, pasando por fotografías...
+            </span>
+            </ul>
             <hr className="service-separator" />
             <button className="cta-button">Productos</button>
           </div>
@@ -160,7 +219,7 @@ export const App = () => {
             </li>
           </ul>
 
-          <p>2023 Ⓤ Servicios digitales y soluciones vía <a href="https://forobeta.com/?ref=179278" target="_blank" alt="ultracobra en Forobeta" title="ultracobra en ForoBeta" rel="noopener noreferrer">ForoBeta</a></p>
+          <p>2023 &copy; Diseñado por <a href="https://github.com/lucfreelance" target="_blank" rel="noopener noreferrer" alt="lucfreelance en GitHub" title="lucfreelance en GitHub" >@lucfreelance</a></p>
           <div className="newsletter-form" style={{ gridColumn: '1 / -1' }}>
             <NewsletterForm /> {/* Agregamos el componente NewsletterForm aquí */}
           </div>
