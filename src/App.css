@@ -53,6 +53,20 @@ header {
   margin-left: 20px;
 }
 
+.list-item {
+  list-style-type: none;
+  margin-left: -15px;
+  padding-left: 0;
+  text-indent: -1em;
+  color: #6c9a2b;
+}
+
+.service-separator {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
 .cta-button {
   background-color: #6c9a2b;
   color: #fff;
@@ -79,20 +93,6 @@ header {
 
 .read-the-docs {
   color: #ebbfbf;
-}
-
-.list-item {
-  list-style-type: none;
-  margin-left: -15px;
-  padding-left: 0;
-  text-indent: -1em;
-  color: #6c9a2b;
-}
-
-.service-separator {
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 20px 0;
 }
 
 .grid-container {
