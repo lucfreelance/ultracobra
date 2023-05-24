@@ -23,7 +23,7 @@ header {
 
 .emoji {
   display: inline-block;
-  animation: snakeMove 2s infinite alternate;
+  animation: snakeMove 3s infinite alternate;
 }
 
 @keyframes snakeMove {
@@ -40,7 +40,7 @@ header {
 
 .highlight {
   display: inline-block;
-  animation: highlightAnimation 6s infinite;
+  animation: highlightAnimation 9s infinite;
 }
 
 @keyframes highlightAnimation {
@@ -178,6 +178,15 @@ header {
   .grid-container {
     grid-template-columns: 1fr 1fr;
     color: #addcad;
+  }
+  .emoji {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 767px) {
+  .emoji {
+    display: none;
   }
 }
 

@@ -5,7 +5,6 @@ import imagenProgramacion from './img/ruta-programacion.jpg';
 import imagenContenidos from './img/ruta-de-contenidos.jpg';
 import imagenAsistencia from './img/ruta-de-asistencia.jpg';
 import imagenArtisticos from './img/ruta-de-la-artistica.jpg';
-// import Servicios from './components/Servicios';
 // import Contacto from './components/Contacto'
 import '@fortawesome/fontawesome-free/css/all.css';
 
