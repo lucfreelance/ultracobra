@@ -66,25 +66,67 @@ export const App = () => {
 
           <div className="service">
             <img src={imagenContenidos} alt="Contenidos" style={{ width: '250px' }} />
-            <Link to="./components/Servicios">
-              <h3 className="service-title">CONTENIDOS 📝</h3>
-            </Link>
-            <ul className="service-description">
-              <li className="list-item">Post Pack temático</li>
-            <span>
-              Ofrecemos contenido atractivo y de calidad para blogs, redes sociales, sitios web. </span>
-              <li className="list-item">Traducciones ES-EN-ES</li>
-            <span>
-              Ofrecemos contenido atractivo y de calidad para blogs, redes sociales, sitios web. </span>
-              <li className="list-item">Imágenes generadas por IA</li>
-            <span>
-              Ofrecemos contenido atractivo y de calidad para blogs, redes sociales, sitios web. </span>
-              <li className="list-item">Sonidos, voces y canciones generadas</li>
-            <span>
-            Desde un nombre de marca / producto hasta la escritura de una enciclopedia. Podemos con todo.</span>
-              <li className="list-item">Creación y actualización de blogs</li>
-            </ul>
-              <br />
+           <h3 className="service-title">CONTENIDOS 📝</h3>
+           <p className='service-title'>
+    {' '}
+    <a
+    href="/"
+    alt="Diseño web en marco de desarrollo"
+    title="Diseño web en marco de desarrollo"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Diseño web en marco de desarrollo
+  </a>
+  <br />
+  <span>
+    Desarrollo de web app, módulos, componentes y otras soluciones de software.</span>
+    </p>
+    <p className='service-title'>
+    {' '}
+    <a
+    href="/"
+    alt="Desarrollo de componentes web"
+    title="Desarrollo de componentes web"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Desarrollo de componentes web
+  </a>
+  <br />       
+  <span>
+    Desarrollo de web app, módulos, componentes y otras soluciones de software.</span>
+    </p>
+    <p className='service-title'>
+    {' '}
+    <a
+    href="/"
+    alt="Optimización de páginas web"
+    title="Optimización de páginas web"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Optimización de páginas web
+  </a>
+  <br />
+  <span>
+    Favorece la velocidad de tu proyecto para evitar rebotes.</span>
+    </p>
+    <p className='service-title'>
+    {' '}
+    <a
+    href="/"
+    alt="Integraciones de Accesibilidad"
+    title="Integraciones de Accesibilidad"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Integraciones de Accesibilidad
+  </a>
+  <br />
+  <span>
+    Que tu web / app llegue a la mayor cantidad de personas posible con Accesibilidad.</span>
+    </p>
             <hr className="service-separator" />
             <button className="cta-button">Servicios</button>
           </div>
@@ -158,45 +200,134 @@ export const App = () => {
 
           <div className="service">
             <img src={imagenAsistencia} alt="Asistencia" style={{ width: '250px' }} />
-            <Link to="./components/Servicios">
               <h3 className="service-title">ASISTENCIA 🤝</h3>
-            </Link>
-            <ul className="service-description">
-              <li className="list-item">Asistencia virtual</li>
-            <span>
-              Proporcionamos soporte remoto, gestionamos cuentas sociales y de email; programamos citas, brindamos help desk al cliente y realizamos diversas asistencias virtuales y acciones sociales a tu favor.
-            </span>
-              <li className="list-item">Respondedor Email</li>
-            <span>
-              Proporcionamos soporte remoto, gestionamos cuentas sociales y de email; programamos citas, brindamos help desk al cliente y realizamos diversas asistencias virtuales y acciones sociales a tu favor.
-            </span>
-              <li className="list-item">Agendado / Booking</li>
-            <span>
-              Proporcionamos soporte remoto, gestionamos cuentas sociales y de email; programamos citas, brindamos help desk al cliente y realizamos diversas asistencias virtuales y acciones sociales a tu favor.
-            </span>
-            </ul>
-            <span>
-              Proporcionamos soporte remoto, gestionamos cuentas sociales y de email; programamos citas, brindamos help desk al cliente y realizamos diversas asistencias virtuales y acciones sociales a tu favor.
-            </span>
+              <p className='service-title'>
+    {' '}
+    <a
+    href="/"
+    alt="Diseño web en marco de desarrollo"
+    title="Diseño web en marco de desarrollo"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Diseño web en marco de desarrollo
+  </a>
+  <br />
+  <span>
+    Desarrollo de web app, módulos, componentes y otras soluciones de software.</span>
+    </p>
+    <p className='service-title'>
+    {' '}
+    <a
+    href="/"
+    alt="Desarrollo de componentes web"
+    title="Desarrollo de componentes web"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Desarrollo de componentes web
+  </a>
+  <br />       
+  <span>
+    Desarrollo de web app, módulos, componentes y otras soluciones de software.</span>
+    </p>
+    <p className='service-title'>
+    {' '}
+    <a
+    href="/"
+    alt="Optimización de páginas web"
+    title="Optimización de páginas web"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Optimización de páginas web
+  </a>
+  <br />
+  <span>
+    Favorece la velocidad de tu proyecto para evitar rebotes.</span>
+    </p>
+    <p className='service-title'>
+    {' '}
+    <a
+    href="/"
+    alt="Integraciones de Accesibilidad"
+    title="Integraciones de Accesibilidad"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Integraciones de Accesibilidad
+  </a>
+  <br />
+  <span>
+    Que tu web / app llegue a la mayor cantidad de personas posible con Accesibilidad.</span>
+    </p>
             <hr className="service-separator" />
             <button className="cta-button">Servicios</button>
           </div>
 
           <div className="service">
             <img src={imagenArtisticos} alt="Artística" style={{ width: '250px' }} />
-            <Link to="./components/Servicios">
               <h3 className="service-title">ARTÍSTICA 🎨</h3>
-            </Link>
-            <ul className="service-description">
-              <li className="list-item">Cuadros artísticos 1</li>
-            <span>
-              Como lo digital no lo es todo, ofreceremos ocasionalmente piezas de arte echas a  mano, desde cuadros hasta murales, pasando por fotografías...
-            </span>
-              <li className="list-item">Cuadros artísticos 2</li>
-            <span>
-              Como lo digital no lo es todo, ofreceremos ocasionalmente piezas de arte echas a  mano, desde cuadros hasta murales, pasando por fotografías...
-            </span>
-            </ul>
+              <p className='service-title'>
+    {' '}
+    <a
+    href="/"
+    alt="Diseño web en marco de desarrollo"
+    title="Diseño web en marco de desarrollo"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Diseño web en marco de desarrollo
+  </a>
+  <br />
+  <span>
+    Desarrollo de web app, módulos, componentes y otras soluciones de software.</span>
+    </p>
+    <p className='service-title'>
+    {' '}
+    <a
+    href="/"
+    alt="Desarrollo de componentes web"
+    title="Desarrollo de componentes web"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Desarrollo de componentes web
+  </a>
+  <br />       
+  <span>
+    Desarrollo de web app, módulos, componentes y otras soluciones de software.</span>
+    </p>
+    <p className='service-title'>
+    {' '}
+    <a
+    href="/"
+    alt="Optimización de páginas web"
+    title="Optimización de páginas web"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Optimización de páginas web
+  </a>
+  <br />
+  <span>
+    Favorece la velocidad de tu proyecto para evitar rebotes.</span>
+    </p>
+    <p className='service-title'>
+    {' '}
+    <a
+    href="/"
+    alt="Integraciones de Accesibilidad"
+    title="Integraciones de Accesibilidad"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Integraciones de Accesibilidad
+  </a>
+  <br />
+  <span>
+    Que tu web / app llegue a la mayor cantidad de personas posible con Accesibilidad.</span>
+    </p>
             <hr className="service-separator" />
             <button className="cta-button">Productos</button>
           </div>
