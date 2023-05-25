@@ -9,6 +9,10 @@ header {
   text-align: center;
 }
 
+.description-subtext {
+  text-align: left;
+}
+
 .intro-title {
   font-size: 24px;
   margin-bottom: 10px;
@@ -24,10 +28,6 @@ header {
 .emoji {
   display: inline-block;
   animation: snakeMove 3s infinite alternate;
-}
-
-.description-subtext {
-  text-align: left;
 }
 
 @keyframes snakeMove {
@@ -66,6 +66,10 @@ header {
 
 .service-title {
   align-items: left;
+}
+
+prompt-text {
+  color: white;
 }
 
 .service-separator {
@@ -117,11 +121,11 @@ header {
   background-color: #d7c55b;
 }
 
-.newsletter-form {
+/* .newsletter-form {
   grid-column: 1 / -1;
   text-align: center;
   margin-top: 20px;
-}
+} */
 
 .footer {
   display: grid;

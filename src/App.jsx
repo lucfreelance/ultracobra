@@ -1,29 +1,11 @@
 import React from 'react';
-import { BrowserRouter, Link } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import imagenProgramacion from './img/ruta-programacion.jpg';
 import imagenContenidos from './img/ruta-de-contenidos.jpg';
 import imagenAsistencia from './img/ruta-de-asistencia.jpg';
-import imagenArtisticos from './img/ruta-de-la-artistica.jpg';
-// import Contacto from './components/Contacto'
+import imagenArtisticos from './img/ruta-de-la-artistica.png';
 import '@fortawesome/fontawesome-free/css/all.css';
-
-// const NewsletterForm = () => {
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     const formData = new FormData(e.target);
-//     const email = formData.get('email');
-//     const mailtoLink = `mailto:ultracobre@gmail.com?subject=Suscripción a Newsletter&body=Correo electrónico: ${email}`;
-//     window.location.href = mailtoLink;
-//   };
-
-//   return (
-//     <form onSubmit={handleSubmit}>
-//       <input type="email" name="email" placeholder="Ingresa tu email" />
-//       <button type="submit">Suscríbete al Boletín</button>
-//     </form>
-//   );
-// };
 
 export const App = () => {
   return (
@@ -62,26 +44,26 @@ export const App = () => {
             </p>
           </div>
 
-          <div className="service-intro">
+          {/* <div className="service-intro">
             <div className="intro-text"></div>
-          </div>
+          </div> */}
 
           <div className="service">
             <img src={imagenContenidos} alt="Contenidos" style={{ width: '250px' }} />
             <h3 className="service-title">CONTENIDOS 📝</h3>
             <p className="service-description">
               <a
-                href="/"
-                alt="Post Pack temático"
+                href="https://forobeta.com/temas/con-excelente-calidad-en-redaccion-y-algo-mas.626791/"
+                alt="Post Pack temático redacciones desde 1000 palabras"
                 title="Post Pack temático"
-                // rel="noopener noreferrer"
-                // target="_blank"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 Post Pack redacciones desde 1000 palabras
               </a>
               <br />
               <span className="description-subtext">
-                Ofrecemos contenido atractivo y de calidad para blogs, redes sociales, sitios web.
+                Relanzamos la primera oferta del foro como redactor de contenido atractivo y de calidad para blogs, redes sociales, sitios web...
               </span>
             </p>
             <p className="service-description">
@@ -92,11 +74,11 @@ export const App = () => {
                 // rel="noopener noreferrer"
                 // target="_blank"
               >
-                Traducciones ES-EN-ES
+                Traducciones Español a Inglés
               </a>
               <br />
               <span className="description-subtext">
-                Traducciones ES-EN-ES Traducciones ES-EN-ES Traducciones ES-EN-ES Traducciones ES-EN-ES Traducciones ES-EN-ES.
+                Traducciones ES-EN-ES / Traducciones EN-ES-EN que evite la imprecisión de las traducciones automáticas, ofreciendo un resultado mucho más preciso.
               </span>
             </p>
             <p className="service-description">
@@ -111,9 +93,11 @@ export const App = () => {
               </a>
               <br />
               <span className="description-subtext">
-                Ofrecemos contenido atractivo y de calidad para blogs, redes sociales, sitios web.
+                Ofrecemos contenido atractivo y de calidad para blogs, redes sociales, sitios web. Construimos tu blog desde cero para WordPress, otros CMS, blogs sin base de datos.
               </span>
             </p>
+            {/* <hr className="service-separator" /> */}
+            
           </div>
 
           <div className="service">
@@ -127,11 +111,11 @@ export const App = () => {
                 // rel="noopener noreferrer"
                 // target="_blank"
               >
-                Diseño web en marcos de desarrollo
+                Diseño web en marcos de desarrollo: Frameworks
               </a>
               <br />
               <span className="description-subtext">
-                Desarrollo de web app, módulos, componentes y otras soluciones de software.
+              Crea una presencia en línea impactante con el desarrollo de sitios web desarrollados con marcos de desarrollo (frameworks).
               </span>
             </p>
             <p className="service-description">
@@ -142,11 +126,11 @@ export const App = () => {
                 // rel="noopener noreferrer"
                 // target="_blank"
               >
-                Optimización de páginas web
+                Optimización de webs y apps
               </a>
               <br />
               <span className="description-subtext">
-                Favorece la velocidad de tu proyecto para evitar rebotes.
+              Impulsa el rendimiento de tu proyecto al mejorar la velocidad de carga, experiencia del usuario, y evitarás rebotes por cargas iniciales lentas.
               </span>
             </p>
             <p className="service-description">
@@ -161,7 +145,7 @@ export const App = () => {
               </a>
               <br />
               <span className="description-subtext">
-                Que tu web / app llegue a la mayor cantidad de personas posible con Accesibilidad.
+              Integraciones de accesibilidad se enfoca en hacer que tu web o app sea fácilmente usable por personas con diferentes capacidades y necesidades,para que tu web o app llegue a la mayor cantidad de personas posible.
               </span>
             </p>
             <p className="service-description">
@@ -176,11 +160,11 @@ export const App = () => {
               </a>
               <br />
               <span className="description-subtext">
-                Desarrollo de web app, módulos, componentes y otras soluciones de software.
+                Desarrollo de componentes web, módulos y otras soluciones personalizadas de software integradas a tus propiedades digitales.
               </span>
             </p>
-            <hr className="service-separator" />
-            <button className="cta-button">Servicios</button>
+            {/* <hr className="service-separator" /> */}
+            
           </div>
 
           <div className="service">
@@ -198,7 +182,7 @@ export const App = () => {
               </a>
               <br />
               <span className="description-subtext">
-                Proporcionamos soporte remoto, gestionamos cuentas sociales y de email; programamos citas, brindamos help desk al cliente y realizamos diversas asistencias virtuales y acciones sociales a tu favor.
+              Obtén soporte eficiente en tus tareas administrativas y organizativas. Simplificamos tu carga de trabajo para que puedas concentrarte en lo más importante.
               </span>
             </p>
             <p className="service-description">
@@ -213,7 +197,7 @@ export const App = () => {
               </a>
               <br />
               <span className="description-subtext">
-                Proporcionamos soporte remoto, gestionamos cuentas sociales y de email; programamos citas, brindamos help desk al cliente y realizamos diversas asistencias virtuales y acciones sociales a tu favor.
+              Olvídate de la carga de responder correos electrónicos uno por uno. Nuestro servicio de respondedor de email se encargará de contestar tus mensajes de manera rápida y profesional.
               </span>
             </p>
             <p className="service-description">
@@ -224,20 +208,21 @@ export const App = () => {
                 // rel="noopener noreferrer"
                 // target="_blank"
               >
-                Agendado
+                Agendador
               </a>
               <br />
               <span className="description-subtext">
-                Proporcionamos soporte remoto, gestionamos cuentas sociales y de email; programamos citas, brindamos help desk al cliente y realizamos diversas asistencias virtuales y acciones sociales a tu favor.
+              Simplifica tu vida organizando tus citas y reuniones. Nuestro servicio de agendador te ayudará a gestionar correctamente tu agenda, programando citas y recordatorios para que nunca pierdas un evento importante.
               </span>
             </p>
-            <hr className="service-separator" />
-            <button className="cta-button">Servicios</button>
+            {/* <hr className="service-separator" /> */}
+            
           </div>
 
           <div className="service">
             <img src={imagenArtisticos} alt="Artística" style={{ width: '250px' }} />
             <h3 className="service-title">ARTÍSTICOS 🎨</h3>
+            <p className="prompt-text">Como no todo puede ser digital, lanzamos ocasionalmente algunas piezas de arte físico. Puedes echar un vistazo, cuéntanos qué te gusta.</p>
             <p className="service-description">
               <a
                 href="/"
@@ -268,12 +253,12 @@ export const App = () => {
                 Cuadros artísticos serie 2 (40 cms x 60 cms) Acrílico sobre lienzo enmarcado - ARTISTAS VARIOS.
               </span>
             </p>
-            <hr className="service-separator" />
+            {/* <hr className="service-separator" /> */}
             <button className="cta-button">Galería</button>
           </div>
         </section>
 
-        <footer className="grid-container footer">
+        <footer className="grid-container">
           <ul style={{ listStyleType: 'none', padding: 0 }}>
             <li>
               <i className="fab fa-whatsapp"></i> <a href="https://wa.me/573166054533" target="_blank" rel="noopener noreferrer" alt="WhatsApp ultracobra" title="WhatsApp @ultracobra">WhatsApp</a>
@@ -293,4 +278,3 @@ export const App = () => {
     </BrowserRouter>
   );
 };
-
