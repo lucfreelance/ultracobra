@@ -59,11 +59,11 @@ export const App = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Post Pack redacciones desde 1000 palabras
+                Redacciones desde 1000 palabras #PostPack
               </a>
               <br />
               <span className="description-subtext">
-                Relanzamos la primera oferta del foro como redactor de contenido atractivo y de calidad para blogs, redes sociales, sitios web...
+                Relanzamos la primera oferta del foro como redactor de contenido atractivo y de calidad para blogs, redes sociales y sitios web.
               </span>
             </p>
             <p className="service-description">
@@ -74,11 +74,11 @@ export const App = () => {
                 // rel="noopener noreferrer"
                 // target="_blank"
               >
-                Traducciones Español a Inglés
+                Traducciones Español / Inglés / Español
               </a>
               <br />
               <span className="description-subtext">
-                Traducciones ES-EN-ES / Traducciones EN-ES-EN que evite la imprecisión de las traducciones automáticas, ofreciendo un resultado mucho más preciso.
+                Evite la imprecisión de las traducciones automáticas, ofreciendo un resultado de traducción mucho más acertado.
               </span>
             </p>
             <p className="service-description">
@@ -111,11 +111,11 @@ export const App = () => {
                 // rel="noopener noreferrer"
                 // target="_blank"
               >
-                Diseño web en marcos de desarrollo: Frameworks
+                Diseño web con o sin frameworks
               </a>
               <br />
               <span className="description-subtext">
-              Crea una presencia en línea impactante con el desarrollo de sitios web desarrollados con marcos de desarrollo (frameworks).
+              Crea una presencia en línea impactante con el desarrollo de sitios web desarrollados con marcos de desarrollo [frameworks], tipo vainilla o con CMS.
               </span>
             </p>
             <p className="service-description">
@@ -141,11 +141,11 @@ export const App = () => {
                 // rel="noopener noreferrer"
                 // target="_blank"
               >
-                Integraciones de Accesibilidad
+                Integraciones de Accesibilidad Web
               </a>
               <br />
               <span className="description-subtext">
-              Integraciones de accesibilidad se enfoca en hacer que tu web o app sea fácilmente usable por personas con diferentes capacidades y necesidades,para que tu web o app llegue a la mayor cantidad de personas posible.
+              La Accesibilidad Web se enfoca en hacer que un sitio web o app sea fácilmente usable por personas con diferentes capacidades y necesidades, asñi tu mensaje llegará a más personas.
               </span>
             </p>
             <p className="service-description">
@@ -170,21 +170,8 @@ export const App = () => {
           <div className="service">
             <img src={imagenAsistencia} alt="Asistencia" style={{ width: '250px' }} />
             <h3 className="service-title">ASISTENCIA 🤝</h3>
-            <p className="service-description">
-              <a
-                href="/"
-                alt="Asistencia virtual"
-                title="Asistencia virtual"
-                // rel="noopener noreferrer"
-                // target="_blank"
-              >
-                Asistencia virtual
-              </a>
-              <br />
-              <span className="description-subtext">
-              Obtén soporte eficiente en tus tareas administrativas y organizativas. Simplificamos tu carga de trabajo para que puedas concentrarte en lo más importante.
-              </span>
-            </p>
+            <p className="prompt-text">Obtén soporte eficiente en tus tareas administrativas y organizativas. Simplificamos tu carga de trabajo para que puedas concentrarte en lo más importante.</p>
+            
             <p className="service-description">
               <a
                 href="/"
@@ -197,7 +184,7 @@ export const App = () => {
               </a>
               <br />
               <span className="description-subtext">
-              Olvídate de la carga de responder correos electrónicos uno por uno. Nuestro servicio de respondedor de email se encargará de contestar tus mensajes de manera rápida y profesional.
+              Olvídate de la carga de responder correos electrónicos uno por uno. Nuestro servicio de respondedor de email se encargará de contestar tus mensajes de manera profesional.
               </span>
             </p>
             <p className="service-description">
@@ -212,7 +199,7 @@ export const App = () => {
               </a>
               <br />
               <span className="description-subtext">
-              Simplifica tu vida organizando tus citas y reuniones. Nuestro servicio de agendador te ayudará a gestionar correctamente tu agenda, programando citas y recordatorios para que nunca pierdas un evento importante.
+              Simplifica organizando tus citas y reuniones. Nuestro agendador te ayudará a gestionar correctamente tu agenda, citas y recordatorios para que nunca pierdas un evento importante.
               </span>
             </p>
             {/* <hr className="service-separator" /> */}
@@ -220,8 +207,8 @@ export const App = () => {
           </div>
 
           <div className="service">
-            <img src={imagenArtisticos} alt="Artística" style={{ width: '250px' }} />
-            <h3 className="service-title">ARTÍSTICOS 🎨</h3>
+            <img src={imagenArtisticos} alt="Artístico" style={{ width: '250px' }} />
+            <h3 className="service-title">ARTÍSTICO 🎨</h3>
             <p className="prompt-text">Como no todo puede ser digital, lanzamos ocasionalmente algunas piezas de arte físico. Puedes echar un vistazo, cuéntanos qué te gusta.</p>
             <p className="service-description">
               <a
@@ -238,22 +225,7 @@ export const App = () => {
                 Cuadros artísticos serie 1 (40 cms x 44 cms) Acrílico sobre lienzo enmarcado - ARTISTAS VARIOS.
               </span>
             </p>
-            <p className="service-description">
-              <a
-                href="/"
-                alt="Cuadros artísticos serie 2: 40 cms x 60 cms"
-                title="Cuadros artísticos serie 2: 40 cms x 60 cms"
-                // rel="noopener noreferrer"
-                // target="_blank"
-              >
-                Cuadros artísticos serie 2
-              </a>
-              <br />
-              <span className="description-subtext">
-                Cuadros artísticos serie 2 (40 cms x 60 cms) Acrílico sobre lienzo enmarcado - ARTISTAS VARIOS.
-              </span>
-            </p>
-            {/* <hr className="service-separator" /> */}
+            <hr className="service-separator" />
             <button className="cta-button">Galería</button>
           </div>
         </section>
