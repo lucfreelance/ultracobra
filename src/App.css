@@ -26,6 +26,10 @@ header {
   animation: snakeMove 3s infinite alternate;
 }
 
+.description-subtext {
+  text-align: left;
+}
+
 @keyframes snakeMove {
   0% {
     transform: translateX(0) rotate(0);
@@ -55,22 +59,6 @@ header {
   }
 }
 
-
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-} */
-
 .service {
   border: 1px solid #ccc;
   padding: 20px;
@@ -79,14 +67,6 @@ header {
 .service-title {
   align-items: left;
 }
-
-/* .list-item {
-  list-style-type: none;
-  margin-left: -15px;
-  padding-left: 0;
-  text-indent: -1em;
-  color: #6c9a2b;
-} */
 
 .service-separator {
   border: none;
