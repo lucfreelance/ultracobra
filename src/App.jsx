@@ -235,7 +235,7 @@ export const App = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Desde $25
+                  Desde $20
                 </a>
               </span>
             </p>
@@ -258,7 +258,7 @@ export const App = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Desde $15
+                  Desde $10
                 </a>
               </span>
             </p>
