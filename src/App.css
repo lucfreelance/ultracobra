@@ -74,13 +74,32 @@ header {
 }
 
 .prompt-text {
-  color: white;
+  color: #561414;
 }
 
 .service-separator {
   border: none;
   border-top: 1px solid #ccc;
   margin: 20px 0;
+}
+
+.service-price {
+  white-space: nowrap;
+}
+
+.service-price-button {
+  background-color: #ecc756;
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: 5px;
+}
+
+.service-price-button:hover {
+  background-color: #addcad;
 }
 
 .cta-button {

@@ -60,7 +60,7 @@ export const App = () => {
           </div>
 
           <div className="service">
-            <img src={imagenContenidos} alt="Contenidos" style={{ width: '250px' }} />
+            <img src={imagenContenidos} alt="Potencia tu presencia online con contenidos irresistibles y cautivadores. Nosotros nos encargamos de crearlos para ti y destacarte en la competencia." title="Potencia tu presencia online con contenidos irresistibles y cautivadores. Nosotros nos encargamos de crearlos para ti y destacarte en la competencia." style={{ width: '250px' }} />
             <h3 className="service-title">CONTENIDOS 📝</h3>
             <p className="service-description">
               <a
@@ -75,7 +75,17 @@ export const App = () => {
               <br />
 <span>
                 Dirigimos a la primera oferta del foro como redactor de contenido atractivo y de calidad. El tema está [cerrado], la oferta ha sido relanzada. 
-              </span>
+              </span>{" "}
+              <span className="service-price">
+  <a
+    href="https://forobeta.com/?ref=179278"
+    className="service-price-button"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Desde $1
+  </a>
+</span>
             </p>
             <p className="service-description">
               <a
@@ -90,7 +100,17 @@ export const App = () => {
               <br />
 <span>
                 Dirigimos a la segunda oferta del foro como traductor Inglés a Español y Español a Inglés. El tema está [cerrado], la oferta ha sido relanzada.
-              </span>
+              </span>{" "}
+              <span className="service-price">
+  <a
+    href="https://forobeta.com/?ref=179278"
+    className="service-price-button"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Desde $1
+  </a>
+</span>
             </p>
             <p className="service-description">
               <a
@@ -105,14 +125,24 @@ export const App = () => {
               <br />
 <span>
                 Ofrecemos contenido atractivo y de calidad para blogs, redes sociales, sitios web. Construimos tu blog desde cero para WordPress, otros CMS, blogs sin base de datos.
-              </span>
+              </span>{" "}
+              <span className="service-price">
+  <a
+    href="https://forobeta.com/?ref=179278"
+    className="service-price-button"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Desde $1
+  </a>
+</span>
             </p>
             {/* <hr className="service-separator" /> */}
             
           </div>
 
           <div className="service">
-            <img src={imagenProgramacion} alt="Programación" style={{ width: '250px' }} />
+            <img src={imagenProgramacion} alt="Incrementa tu éxito en línea con soluciones de programación a medida. Confía en nosotros para diseñar componentes y sitios web, ofrecer integraciones de optimización, accesibilidad, y más." title="Incrementa tu éxito en línea con soluciones de programación a medida. Confía en nosotros para diseñar componentes y sitios web, ofrecer integraciones de optimización, accesibilidad, y más." style={{ width: '250px' }} />
             <h3 className="service-title">PROGRAMACIÓN 💻</h3>
             <p className="service-description">
               <a
@@ -127,7 +157,17 @@ export const App = () => {
               <br />
 <span>
               Crea una presencia en línea impactante con el desarrollo de sitios desarrollados con marcos de desarrollo [frameworks], o si prefieres tipo vainilla o con CMS: Lo que mejor se adapte a tu proyecto
-              </span>
+              </span>{" "}
+              <span className="service-price">
+  <a
+    href="https://forobeta.com/?ref=179278"
+    className="service-price-button"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Desde $1
+  </a>
+</span>
             </p>
             <p className="service-description">
               <a
@@ -142,7 +182,17 @@ export const App = () => {
               <br />
 <span>
               Impulsa el rendimiento de tu proyecto al mejorar la velocidad de carga, experiencia del usuario, y evitarás rebotes por cargas iniciales lentas.
-              </span>
+              </span>{" "}
+              <span className="service-price">
+  <a
+    href="https://forobeta.com/?ref=179278"
+    className="service-price-button"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Desde $1
+  </a>
+</span>
             </p>
             <p className="service-description">
               <a
@@ -157,7 +207,17 @@ export const App = () => {
               <br />
 <span>
               La Accesibilidad Web se enfoca en hacer que un sitio web o app sea fácilmente usable por personas con diferentes capacidades y necesidades, así, tu mensaje llegará a muchas más personas.
-              </span>
+              </span>{" "}
+              <span className="service-price">
+  <a
+    href="https://forobeta.com/?ref=179278"
+    className="service-price-button"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Desde $1
+  </a>
+</span>
             </p>
             <p className="service-description">
               <a
@@ -172,16 +232,25 @@ export const App = () => {
               <br />
 <span>
                 Desarrollo de componentes web, módulos y otras soluciones personalizadas de software integradas a tus propiedades digitales.
-              </span>
+              </span>{" "}
+              <span className="service-price">
+  <a
+    href="https://forobeta.com/?ref=179278"
+    className="service-price-button"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Desde $1
+  </a>
+</span>
             </p>
             {/* <hr className="service-separator" /> */}
             
           </div>
 
           <div className="service">
-            <img src={imagenAsistencia} alt="Asistencia" style={{ width: '250px' }} />
+            <img src={imagenAsistencia} alt="Obtén soporte eficiente en tus tareas administrativas y organizativas. Simplificamos tu carga de trabajo para que puedas concentrarte en lo más importante." title="Obtén soporte eficiente en tus tareas administrativas y organizativas. Simplificamos tu carga de trabajo para que puedas concentrarte en lo más importante." style={{ width: '250px' }} />
             <h3 className="service-title">ASISTENCIA 🤝</h3>
-            <p className="prompt-text">Obtén soporte eficiente en tus tareas administrativas y organizativas. Simplificamos tu carga de trabajo para que puedas concentrarte en lo más importante.</p>
             
             <p className="service-description">
               <a
@@ -196,7 +265,17 @@ export const App = () => {
               <br />
 <span>
               Olvídate de la carga de responder correos electrónicos uno por uno. Nuestro servicio de respondedor de email se encargará de contestar tus mensajes de manera profesional.
-              </span>
+              </span>{" "}
+              <span className="service-price">
+  <a
+    href="https://forobeta.com/?ref=179278"
+    className="service-price-button"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Desde $1
+  </a>
+</span>
             </p>
             <p className="service-description">
               <a
@@ -211,7 +290,17 @@ export const App = () => {
               <br />
 <span>
               Simplifica organizando tus citas y reuniones. Nuestro agendador te ayudará a gestionar correctamente tu agenda, citas y recordatorios para que nunca pierdas un evento importante.
-              </span>
+              </span>{" "}
+              <span className="service-price">
+  <a
+    href="https://forobeta.com/?ref=179278"
+    className="service-price-button"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Desde $1
+  </a>
+</span>
             </p>
             {/* <hr className="service-separator" /> */}
             
@@ -264,5 +353,6 @@ export const App = () => {
 <Footer />
       </div>
     </BrowserRouter>
+    
   );
 };
