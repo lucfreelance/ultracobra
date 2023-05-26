@@ -83,7 +83,7 @@ export const App = () => {
     target="_blank"
     rel="noopener noreferrer"
   >
-    Desde $1
+    Desde $
   </a>
 </span>
             </p>
@@ -108,7 +108,7 @@ export const App = () => {
     target="_blank"
     rel="noopener noreferrer"
   >
-    Desde $1
+    Desde $
   </a>
 </span>
             </p>
@@ -133,7 +133,7 @@ export const App = () => {
     target="_blank"
     rel="noopener noreferrer"
   >
-    Desde $1
+    Desde $
   </a>
 </span>
             </p>
@@ -165,7 +165,7 @@ export const App = () => {
     target="_blank"
     rel="noopener noreferrer"
   >
-    Desde $1
+    Desde $
   </a>
 </span>
             </p>
@@ -190,7 +190,7 @@ export const App = () => {
     target="_blank"
     rel="noopener noreferrer"
   >
-    Desde $1
+    Desde $
   </a>
 </span>
             </p>
@@ -215,7 +215,7 @@ export const App = () => {
     target="_blank"
     rel="noopener noreferrer"
   >
-    Desde $1
+    Desde $
   </a>
 </span>
             </p>
@@ -240,7 +240,7 @@ export const App = () => {
     target="_blank"
     rel="noopener noreferrer"
   >
-    Desde $1
+    Desde $
   </a>
 </span>
             </p>
@@ -273,7 +273,7 @@ export const App = () => {
     target="_blank"
     rel="noopener noreferrer"
   >
-    Desde $1
+    Desde $
   </a>
 </span>
             </p>
@@ -298,7 +298,7 @@ export const App = () => {
     target="_blank"
     rel="noopener noreferrer"
   >
-    Desde $1
+    Desde $
   </a>
 </span>
             </p>
