@@ -1,19 +1,29 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import './App.css';
+import Footer from './components/Footer';
 import imagenProgramacion from './img/ruta-programacion.jpg';
 import imagenContenidos from './img/ruta-de-contenidos.jpg';
 import imagenAsistencia from './img/ruta-de-asistencia.jpg';
-import imagenArtisticos from './img/ruta-de-la-artistica.png';
-import '@fortawesome/fontawesome-free/css/all.css';
+// import imagenArtisticos from './img/ruta-de-la-artistica.png';
+import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaBootstrap } from 'react-icons/fa';
 
 export const App = () => {
   return (
     <BrowserRouter>
       <div style={{ marginLeft: '20px' }}>
+        <Helmet>
+          <meta charSet="UTF-8" />
+          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>ultracobra Ⓤ Servicios digitales y soluciones 🐍 vía ForoBeta</title>
+          <meta name="description" content="Servicios digitales y soluciones en: Contenidos + Programación + Asistencia + Arte digital. Estamos en web, foros, social y pronto más!" />
+          <meta property="og:image" content="https://i.imgur.com/cCphed4.png" />
+        </Helmet>
         <header>
           <h1>
-            <span className="highlight">Ⓤ</span> ultracobra{' '}
+            <span className="ultra">Ⓤ</span> ultracobra{' '}
             <span className="emoji">🐍</span>
           </h1>
           <p className="slogan-prompt">
@@ -44,10 +54,6 @@ export const App = () => {
             </p>
           </div>
 
-          {/* <div className="service-intro">
-            <div className="intro-text"></div>
-          </div> */}
-
           <div className="service">
             <img src={imagenContenidos} alt="Contenidos" style={{ width: '250px' }} />
             <h3 className="service-title">CONTENIDOS 📝</h3>
@@ -62,23 +68,23 @@ export const App = () => {
                 Redacciones desde 1000 palabras #PostPack
               </a>
               <br />
-              <span className="description-subtext">
-                Relanzamos la primera oferta del foro como redactor de contenido atractivo y de calidad para blogs, redes sociales y sitios web.
+<span>
+                Dirigimos a la primera oferta del foro como redactor de contenido atractivo y de calidad. El tema está [cerrado], la oferta ha sido relanzada. 
               </span>
             </p>
             <p className="service-description">
               <a
-                href="/"
+                href="https://forobeta.com/temas/traductor-espanol-ingles-ingles-portugues-portugues-espanol-a-tu-servicio-24-7-365.660572/"
                 alt="Traducciones ES-EN-ES"
                 title="Traducciones ES-EN-ES"
-                // rel="noopener noreferrer"
-                // target="_blank"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 Traducciones Español / Inglés / Español
               </a>
               <br />
-              <span className="description-subtext">
-                Evite la imprecisión de las traducciones automáticas, ofreciendo un resultado de traducción mucho más acertado.
+<span>
+                Dirigimos a la segunda oferta del foro como traductor Inglés a Español y Español a Inglés. El tema está [cerrado], la oferta ha sido relanzada.
               </span>
             </p>
             <p className="service-description">
@@ -92,7 +98,7 @@ export const App = () => {
                 Creación y actualización de blogs
               </a>
               <br />
-              <span className="description-subtext">
+<span>
                 Ofrecemos contenido atractivo y de calidad para blogs, redes sociales, sitios web. Construimos tu blog desde cero para WordPress, otros CMS, blogs sin base de datos.
               </span>
             </p>
@@ -111,11 +117,11 @@ export const App = () => {
                 // rel="noopener noreferrer"
                 // target="_blank"
               >
-                Diseño web con o sin frameworks
+                Diseño de sitios web estáticos [con o sin frameworks]
               </a>
               <br />
-              <span className="description-subtext">
-              Crea una presencia en línea impactante con el desarrollo de sitios web desarrollados con marcos de desarrollo [frameworks], tipo vainilla o con CMS.
+<span>
+              Crea una presencia en línea impactante con el desarrollo de sitios desarrollados con marcos de desarrollo [frameworks], o si prefieres tipo vainilla o con CMS: Lo que mejor se adapte a tu proyecto
               </span>
             </p>
             <p className="service-description">
@@ -129,7 +135,7 @@ export const App = () => {
                 Optimización de webs y apps
               </a>
               <br />
-              <span className="description-subtext">
+<span>
               Impulsa el rendimiento de tu proyecto al mejorar la velocidad de carga, experiencia del usuario, y evitarás rebotes por cargas iniciales lentas.
               </span>
             </p>
@@ -144,8 +150,8 @@ export const App = () => {
                 Integraciones de Accesibilidad Web
               </a>
               <br />
-              <span className="description-subtext">
-              La Accesibilidad Web se enfoca en hacer que un sitio web o app sea fácilmente usable por personas con diferentes capacidades y necesidades, asñi tu mensaje llegará a más personas.
+<span>
+              La Accesibilidad Web se enfoca en hacer que un sitio web o app sea fácilmente usable por personas con diferentes capacidades y necesidades, así, tu mensaje llegará a muchas más personas.
               </span>
             </p>
             <p className="service-description">
@@ -159,7 +165,7 @@ export const App = () => {
                 Desarrollo de componentes web
               </a>
               <br />
-              <span className="description-subtext">
+<span>
                 Desarrollo de componentes web, módulos y otras soluciones personalizadas de software integradas a tus propiedades digitales.
               </span>
             </p>
@@ -183,7 +189,7 @@ export const App = () => {
                 Respondedor Email
               </a>
               <br />
-              <span className="description-subtext">
+<span>
               Olvídate de la carga de responder correos electrónicos uno por uno. Nuestro servicio de respondedor de email se encargará de contestar tus mensajes de manera profesional.
               </span>
             </p>
@@ -198,7 +204,7 @@ export const App = () => {
                 Agendador
               </a>
               <br />
-              <span className="description-subtext">
+<span>
               Simplifica organizando tus citas y reuniones. Nuestro agendador te ayudará a gestionar correctamente tu agenda, citas y recordatorios para que nunca pierdas un evento importante.
               </span>
             </p>
@@ -206,46 +212,51 @@ export const App = () => {
             
           </div>
 
-          <div className="service">
+          {/* <div className="service">
             <img src={imagenArtisticos} alt="Artístico" style={{ width: '250px' }} />
-            <h3 className="service-title">ARTÍSTICO 🎨</h3>
-            <p className="prompt-text">Como no todo puede ser digital, lanzamos ocasionalmente algunas piezas de arte físico. Puedes echar un vistazo, cuéntanos qué te gusta.</p>
+            <h3 className="service-title">ARTE DIGITAL 🎨</h3>
+            <p className="prompt-text">Nos encanta el arte digital, checa algunas piezas de nuestros colaboradores. Sólo contenido original y publicado en las mejores galerías y mercados de arte digital.</p>
             <p className="service-description">
               <a
                 href="/"
-                alt="Cuadros artísticos serie 1: 40 cms x 44 cms"
-                title="Cuadros artísticos serie 1: 40 cms x 44 cms"
+                alt="Patrones de diseño A"
+                title="Patrones de diseño A"
                 // rel="noopener noreferrer"
                 // target="_blank"
               >
-                Cuadros artísticos serie 1
+                Patrones de diseño A. 
               </a>
               <br />
-              <span className="description-subtext">
-                Cuadros artísticos serie 1 (40 cms x 44 cms) Acrílico sobre lienzo enmarcado - ARTISTAS VARIOS.
+<span>
+              Vectorizados en formato grande. Puedes usarlos donde quieras y para toda la vida!
               </span>
             </p>
             <hr className="service-separator" />
-            <button className="cta-button">Galería</button>
-          </div>
+            <button className="cta-button">Tienda Etsy</button>
+          </div> */}
         </section>
-
-        <footer className="grid-container">
-          <ul style={{ listStyleType: 'none', padding: 0 }}>
-            <li>
-              <i className="fab fa-whatsapp"></i> <a href="https://wa.me/573166054533" target="_blank" rel="noopener noreferrer" alt="WhatsApp ultracobra" title="WhatsApp @ultracobra">WhatsApp</a>
-            </li>
-            <li>
-              <i className="fab fa-twitter"></i> <a href="https://twitter.com/cobraultra" target="_blank" rel="noopener noreferrer" alt="Twitter ultracobra" title="Twitter @ultracobra">@cobraultra</a>
-            </li>
-            <li>
-              <i className="fab fa-instagram"></i> <a href="https://instagram.com/ultracobra.es/" target="_blank" rel="noopener noreferrer" alt="Instagram ultracobra" title="Instagram @ultracobra">@ultracobra.es</a>
-            </li>
-            <li>
-              <i className="far fa-envelope"></i> <a href="mailto:ultracobre@gmail.com" target="_blank" rel="noopener noreferrer" alt="Email ultracobra" title="Email ultracobra">ultracobre@gmail.com</a>
-            </li>
-          </ul>
-        </footer>
+        
+<section>
+  <h3>Usamos estas y otras tecnologías:</h3>
+  <ul className="technologies-list">
+    <li>
+      <FaReact style={{ marginRight: '5px' }} /> React
+    </li>
+    <li>
+      <FaNodeJs style={{ marginRight: '5px' }} /> Node.js
+    </li>
+    <li>
+      <FaHtml5 style={{ marginRight: '5px' }} /> HTML5
+    </li>
+    <li>
+      <FaCss3 style={{ marginRight: '5px' }} /> CSS3
+    </li>
+    <li>
+      <FaBootstrap style={{ marginRight: '5px' }} /> Bootstrap
+    </li>
+  </ul>
+</section>
+<Footer />
       </div>
     </BrowserRouter>
   );
