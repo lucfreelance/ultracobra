@@ -6,7 +6,7 @@ import './App.css';
 import Footer from './components/Footer';
 import imagenProgramacion from './img/ruta-programacion.jpg';
 import imagenContenidos from './img/ruta-de-contenidos.jpg';
-import imagenAsistencia from './img/ruta-de-asistencia.jpg';
+// import imagenAsistencia from './img/ruta-de-asistencia.jpg';
 // import imagenArtisticos from './img/ruta-de-la-artistica.png';
 import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaBootstrap } from 'react-icons/fa';
 
@@ -23,7 +23,7 @@ export const App = () => {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>ultracobra Ⓤ Servicios digitales y soluciones 🐍 vía ForoBeta</title>
-          <meta name="description" content="Servicios digitales y soluciones en: Contenidos + Programación + Asistencia + Arte digital. Estamos en web, foros, social y pronto más!" />
+          <meta name="description" content="Servicios digitales y soluciones en: Programación + Contenidos. Estamos en web, foros, social y pronto más!" />
           <meta property="og:image" content="https://i.imgur.com/cCphed4.png" />
         </Helmet>
         <header>
@@ -57,88 +57,6 @@ export const App = () => {
             <p className="intro-description">
               Ofrecemos soluciones basadas en desarrollo web, generación de contenido de calidad, o, si necesitas una mano…
             </p>
-          </div>
-
-          <div className="service">
-            <img src={imagenContenidos} alt="Potencia tu presencia online con contenidos irresistibles y cautivadores. Nosotros nos encargamos de crearlos para ti y destacarte en la competencia." title="Potencia tu presencia online con contenidos irresistibles y cautivadores. Nosotros nos encargamos de crearlos para ti y destacarte en la competencia." style={{ width: '250px' }} />
-            <h3 className="service-title">CONTENIDOS 📝</h3>
-            <p className="service-description">
-              <a
-                href="https://forobeta.com/temas/con-excelente-calidad-en-redaccion-y-algo-mas.626791/"
-                alt="Post Pack temático redacciones desde 1000 palabras"
-                title="Post Pack temático"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Redacciones desde 1000 palabras #PostPack
-              </a>
-              <br />
-<span>
-                Dirigimos a la primera oferta del foro como redactor de contenido atractivo y de calidad. El tema está [cerrado], la oferta ha sido relanzada. 
-              </span>{" "}
-              <span className="service-price">
-  <a
-    href="https://forobeta.com/?ref=179278"
-    className="service-price-button"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Desde $
-  </a>
-</span>
-            </p>
-            <p className="service-description">
-              <a
-                href="https://forobeta.com/temas/traductor-espanol-ingles-ingles-portugues-portugues-espanol-a-tu-servicio-24-7-365.660572/"
-                alt="Traducciones ES-EN-ES"
-                title="Traducciones ES-EN-ES"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Traducciones Español / Inglés / Español
-              </a>
-              <br />
-<span>
-                Dirigimos a la segunda oferta del foro como traductor Inglés a Español y Español a Inglés. El tema está [cerrado], la oferta ha sido relanzada.
-              </span>{" "}
-              <span className="service-price">
-  <a
-    href="https://forobeta.com/?ref=179278"
-    className="service-price-button"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Desde $
-  </a>
-</span>
-            </p>
-            <p className="service-description">
-              <a
-                href="/"
-                alt="Creación y actualización de blogs"
-                title="Creación y actualización de blogs"
-                // rel="noopener noreferrer"
-                // target="_blank"
-              >
-                Creación y actualización de blogs
-              </a>
-              <br />
-<span>
-                Ofrecemos contenido atractivo y de calidad para blogs, redes sociales, sitios web. Construimos tu blog desde cero para WordPress, otros CMS, blogs sin base de datos.
-              </span>{" "}
-              <span className="service-price">
-  <a
-    href="https://forobeta.com/?ref=179278"
-    className="service-price-button"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Desde $
-  </a>
-</span>
-            </p>
-            {/* <hr className="service-separator" /> */}
-            
           </div>
 
           <div className="service">
@@ -247,8 +165,90 @@ export const App = () => {
             {/* <hr className="service-separator" /> */}
             
           </div>
-
           <div className="service">
+            <img src={imagenContenidos} alt="Potencia tu presencia online con contenidos irresistibles y cautivadores. Nosotros nos encargamos de crearlos para ti y destacarte en la competencia." title="Potencia tu presencia online con contenidos irresistibles y cautivadores. Nosotros nos encargamos de crearlos para ti y destacarte en la competencia." style={{ width: '250px' }} />
+            <h3 className="service-title">CONTENIDOS 📝</h3>
+            <p className="service-description">
+              <a
+                href="https://forobeta.com/temas/con-excelente-calidad-en-redaccion-y-algo-mas.626791/"
+                alt="Post Pack temático redacciones desde 1000 palabras"
+                title="Post Pack temático"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Redacciones desde 1000 palabras #PostPack
+              </a>
+              <br />
+<span>
+                Dirigimos a la primera oferta del foro como redactor de contenido atractivo y de calidad. El tema está [cerrado], la oferta ha sido relanzada. 
+              </span>{" "}
+              <span className="service-price">
+  <a
+    href="https://forobeta.com/?ref=179278"
+    className="service-price-button"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Desde $
+  </a>
+</span>
+            </p>
+            <p className="service-description">
+              <a
+                href="https://forobeta.com/temas/traductor-espanol-ingles-ingles-portugues-portugues-espanol-a-tu-servicio-24-7-365.660572/"
+                alt="Traducciones ES-EN-ES"
+                title="Traducciones ES-EN-ES"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Traducciones Español / Inglés / Español
+              </a>
+              <br />
+<span>
+                Dirigimos a la segunda oferta del foro como traductor Inglés a Español y Español a Inglés. El tema está [cerrado], la oferta ha sido relanzada.
+              </span>{" "}
+              <span className="service-price">
+  <a
+    href="https://forobeta.com/?ref=179278"
+    className="service-price-button"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Desde $
+  </a>
+</span>
+            </p>
+            <p className="service-description">
+              <a
+                href="/"
+                alt="Creación y actualización de blogs"
+                title="Creación y actualización de blogs"
+                // rel="noopener noreferrer"
+                // target="_blank"
+              >
+                Creación y actualización de blogs
+              </a>
+              <br />
+<span>
+                Ofrecemos contenido atractivo y de calidad para blogs, redes sociales, sitios web. Construimos tu blog desde cero para WordPress, otros CMS, blogs sin base de datos.
+              </span>{" "}
+              <span className="service-price">
+  <a
+    href="https://forobeta.com/?ref=179278"
+    className="service-price-button"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Desde $
+  </a>
+</span>
+            </p>
+            {/* <hr className="service-separator" /> */}
+            
+          </div>
+
+
+          {/* <div className="service">
             <img src={imagenAsistencia} alt="Obtén soporte eficiente en tus tareas administrativas y organizativas. Simplificamos tu carga de trabajo para que puedas concentrarte en lo más importante." title="Obtén soporte eficiente en tus tareas administrativas y organizativas. Simplificamos tu carga de trabajo para que puedas concentrarte en lo más importante." style={{ width: '250px' }} />
             <h3 className="service-title">ASISTENCIA 🤝</h3>
             
@@ -302,9 +302,9 @@ export const App = () => {
   </a>
 </span>
             </p>
-            {/* <hr className="service-separator" /> */}
+            <hr className="service-separator" />
             
-          </div>
+          </div> */}
 
           {/* <div className="service">
             <img src={imagenArtisticos} alt="Artístico" style={{ width: '250px' }} />
