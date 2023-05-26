@@ -15,17 +15,27 @@ export const App = () => {
   return (
     <BrowserRouter>
       <div style={{ marginLeft: '20px' }}>
-        <Helmet>
-          <meta charSet="UTF-8" />
-          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <title>ultracobra Ⓤ Servicios digitales y soluciones 🐍 vía ForoBeta</title>
-          <meta
-            name="description"
-            content="Servicios digitales y soluciones en: Programación + Contenidos. Estamos en web, foros, social y pronto más!"
-          />
-          <meta property="og:image" content="https://i.imgur.com/cCphed4.png" />
-        </Helmet>
+      <Helmet>
+  {/* Google tag (gtag.js) */}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7C52MLZWVM"></script>
+  <script>
+    {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7C52MLZWVM');
+    `}
+  </script>
+  <meta charSet="UTF-8" />
+  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ultracobra Ⓤ Servicios digitales y soluciones en Programación + Contenidos 🐍</title>
+  <meta
+    name="description"
+    content="Servicios digitales y soluciones en: Programación + Contenidos. Estamos en web, foros, social y pronto más!"
+  />
+  <meta property="og:image" content="https://i.imgur.com/cCphed4.png" />
+</Helmet>
         <header>
           <h1>
             <span className="ultra">Ⓤ</span> ultracobra{' '}
@@ -70,6 +80,8 @@ export const App = () => {
                 href="https://forobeta.com/temas/presentando-u-ultracobra-netlify-app.950498/"
                 alt="Diseño web estático SPA con frameworks"
                 title="Diseño web estático SPA con frameworks"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Diseño web estático [SPA] con frameworks
               </a>
@@ -93,6 +105,8 @@ export const App = () => {
                 href="https://forobeta.com/temas/presentando-u-ultracobra-netlify-app.950498/"
                 alt="Desarrollo de componentes web"
                 title="Desarrollo de componentes web"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Desarrollo de componentes web
               </a>
@@ -116,6 +130,8 @@ export const App = () => {
                 href="https://forobeta.com/temas/presentando-u-ultracobra-netlify-app.950498/"
                 alt="Integraciones de Accesibilidad"
                 title="Integraciones de Accesibilidad"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Integración de Accesibilidad Web
               </a>
@@ -139,6 +155,8 @@ export const App = () => {
                 href="https://forobeta.com/temas/presentando-u-ultracobra-netlify-app.950498/"
                 alt="Integraciones de Accesibilidad"
                 title="Integraciones de Accesibilidad"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Animaciones CSS
               </a>
@@ -221,6 +239,8 @@ export const App = () => {
                 href="https://forobeta.com/temas/presentando-u-ultracobra-netlify-app.950498/"
                 alt="Creación y actualización de blogs"
                 title="Creación y actualización de blogs"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Creación de blog: WordPress - No WordPress - No database
               </a>
@@ -244,6 +264,8 @@ export const App = () => {
                 href="https://forobeta.com/temas/presentando-u-ultracobra-netlify-app.950498/"
                 alt="Creación y actualización de blogs"
                 title="Creación y actualización de blogs"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Imágenes generadas via MidJourney / StableDiffusion #GeneradoPack
               </a>
