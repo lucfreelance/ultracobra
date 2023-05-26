@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import { useEffect } from 'react';
 import './App.css';
 import Footer from './components/Footer';
 import imagenProgramacion from './img/ruta-programacion.jpg';
@@ -10,6 +11,10 @@ import imagenAsistencia from './img/ruta-de-asistencia.jpg';
 import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaBootstrap } from 'react-icons/fa';
 
 export const App = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <BrowserRouter>
       <div style={{ marginLeft: '20px' }}>
