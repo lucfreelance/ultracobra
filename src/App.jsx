@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './App.css';
@@ -8,24 +8,46 @@ import imagenContenidos from './img/ruta-de-contenidos.jpg';
 import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaBootstrap } from 'react-icons/fa';
 
 export const App = () => {
+  // Estado del modal
+  const [showModal, setShowModal] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  // Función para abrir y cerrar el modal
+  const toggleModal = () => {
+    setShowModal(!showModal);
+  };
+
+  // Código existente que utiliza useEffect
+  useEffect(() => {
+    // Código de efecto personalizado
+    // ...
+
+    // Ejemplo de limpieza al desmontar el componente
+    return () => {
+      // Código de limpieza
+      // ...
+    };
+  }, []);
+
+
+  // Renderizado del componente
   return (
     <BrowserRouter>
       <div style={{ marginLeft: '20px' }}>
       <Helmet>
-  {/* Google tag (gtag.js) */}
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7C52MLZWVM"></script>
-  <script>
-    {`
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-7C52MLZWVM');
-    `}
-  </script>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7C52MLZWVM"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-7C52MLZWVM');
+        `}
+        </script>
   <meta charSet="UTF-8" />
   <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,7 +74,7 @@ export const App = () => {
             </a>
           </p>
         </header>
-
+<main>
         <section id="services" className="grid-container">
           <div className="column">
             <h3 className="intro-title">Potencia tu modo online</h3>
@@ -75,31 +97,6 @@ export const App = () => {
               style={{ width: '250px' }}
             />
             <h3 className="service-title">PROGRAMACIÓN 💻</h3>
-            <p className="service-description">
-              <a
-                href="https://forobeta.com/temas/presentando-u-ultracobra-netlify-app.950498/"
-                alt="Diseño web estático SPA con frameworks"
-                title="Diseño web estático SPA con frameworks"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Diseño web estático [SPA] con frameworks
-              </a>
-              <br />
-              <span>
-                Crea o mejora tu presencia en línea con el desarrollo de sitios modernos, seguros, rápidos, responsive. Hazte dueño del código de tu proyecto.
-              </span>{' '}
-              <span className="service-price">
-                <a
-                  href="https://forobeta.com/temas/presentando-u-ultracobra-netlify-app.950498/"
-                  className="service-price-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Desde $50
-                </a>
-              </span>
-            </p>
             <p className="service-description">
               <a
                 href="https://forobeta.com/temas/presentando-u-ultracobra-netlify-app.950498/"
@@ -172,6 +169,31 @@ export const App = () => {
                   rel="noopener noreferrer"
                 >
                   Desde $5
+                </a>
+              </span>
+            </p>
+            <p className="service-description">
+              <a
+                href="https://forobeta.com/temas/presentando-u-ultracobra-netlify-app.950498/"
+                alt="Diseño web estático SPA con frameworks"
+                title="Diseño web estático SPA con frameworks"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Diseño web estático [SPA] con frameworks
+              </a>
+              <br />
+              <span>
+                Crea o mejora tu presencia en línea con el desarrollo de sitios modernos, seguros, rápidos, responsive. Hazte dueño del código de tu proyecto.
+              </span>{' '}
+              <span className="service-price">
+                <a
+                  href="https://forobeta.com/temas/presentando-u-ultracobra-netlify-app.950498/"
+                  className="service-price-button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Desde $50
                 </a>
               </span>
             </p>
@@ -307,8 +329,11 @@ export const App = () => {
             </li>
           </ul>
         </section>
+        </main>
         <Footer />
       </div>
+      {/* Mostrar modal. Va con el codigo useContext useEffect inactivo arriba...
+            <button onClick={toggleModal}>Mostrar Modal</button> */}
     </BrowserRouter>
   );
 };
