@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -50,6 +50,16 @@ header {
 .ultra {
   display: inline-block;
   animation: ultraAnimation 9s infinite;
+}
+
+.ultra-head {
+  width: 70%;
+  max-width: 100%;
+  height: 66%;
+}
+
+.ultra-meme {
+  height: auto;
 }
 
 @keyframes ultraAnimation {

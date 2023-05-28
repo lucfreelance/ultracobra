@@ -5,6 +5,8 @@ import './App.css';
 import Footer from './components/Footer';
 import imagenProgramacion from './img/ruta-programacion.jpg';
 import imagenContenidos from './img/ruta-de-contenidos.jpg';
+import ultraHead from './img/ultra-head-square.png';
+import ultraMeme from './img/ultra-meme.png';
 import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaBootstrap } from 'react-icons/fa';
 
 export const App = () => {
@@ -64,7 +66,8 @@ export const App = () => {
             <span className="emoji">🐍</span>
           </h1>
           <p className="slogan-prompt">
-            Servicios digitales y soluciones vía{' '}
+            Servicios digitales y soluciones vía
+            {' '}
             <a
               href="https://forobeta.com/temas/presentando-u-ultracobra-netlify-app.950498/"
               alt="ultracobra en ForoBeta"
@@ -74,6 +77,14 @@ export const App = () => {
             </a>
           </p>
         </header>
+        <div>
+        <img
+          src={ultraHead}
+          alt="Imagen cabecera"
+          className="ultra-head"
+        />
+<hr className="linea-divisoria-delgada" />
+</div>
 <main>
         <section id="services" className="grid-container">
           <div className="column">
@@ -308,6 +319,12 @@ export const App = () => {
             </p>
           </div>
         </section>
+        <hr className="linea-divisoria-delgada" />
+        <img
+          src={ultraMeme}
+          alt="Ultra meme"
+          className="ultra-meme"
+        />
 
         <section>
           <h3>Usamos estas y otras tecnologías:</h3>
@@ -332,7 +349,7 @@ export const App = () => {
         </main>
         <Footer />
       </div>
-      {/* Mostrar modal. Va con el codigo useContext useEffect inactivo arriba...
+      {/* Mostrar modal. Va con el codigo useContext useEffect inactivo arriba... 
             <button onClick={toggleModal}>Mostrar Modal</button> */}
     </BrowserRouter>
   );
