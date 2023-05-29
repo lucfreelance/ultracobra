@@ -26,9 +26,10 @@ header {
 }
 
 .slogan-prompt {
-  margin: 0;
   padding: 10px;
-  text-align: left;
+  text-align: center;
+  margin-top: 15px;
+  color: #6c9a2b;
 }
 
 .description-subtext {
@@ -234,7 +235,8 @@ header {
 
 @media (min-width: 768px) {
   .slogan-prompt {
-    text-align: left;
+    text-align: center;
+    color: #6c9a2b;
   }
   .grid-container {
     grid-template-columns: 1fr 1fr;

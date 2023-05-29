@@ -78,7 +78,6 @@ export const App = () => {
         />
 <hr className="linea-divisoria-delgada" />
 </div>
-
 </header> 
 <main>
         <section id="services" className="grid-container">
@@ -338,9 +337,10 @@ export const App = () => {
           alt="Ultra meme"
           className="ultra-meme"
         />
-        </main>       
+        </main>
         <BotonVolverArriba />
         <Footer />
+        <Contacto />
       </div>
       {/* Mostrar modal. Va con el codigo useContext useEffect inactivo arriba... 
             <button onClick={toggleModal}>Mostrar Modal</button> */}

@@ -1,10 +1,10 @@
 import React from "react";
-import "../Tarjeta.css";
+import "../App.css";
 
 function Tarjeta() {
   return (
-    <p className="slogan-prompt tarjeta">
-      Servicios digitales y soluciones
+    <p className="slogan-prompt">
+      [Aquí vendrá un formulario de contacto]
     </p>
   );
 }
