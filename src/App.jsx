@@ -1,9 +1,12 @@
+// import React from 'react';
 import { useState, useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './App.css';
 import Footer from './components/Footer';
+import Contacto from './components/Contacto'
 import TarjetaFront from "./components/TarjetaFront";
+import BotonVolverArriba from './components/BotonVolverArriba';
 import ultraHead from './img/ultra-head-square.png';
 import imagenProgramacion from './img/ruta-programacion.jpg';
 import imagenContenidos from './img/ruta-de-contenidos.jpg';
@@ -75,6 +78,7 @@ export const App = () => {
         />
 <hr className="linea-divisoria-delgada" />
 </div>
+
 </header> 
 <main>
         <section id="services" className="grid-container">
@@ -177,6 +181,31 @@ export const App = () => {
             <p className="service-description">
               <a
                 href="https://forobeta.com/temas/presentando-u-ultracobra-netlify-app.950498/"
+                alt="Creación y actualización de blogs"
+                title="Creación y actualización de blogs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Creación de blog: WordPress - No WordPress - No database
+              </a>
+              <br />
+              <span>
+                Quieres crear un blog desde cero? te ofrecemos opciones para llevar tu mensaje via WordPress, Blogger, otro CMS, incluso uno programado. Sé el medio y el mensaje.
+              </span>{' '}
+              <span className="service-price">
+                <a
+                  href="https://forobeta.com/temas/presentando-u-ultracobra-netlify-app.950498/"
+                  className="service-price-button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Desde $20
+                </a>
+              </span>
+            </p>
+            <p className="service-description">
+              <a
+                href="https://forobeta.com/temas/presentando-u-ultracobra-netlify-app.950498/"
                 alt="Diseño web estático SPA con frameworks"
                 title="Diseño web estático SPA con frameworks"
                 target="_blank"
@@ -229,7 +258,7 @@ export const App = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  [Ahora] Desde $10
+                  Desde $5
                 </a>
               </span>
             </p>
@@ -254,32 +283,7 @@ export const App = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  [Ahora] Desde $5
-                </a>
-              </span>
-            </p>
-            <p className="service-description">
-              <a
-                href="https://forobeta.com/temas/presentando-u-ultracobra-netlify-app.950498/"
-                alt="Creación y actualización de blogs"
-                title="Creación y actualización de blogs"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Creación de blog: WordPress - No WordPress - No database
-              </a>
-              <br />
-              <span>
-                Quieres crear un blog desde cero? te ofrecemos opciones para llevar tu mensaje via WordPress, Blogger, otro CMS, incluso uno programado. Sé el medio y el mensaje.
-              </span>{' '}
-              <span className="service-price">
-                <a
-                  href="https://forobeta.com/temas/presentando-u-ultracobra-netlify-app.950498/"
-                  className="service-price-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Desde $20
+                  Desde $5
                 </a>
               </span>
             </p>
@@ -311,11 +315,6 @@ export const App = () => {
           </div>
         </section>
         <hr className="linea-divisoria-delgada" />
-        <img
-          src={ultraMeme}
-          alt="Ultra meme"
-          className="ultra-meme"
-        />
 
         <section>
           <h3>Usamos estas y otras tecnologías:</h3>
@@ -333,8 +332,14 @@ export const App = () => {
               <FaBootstrap style={{ marginRight: '5px' }} /> Bootstrap
             </li>
           </ul>
-        </section>
-        </main>
+        </section> 
+        <img
+          src={ultraMeme}
+          alt="Ultra meme"
+          className="ultra-meme"
+        />
+        </main>       
+        <BotonVolverArriba />
         <Footer />
       </div>
       {/* Mostrar modal. Va con el codigo useContext useEffect inactivo arriba... 

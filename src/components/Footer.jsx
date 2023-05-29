@@ -44,6 +44,15 @@ const Footer = () => {
               target="_blank"
             >
               oi-ia
+            </a>{' | '}
+            <a
+              href="https://oportunidadesilimitadas.com/blogs/_site/index.html"
+              alt="Blogs de Oportunidades Ilimitadas | Blog sobre #InteligenciaArtificial"
+              title="Blogs de Oportunidades Ilimitadas"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Blogs
             </a>
       </section>
     </footer>
