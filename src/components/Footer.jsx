@@ -1,5 +1,4 @@
-import React from 'react';
-import { FaWhatsapp, FaTwitter, FaInstagram, FaEnvelope } from 'react-icons/fa';
+import { FaWhatsapp, FaTwitter, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -14,11 +13,6 @@ const Footer = () => {
         <li>
           <a href="https://twitter.com/cobraultra" target="_blank" rel="noopener noreferrer" alt="Twitter ultracobra" title="Twitter @ultracobra">
             <FaTwitter className="fa-cloud" />
-          </a>
-        </li>
-        <li>
-          <a href="https://instagram.com/ultracobra.es/" target="_blank" rel="noopener noreferrer" alt="Instagram ultracobra" title="Instagram @ultracobra">
-            <FaInstagram className="fa-cloud" />
           </a>
         </li>
         <li>
@@ -38,6 +32,18 @@ const Footer = () => {
               target="_blank"
             >
               @lucfreelance
+            </a>
+      </section>
+      <section className="footer-signature">
+      Otros sitios web del diseñador: {' '}
+            <a
+              href="https://oportunidadesilimitadas.com/#table-board-top"
+              alt="Oportunidades Ilimitadas | Directorio web y app de #InteligenciaArtificial"
+              title="Oportunidades Ilimitadas Directorio web y app de Inteligencia Artificial"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              oi-ia
             </a>
       </section>
     </footer>

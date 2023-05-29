@@ -9,6 +9,28 @@ header {
   text-align: center;
 }
 
+.tarjeta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0.3vh;
+  margin-bottom: 60px;
+}
+
+.tarjeta-front {
+  padding: 3px;
+  background-color: #f2f2f2;
+  border-radius: 9px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+}
+
+.slogan-prompt {
+  margin: 0;
+  padding: 10px;
+  text-align: left;
+}
+
 .description-subtext {
   text-align: left;
 }
@@ -56,10 +78,7 @@ header {
   width: 70%;
   max-width: 100%;
   height: 66%;
-}
-
-.ultra-meme {
-  height: auto;
+  margin-bottom: -5px;
 }
 
 @keyframes ultraAnimation {
@@ -72,6 +91,14 @@ header {
   100% {
     color: black;
   }
+}
+
+.ultra-meme {
+  height: 70%;
+}
+
+.linea-divisoria-delgada {
+  margin-top: 0;
 }
 
 .service {

@@ -3,24 +3,25 @@ import { BrowserRouter } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './App.css';
 import Footer from './components/Footer';
+import TarjetaFront from "./components/TarjetaFront";
+import ultraHead from './img/ultra-head-square.png';
 import imagenProgramacion from './img/ruta-programacion.jpg';
 import imagenContenidos from './img/ruta-de-contenidos.jpg';
-import ultraHead from './img/ultra-head-square.png';
 import ultraMeme from './img/ultra-meme.png';
-import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaBootstrap } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaCss3, FaBootstrap } from 'react-icons/fa';
 
 export const App = () => {
-  // Estado del modal
-  const [showModal, setShowModal] = useState(false);
+  // // Estado del modal
+  // const [showModal, setShowModal] = useState(false);
+
+  // // Función para abrir y cerrar el modal
+  // const toggleModal = () => {
+  //   setShowModal(!showModal);
+  // };
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  // Función para abrir y cerrar el modal
-  const toggleModal = () => {
-    setShowModal(!showModal);
-  };
 
   // Código existente que utiliza useEffect
   useEffect(() => {
@@ -39,17 +40,17 @@ export const App = () => {
   return (
     <BrowserRouter>
       <div style={{ marginLeft: '20px' }}>
-      <Helmet>
-        {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7C52MLZWVM"></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-7C52MLZWVM');
-        `}
-        </script>
+<Helmet>
+  {/* Google tag (gtag.js) */}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7C52MLZWVM"></script>
+  <script>
+    {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7C52MLZWVM');
+  `}
+  </script>
   <meta charSet="UTF-8" />
   <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -64,19 +65,8 @@ export const App = () => {
           <h1>
             <span className="ultra">Ⓤ</span> ultracobra{' '}
             <span className="emoji">🐍</span>
-          </h1>
-          <p className="slogan-prompt">
-            Servicios digitales y soluciones vía
-            {' '}
-            <a
-              href="https://forobeta.com/temas/presentando-u-ultracobra-netlify-app.950498/"
-              alt="ultracobra en ForoBeta"
-              title="ultracobra en ForoBeta"
-            >
-              ForoBeta
-            </a>
-          </p>
-        </header>
+          </h1>          
+<TarjetaFront />
         <div>
         <img
           src={ultraHead}
@@ -85,6 +75,7 @@ export const App = () => {
         />
 <hr className="linea-divisoria-delgada" />
 </div>
+</header> 
 <main>
         <section id="services" className="grid-container">
           <div className="column">
@@ -334,9 +325,6 @@ export const App = () => {
             </li>
             <li>
               <FaNodeJs style={{ marginRight: '5px' }} /> Node.js
-            </li>
-            <li>
-              <FaHtml5 style={{ marginRight: '5px' }} /> HTML5
             </li>
             <li>
               <FaCss3 style={{ marginRight: '5px' }} /> CSS3
