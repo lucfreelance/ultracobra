@@ -1,9 +1,11 @@
 import React from 'react';
+import '../App.css';
 
 const Servicios = () => {
   return (
     <div>
-      {/* Contenido dinámico de la página de servicios */}
+      <h1>Servicios</h1>
+      <p>Aquí puedes agregar información sobre tus servicios.</p>
     </div>
   );
 };

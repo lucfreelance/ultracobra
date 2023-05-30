@@ -1,17 +1,19 @@
 // import React from 'react';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './App.css';
+import Header from './components/Header';
 import Footer from './components/Footer';
-import Contacto from './components/Contacto'
-import TarjetaFront from "./components/TarjetaFront";
+import Contacto from './components/Contacto';
+// import ultraHead from './img/ultra-head-square.png';
+// import TarjetaFront from "./components/TarjetaFront";
 import BotonVolverArriba from './components/BotonVolverArriba';
-import ultraHead from './img/ultra-head-square.png';
 import imagenProgramacion from './img/ruta-programacion.jpg';
 import imagenContenidos from './img/ruta-de-contenidos.jpg';
 import ultraMeme from './img/ultra-meme.png';
 import { FaReact, FaNodeJs, FaCss3, FaBootstrap } from 'react-icons/fa';
+
 
 export const App = () => {
   // // Estado del modal
@@ -30,7 +32,6 @@ export const App = () => {
   useEffect(() => {
     // Código de efecto personalizado
     // ...
-
     // Ejemplo de limpieza al desmontar el componente
     return () => {
       // Código de limpieza
@@ -38,8 +39,6 @@ export const App = () => {
     };
   }, []);
 
-
-  // Renderizado del componente
   return (
     <BrowserRouter>
       <div style={{ marginLeft: '20px' }}>
@@ -60,27 +59,13 @@ export const App = () => {
   <title>ultracobra Ⓤ Servicios digitales y soluciones en Programación + Contenidos 🐍</title>
   <meta
     name="description"
-    content="Servicios digitales y soluciones en: Programación + Contenidos. Estamos en web, foros, social y pronto más!"
+    content="Servicios digitales y soluciones en Programación + Contenidos. Estamos en web, foros, social y pronto más!"
   />
   <meta property="og:image" content="https://i.imgur.com/cCphed4.png" />
 </Helmet>
-        <header>
-          <h1>
-            <span className="ultra">Ⓤ</span> ultracobra{' '}
-            <span className="emoji">🐍</span>
-          </h1>          
-<TarjetaFront />
-        <div>
-        <img
-          src={ultraHead}
-          alt="Imagen cabecera"
-          className="ultra-head"
-        />
-<hr className="linea-divisoria-delgada" />
-</div>
-</header> 
+<Header />
 <main>
-        <section id="services" className="grid-container">
+        <section id="intro-promises" className="grid-container">
           <div className="column">
             <h3 className="intro-title">Potencia tu modo online</h3>
             <p className="intro-description">
