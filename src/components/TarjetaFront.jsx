@@ -12,7 +12,7 @@ const TarjetaFront = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}
       >
-        <Link to="/Servicios">
+        <Link to="/servicios" target="_blank">
           <p>Servicios digitales y soluciones</p>
         </Link>
       </motion.div>

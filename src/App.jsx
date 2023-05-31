@@ -1,11 +1,13 @@
 // import React from 'react';
 import { useEffect } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './App.css';
 import Header from './components/Header';
-import Footer from './components/Footer';
+import Servicios from './components/Servicios';
+import TarjetaFront from './components/TarjetaFront';
 import Contacto from './components/Contacto';
+import Footer from './components/Footer';
 // import ultraHead from './img/ultra-head-square.png';
 // import TarjetaFront from "./components/TarjetaFront";
 import BotonVolverArriba from './components/BotonVolverArriba';
@@ -326,6 +328,11 @@ export const App = () => {
         <BotonVolverArriba />
         <Footer />
         <Contacto />
+        <Routes>
+          <Route path="/" element={<Header />} />
+          <Route path="./components/servicios" element={<Servicios />} />
+          <Route path="./components/TarjetaFront" element={<TarjetaFront />} />
+        </Routes> 
       </div>
       {/* Mostrar modal. Va con el codigo useContext useEffect inactivo arriba... 
             <button onClick={toggleModal}>Mostrar Modal</button> */}

@@ -1,13 +1,14 @@
 
 import ultraHead from '../img/ultra-head-square.png';
+import { Link } from 'react-router-dom';
 import TarjetaFront from "./TarjetaFront";
 
 const Header = () => {
   return (
     <header>
       <h1>
-        <span className="ultra">Ⓤ</span> ultracobra{' '}
-        <span className="emoji">🐍</span>
+      <Link to="/"><span className="ultra">Ⓤ</span> ultracobra{' '}
+        <span className="emoji">🐍</span></Link>
       </h1>          
     <TarjetaFront />
             <div>

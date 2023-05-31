@@ -157,10 +157,6 @@ header {
   background-color: #8cc63e;
 }
 
-.read-the-docs {
-  color: #ebbfbf;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
