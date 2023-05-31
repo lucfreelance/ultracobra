@@ -14,10 +14,10 @@ const Header = () => {
             <div>
             <img
               src={ultraHead}
-              alt="Modelo cabecera"
+              alt="Relax and contact ultracobra services"
               className="ultra-head"
             />
-    <hr className="linea-divisoria-delgada" />
+    <hr className="divisory-line" />
     </div>
     </header> 
   );

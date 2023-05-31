@@ -1,12 +1,12 @@
-import React from "react";
+// import React from "react";
 import "../App.css";
 
-function Tarjeta() {
+function TarjetaContact() {
   return (
     <p className="slogan-prompt">
-      [Aquí vendrá un formulario de contacto]
+      [Here will come a contact form]
     </p>
   );
 }
 
-export default Tarjeta;
+export default TarjetaContact;

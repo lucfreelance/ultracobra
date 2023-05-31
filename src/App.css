@@ -30,6 +30,7 @@ header {
   text-align: center;
   margin-top: 15px;
   color: #6c9a2b;
+  justify-items: center;
 }
 
 .description-subtext {
@@ -100,7 +101,7 @@ header {
   margin-top: 10px;
 }
 
-.linea-divisoria-delgada {
+.divisory-line {
   margin-top: 0;
 }
 
@@ -216,6 +217,8 @@ header {
 .footer-logos {
   text-align: center;
   display: grid;
+  margin: 0;
+  justify-items: center;
 }
 
 .footer-signature {
@@ -233,6 +236,7 @@ header {
   .slogan-prompt {
     text-align: center;
     color: #6c9a2b;
+    justify-items: center;
   }
   .grid-container {
     grid-template-columns: 1fr 1fr;
