@@ -102,12 +102,13 @@ header {
 }
 
 .divisory-line {
-  margin-top: 0;
+  margin-top: 15px;
 }
 
 .service {
   border: 1px solid #ccc;
   padding: 20px;
+  margin: 10px;
 }
 
 .service-title {
@@ -163,6 +164,7 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 15px;
   color: #addcad;
+  margin-bottom: 15px;
 }
 
 .column {

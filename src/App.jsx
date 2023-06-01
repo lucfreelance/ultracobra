@@ -14,6 +14,7 @@ import Services from './pages/Services';
 import imagenProgramacion from './img/ruta-programacion.jpg';
 import imagenContenidos from './img/ruta-de-contenidos.jpg';
 // import { FaReact, FaNodeJs, FaCss3, FaBootstrap } from 'react-icons/fa';
+import Blog1 from '../Blog/Blog-1'
 
 
 export const App = () => {
@@ -42,7 +43,7 @@ export const App = () => {
 
   return (
     <BrowserRouter>
-      <div style={{ marginLeft: '20px' }}>
+      <div style={{ marginLeft: '0px' }}>
 <Helmet>
   {/* Google tag (gtag.js) */}
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7C52MLZWVM"></script>
@@ -65,9 +66,7 @@ export const App = () => {
   <meta property="og:image" content="https://i.imgur.com/cCphed4.png" />
 </Helmet>
 <Header />
-<main>
-
-<section id="intro-promises" className="grid-container">
+<section className="grid-container">
           <div className="column">
             <h3 className="intro-title">Boost your online mode</h3>
             <p className="intro-description">
@@ -80,7 +79,12 @@ export const App = () => {
               We offer solutions based on web development, quality content generation, or, if you need a hand...
             </p>
           </div> 
-<div className="service">
+          </section>
+          <main>
+            <Blog1 />
+          </main>
+          <section>      
+          <div className="service">
         <img
           src={imagenProgramacion}
           alt="Boost your online success with tailored programming solutions. Trust us to design components and websites, offer optimization integrations, accessibility, and more."
@@ -90,7 +94,7 @@ export const App = () => {
         <h3 className="service-title">PROGRAMMING 💻</h3>
         <p className="service-description">
           <a
-            href="./pages/Services.jsx"
+            href="./Services"
             alt="Web component development"
             title="Web component development"
             target="_blank"
@@ -104,7 +108,7 @@ export const App = () => {
           </span>{' '}
           <span className="service-price">
             <a
-              href="./pages/Services.jsx"
+              href="./Services"
               className="service-price-button"
               target="_blank"
               rel="noopener noreferrer"
@@ -115,7 +119,7 @@ export const App = () => {
         </p>
         <p className="service-description">
           <a
-            href="./pages/Services.jsx"
+            href="./Services"
             alt="Accessibility integrations"
             title="Accessibility integrations"
             target="_blank"
@@ -129,7 +133,7 @@ export const App = () => {
           </span>{' '}
           <span className="service-price">
             <a
-              href="./pages/Services.jsx"
+              href="./Services"
               className="service-price-button"
               target="_blank"
               rel="noopener noreferrer"
@@ -140,7 +144,7 @@ export const App = () => {
         </p>
         <p className="service-description">
           <a
-            href="./pages/Services.jsx"
+            href="./Services"
             alt="CSS animations"
             title="CSS animations"
             target="_blank"
@@ -154,7 +158,7 @@ export const App = () => {
           </span>{' '}
           <span className="service-price">
             <a
-              href="./pages/Services.jsx"
+              href="./Services"
               className="service-price-button"
               target="_blank"
               rel="noopener noreferrer"
@@ -165,7 +169,7 @@ export const App = () => {
         </p>
         <p className="service-description">
           <a
-            href="./pages/Services.jsx"
+            href="./Services"
             alt="Blog creation and updates"
             title="Blog creation and updates"
             target="_blank"
@@ -179,7 +183,7 @@ export const App = () => {
           </span>{' '}
           <span className="service-price">
             <a
-              href="./pages/Services.jsx"
+              href="./Services"
               className="service-price-button"
               target="_blank"
               rel="noopener noreferrer"
@@ -190,7 +194,7 @@ export const App = () => {
         </p>
         <p className="service-description">
           <a
-            href="./pages/Services.jsx"
+            href="./Services"
             alt="Static web design SPA with frameworks"
             title="Static web design SPA with frameworks"
             target="_blank"
@@ -204,7 +208,7 @@ export const App = () => {
           </span>{' '}
           <span className="service-price">
             <a
-              href="./pages/Services.jsx"
+              href="./Services"
               className="service-price-button"
               target="_blank"
               rel="noopener noreferrer"
@@ -238,7 +242,7 @@ export const App = () => {
           </span>{' '}
           <span className="service-price">
             <a
-              href="./pages/Services.jsx"
+              href="./Services"
               className="service-price-button"
               target="_blank"
               rel="noopener noreferrer"
@@ -263,7 +267,7 @@ export const App = () => {
           </span>{' '}
           <span className="service-price">
             <a
-              href="./pages/Services.jsx"
+              href="./Services"
               className="service-price-button"
               target="_blank"
               rel="noopener noreferrer"
@@ -274,7 +278,7 @@ export const App = () => {
         </p>
         <p className="service-description">
           <a
-            href="./pages/Services.jsx"
+            href="./Services"
             alt="Blog creation and updates"
             title="Blog creation and updates"
             target="_blank"
@@ -288,7 +292,7 @@ export const App = () => {
           </span>{' '}
           <span className="service-price">
             <a
-              href="./pages/Services.jsx"
+              href="./Services"
               className="service-price-button"
               target="_blank"
               rel="noopener noreferrer"
@@ -300,7 +304,7 @@ export const App = () => {
       </div>
     </section>
 
-        </main>
+       
         <BotonVolverArriba />
         <Footer />
         <Contacto />
