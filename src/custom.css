@@ -7,6 +7,82 @@ body {
 	height: 100%;
 }
 
+
+
+
+  
+
+  /* New unrandom classes */
+  .card custom-card {
+	padding: 15%;
+  }
+
+  .custom-card {
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-card-image {
+	width: 100%;
+	height: auto;
+  }
+  
+  .custom-card-title {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  .custom-card-text {
+	font-size: 16px;
+	margin-bottom: 20px;
+  }
+  
+  .custom-card-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+  }
+  
+  .custom-card-button:hover {
+	background-color: #0056b3;
+  }
+  
+/* Blog 1 */
+  @media (max-width: 767px) {
+	.custom-card-image {
+	  width: 35%;
+	}
+	.custom-card-title {
+	  font-size: 18px;
+	}  
+	.custom-card-text {
+	  font-size: 12px;
+	}
+  }
+
+  @media (min-width: 768px) {
+	.custom-card-image {
+	  width: 50%;
+	}
+  }
+
+  @media (min-width: 1200px) {
+	.custom-card-image {
+	  width: 70%;
+	}
+  }
+
+
+
+
+/* 
 /* Dropdown */
 .dropdown-item:hover, .dropdown-item:focus {
 	border-radius: var(--border-radius);
@@ -142,13 +218,6 @@ canvas {
 	padding-bottom: .75rem;
 }
 
-@media (min-width: 992px) {
-	.navbar-expand-lg .navbar-nav .nav-link {
-		padding-right: 1rem;
-		padding-left: 1rem;
-	}
-}
-
 .navbar-logo {
 	max-height: 2.5rem;
 	height: 2.5rem;
@@ -210,65 +279,6 @@ canvas {
 	border-radius: 50%;
 	max-width: 70px;
 	max-height: 70px;
-}
-
-/* Others */
-.container-disabled {
-	pointer-events: none;
-	opacity: .5;
-}
-
-.container-disabled-simple {
-	pointer-events: none;
-}
-
-/* Tables */
-.table-custom-container {
-	border-radius: var(--border-radius);
-	border: 1px solid var(--gray-100);
-}
-
-.table-custom {
-	margin-bottom: 0;
-	background: var(--white);
-}
-
-.table-custom thead th {
-	border-top: 0;
-	border-bottom: 0;
-	color: var(--gray);
-}
-
-.table-custom th {
-	padding: 1.25rem 1.25rem;
-	font-size: .9rem;
-}
-
-[data-theme-style="dark"] .table-custom thead th {
-	color: var(--gray-800)
-}
-
-.table-custom tbody tr {
-	border-top: 1px solid var(--gray-50);
-}
-
-.table-custom td {
-	padding: 1.25rem 1.25rem;
-	vertical-align: middle;
-}
-
-.table-custom tbody tr td {
-	border-top: 0;
-}
-
-[data-theme-style="dark"] .table-custom tbody tr td {
-}
-
-.table-custom tbody tr {
-	transition: all .3s ease-in-out;
-}
-
-.table-custom tbody tr:hover td {
 }
 
 /* Custom Radio Boxes */
@@ -415,21 +425,6 @@ canvas {
 	}
 }
 
-/* Base animation */
-.altum-animate {
-	-webkit-animation-duration:1s;
-	animation-duration:1s;
-}
-
-.altum-animate-fill-both {
-	-webkit-animation-fill-mode:both;
-	animation-fill-mode:both;
-}
-
-.altum-animate-fill-none {
-	-webkit-animation-fill-mode:none;
-	animation-fill-mode:none;
-}
 
 @-webkit-keyframes fadeIn{
 	0% {
@@ -472,12 +467,6 @@ canvas {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	gap: 0 .25rem;
-}
-
-@media (min-width: 992px) {
-	.account-header-navbar {
-		flex-direction: row;
-	}
 }
 
 .account-header-navbar .nav-item {
@@ -608,72 +597,4 @@ a:active svg {
   .custom-card-button:hover {
 	background-color: var(--primary-dark);
 	border-color: var(--primary-dark);
-  }
-
-
-  /* New unrandom classes */
-  .card custom-card {
-	padding: 15%;
-  }
-
-  .custom-card {
-	margin: 20px;
-	padding: 20px;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .custom-card-image {
-	width: 100%;
-	height: auto;
-  }
-  
-  .custom-card-title {
-	font-size: 24px;
-	font-weight: bold;
-	margin-bottom: 10px;
-  }
-  
-  .custom-card-text {
-	font-size: 16px;
-	margin-bottom: 20px;
-  }
-  
-  .custom-card-button {
-	display: inline-block;
-	padding: 10px 20px;
-	background-color: #007bff;
-	color: #fff;
-	text-decoration: none;
-	border-radius: 5px;
-  }
-  
-  .custom-card-button:hover {
-	background-color: #0056b3;
-  }
-  
-
-  @media (max-width: 767px) {
-	.custom-card-image {
-	  width: 40%;
-	}
-	.custom-card-title {
-	  font-size: 20px;
-	}  
-	.custom-card-text {
-	  font-size: 14px;
-	}
-  }
-
-  @media (min-width: 768px) {
-	.custom-card-image {
-	  width: 60%;
-	}
-  }
-
-  @media (min-width: 1200px) {
-	.custom-card-image {
-	  width: 80%;
-	}
-  }
+  } */
