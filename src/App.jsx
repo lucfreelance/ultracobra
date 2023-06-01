@@ -84,7 +84,7 @@ export const App = () => {
             <Blog1 />
           </main>
           <section>      
-          <div className="service">
+          {/* <div className="service">
         <img
           src={imagenProgramacion}
           alt="Boost your online success with tailored programming solutions. Trust us to design components and websites, offer optimization integrations, accessibility, and more."
@@ -301,7 +301,7 @@ export const App = () => {
             </a>
           </span>
         </p>
-      </div>
+      </div> */}
     </section>
 
        

@@ -615,3 +615,65 @@ a:active svg {
   .card custom-card {
 	padding: 15%;
   }
+
+  .custom-card {
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-card-image {
+	width: 100%;
+	height: auto;
+  }
+  
+  .custom-card-title {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  .custom-card-text {
+	font-size: 16px;
+	margin-bottom: 20px;
+  }
+  
+  .custom-card-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+  }
+  
+  .custom-card-button:hover {
+	background-color: #0056b3;
+  }
+  
+
+  @media (max-width: 767px) {
+	.custom-card-image {
+	  width: 40%;
+	}
+	.custom-card-title {
+	  font-size: 20px;
+	}  
+	.custom-card-text {
+	  font-size: 14px;
+	}
+  }
+
+  @media (min-width: 768px) {
+	.custom-card-image {
+	  width: 60%;
+	}
+  }
+
+  @media (min-width: 1200px) {
+	.custom-card-image {
+	  width: 80%;
+	}
+  }
