@@ -7,13 +7,18 @@ app = Flask(__name__)
 # Define the route for rendering the index.html template:
 
 
+# Enable debugging mode
+app.debug = True
+# You should add the line app.debug = True right after creating the Flask app instance. This will enable the debug mode for your application.
+
+
 @app.route('/')
 def index():
     return render_template('index.html')
 
 
 # Define the directory where the Blog-X.jsx files will be saved
-blog_directory = os.path.join(os.getcwd(), 'Blog', 'entries')
+blog_directory = os.path.join(os.getcwd(), 'entries')
 
 # Define the route for processing the form submission:
 
@@ -24,7 +29,7 @@ def create_blog():
         image = request.form.get('image')
         title = request.form.get('title')
         subtitle = request.form.get('subtitle')
-        paragraphs = request.form.get('paragraphs')
+        paragraph = request.form.get('paragraph')
         author = request.form.get('author')
         date = request.form.get('date')
         other_value = request.form.get('otherValue')
@@ -62,7 +67,7 @@ export default Blog;
 
         # Modify the App.jsx file to insert the new JSX component at the top of the <main> element
         app_jsx_path = os.path.join(
-            os.path.dirname(os.getcwd()), '..', 'App.jsx')
+            os.path.dirname(os.getcwd()), 'src', 'App.jsx')
         with open(app_jsx_path, 'r+') as app_file:
             content = app_file.read()
             app_file.seek(0, 0)

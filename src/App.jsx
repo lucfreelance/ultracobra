@@ -11,10 +11,11 @@ import BotonVolverArriba from './components/BotonVolverArriba';
 import Services from './pages/Services';
 // import ultraHead from './img/ultra-head-square.png';
 // import TarjetaFront from "./components/TarjetaFront";
-import imagenProgramacion from './img/ruta-programacion.jpg';
-import imagenContenidos from './img/ruta-de-contenidos.jpg';
+// import imagenProgramacion from './img/ruta-programacion.jpg';
+// import imagenContenidos from './img/ruta-de-contenidos.jpg';
 // import { FaReact, FaNodeJs, FaCss3, FaBootstrap } from 'react-icons/fa';
 import Blog1 from '../Blog/Blog-1'
+import BlogHi from '../Blog/entries/Blog-hi'
 
 
 export const App = () => {
@@ -67,21 +68,20 @@ export const App = () => {
 </Helmet>
 <Header />
 <section className="grid-container">
-          <div className="column">
-            <h3 className="intro-title">Boost your online mode</h3>
-            <p className="intro-description">
-              We design digital services to build your project from scratch or boost your online ventures.
-            </p>
-          </div>
-          <div className="column">
-            <h3 className="intro-title">Improve your productivity</h3>
-            <p className="intro-description">
-              We offer solutions based on web development, quality content generation, or, if you need a hand...
-            </p>
-          </div> 
-          </section>
-          <main>
-            <Blog1 />
+  <div className="column">
+    <h3 className="intro-title">Ignite Your Imagination</h3>
+    <p className="intro-description">
+      Explore a world of inspiration and fun with Ultracobra's digital services designed to spark your creative ideas and bring them to life.
+    </p>
+  </div>
+  <div className="column">
+    <h3 className="intro-title">Embrace Adventure</h3>
+    <p className="intro-description">
+      Embark on a thrilling journey of discovery and innovation with Ultracobra's web development solutions and captivating content creation.
+    </p>
+  </div>
+</section>
+          <main><Blog-frf/> <Blog-Ho /> <BlogHi /> <Blog1 />
           </main>
           <section>      
           {/* <div className="service">
@@ -309,10 +309,10 @@ export const App = () => {
         <Footer />
         <Contacto />
         <Routes>
-          <Route path="./components/Header" element={<Header />} />
-          <Route path="./components/TarjetaFront" element={<TarjetaFront />} />
-          <Route path="./pages/Services" element={<Services />} />
-        </Routes> 
+        <Route path="*" element={<div>NOT FOUND</div>} />
+        <Route path="/components/Header" element={<Header />} />
+        <Route path="/components/TarjetaFront" element={<TarjetaFront />} />
+    </Routes>
       </div>
       {/* Mostrar modal. Va con el codigo useContext useEffect inactivo arriba... 
             <button onClick={toggleModal}>Mostrar Modal</button> */}
