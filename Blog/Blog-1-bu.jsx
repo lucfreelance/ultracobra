@@ -9,7 +9,7 @@ const Blog1 = () => {
     return colors[randomIndex];
   };
 
-  const getRandomTitle = () => {
+  const getRandomPhrase = () => {
     const phrases = [
       'Welcome to the Wonderland!',
       'Discover a world of magic!',
@@ -41,7 +41,7 @@ return paragraphs[randomIndex];
   };
 
   const [color, setColor] = useState(getRandomColor());
-  const [phrase, setTitle] = useState(getRandomTitle());
+  const [phrase, setPhrase] = useState(getRandomPhrase());
   const [image, setImage] = useState(getRandomImage());
   const [paragraph, setParagraph] = useState(getLongParagraph());
 
@@ -49,8 +49,8 @@ return paragraphs[randomIndex];
     setColor(getRandomColor());
   };
 
-  const handleChangeTitle = () => {
-    setTitle(getRandomTitle());
+  const handleChangePhrase = () => {
+    setPhrase(getRandomPhrase());
   };
 
   const handleChangeImage = () => {
@@ -82,25 +82,19 @@ return paragraphs[randomIndex];
       </Helmet>
       <div>
         <div className="card custom-card" style={cardStyle}>
-          <br />
-          <img
-            className="card-img-top custom-card-image"
-            src={image}
-            alt="Card image"
-          />
+        <br />
+          <img className="card-img-top custom-card-image" src={image} alt="Card image" />
           <div className="card-body">
             <h5 className="card-title custom-card-title">{phrase}</h5>
             <p className="card-text custom-card-text">{paragraph}</p>
-            <a href="#" className="btn btn-primary custom-card-button">
-              Embark on the Journey!
-            </a>
-            <br />
+            <a href="#" className="btn btn-primary custom-card-button">Embark on the Journey!</a>
+        <br />
           </div>
         </div>
       </div>
       <button onClick={handleChangeColor}>Change Color</button>
       <button onClick={handleChangeImage}>Change Image</button>
-      <button onClick={handleChangeTitle}>Change Title</button>
+      <button onClick={handleChangePhrase}>Change Phrase</button>
       <button onClick={handleChangeParagraph}>Change Paragraph</button>
     </div>
   );
