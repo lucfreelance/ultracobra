@@ -1,12 +1,12 @@
 from flask import Flask, render_template, request
 import os
 
-
 # Create a Flask app instance:
 app = Flask(__name__)
 
-
 # Define the route for rendering the index.html template:
+
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -15,8 +15,9 @@ def index():
 # Define the directory where the Blog-X.jsx files will be saved
 blog_directory = os.path.join(os.getcwd(), 'Blog', 'entries')
 
-
 # Define the route for processing the form submission:
+
+
 @app.route('/create-blog', methods=['POST'])
 def create_blog():
     if request.method == 'POST':
@@ -32,7 +33,7 @@ def create_blog():
         # You can customize this part based on your requirements
 
         # Generate the filename for the new JSX component
-        filename = f"Blog-{title.replace(' ', '_')}.jsx"
+        filename = f"Blog-{title.replace(' ', '-')}.jsx"
 
         # Specify the file path
         filepath = os.path.join(blog_directory, filename)
@@ -45,9 +46,7 @@ const Blog = () => (
   <div>
     <h2>{title}</h2>
     <p>{subtitle}</p>
-    {paragraphs.split('\n').map((paragraph, index) => (
-      <p key={index}>{paragraph}</p>
-    ))}
+    {{"\n".join(f"<p key={index}>{paragraph}</p>" for index, paragraph in enumerate(paragraphs.split('\n')))}}
     <p>Author: {author}</p>
     <p>Date: {date}</p>
     <p>Other Value: {other_value}</p>
@@ -61,15 +60,18 @@ export default Blog;
         with open(filepath, 'w') as file:
             file.write(jsx_content)
 
-        # Insert the import statement for the new JSX component at the top of App.jsx
-        app_jsx_path = os.path.join(os.getcwd(), 'src', 'App.jsx')
+        # Modify the App.jsx file to insert the new JSX component at the top of the <main> element
+        app_jsx_path = os.path.join(
+            os.path.dirname(os.getcwd()), '..', 'App.jsx')
         with open(app_jsx_path, 'r+') as app_file:
             content = app_file.read()
             app_file.seek(0, 0)
-            app_file.write(f"import Blog from './Blog/entries/{filename}';\n{content}")
+            app_file.write(content.replace(
+                '<main>', f'<main>\\n<Blog-{title.replace(" ", "-")}/>\\n'))
 
         # Return a success message or redirect to a different page
-        return 'Blog post created successfully!'
+        response = 'Blog post created successfully!'
+        return response, 200
     else:
         # Handle cases where the request method is not POST
         return 'Invalid request method'
