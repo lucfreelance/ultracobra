@@ -1,5 +1,5 @@
 
-import ultraHead from '../img/ultra-head-square.png';
+import UltraHead from '../img/ultra-head-square.png';
 import { Link } from 'react-router-dom';
 import TarjetaFront from "./TarjetaFront";
 import '../App.css';
@@ -14,7 +14,7 @@ const Header = () => {
     <TarjetaFront />
             <div>
             <img
-              src={ultraHead}
+              src={UltraHead}
               alt="Relax and contact ultracobra services"
               className="ultra-head"
             />

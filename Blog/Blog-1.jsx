@@ -1,6 +1,18 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import '../src/custom.css';
+import Blog1One from './assets/blog-1-1.gif';
+import Blog1Two from './assets/blog-1-2.gif';
+import Blog1Tree from './assets/blog-1-3.gif';
+import Blog1Four from './assets/blog-1-4.gif';
+import Blog1Five from './assets/blog-1-5.gif';
+import Blog1Six from './assets/blog-1-6.gif';
+
+'/Blog/assets/blog-1-2.gif',
+'/Blog/assets/blog-1-3.gif',
+'/Blog/assets/blog-1-4.gif',
+'/Blog/assets/blog-1-5.gif',
+'/Blog/assets/blog-1-6.gif'
 
 const Blog1 = () => {
   const getRandomColor = () => {
@@ -21,15 +33,15 @@ const Blog1 = () => {
     const randomIndex = Math.floor(Math.random() * titles.length);
     return titles[randomIndex];
   };
-
+  
   const getRandomImage = () => {
     const images = [
-      '/Blog/assets/blog-1-1.gif',
-      '/Blog/assets/blog-1-2.gif',
-      '/Blog/assets/blog-1-3.gif',
-      '/Blog/assets/blog-1-4.gif',
-      '/Blog/assets/blog-1-5.gif',
-      '/Blog/assets/blog-1-6.gif'
+      Blog1One,
+      Blog1Two,
+      Blog1Tree,
+      Blog1Four,
+      Blog1Five,
+      Blog1Six
     ];
   
     const randomIndex = Math.floor(Math.random() * images.length);
