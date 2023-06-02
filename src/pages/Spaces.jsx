@@ -22,10 +22,10 @@ const Services = () => {
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ultracobra Ⓤ Digital services in Programming a nd Assistances 🐍</title>
+        <title>ultracobra Ⓤ Spaces 🐍</title>
         <meta
           name="description"
-          content="Servicios digitales y soluciones en Programación + Contenidos. Estamos en web, foros, social y pronto más!"
+          content="Nice to be here at Ultracobra Spaces"
         />
         <meta property="og:image" content="https://i.imgur.com/cCphed4.png" />
       </Helmet>

@@ -8,11 +8,6 @@ import Blog1Four from './assets/blog-1-4.gif';
 import Blog1Five from './assets/blog-1-5.gif';
 import Blog1Six from './assets/blog-1-6.gif';
 
-'/Blog/assets/blog-1-2.gif',
-'/Blog/assets/blog-1-3.gif',
-'/Blog/assets/blog-1-4.gif',
-'/Blog/assets/blog-1-5.gif',
-'/Blog/assets/blog-1-6.gif'
 
 const Blog1 = () => {
   const getRandomColor = () => {
