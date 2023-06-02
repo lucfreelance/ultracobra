@@ -1,6 +1,6 @@
 // import React from 'react';
 import { BrowserRouter as Router, Route, BrowserRouter } from 'react-router-dom';
-import Services from '../pages/Services';
+import Services from '../pages/Spaces';
 import TarjetaFront from './TarjetaFront';
 
 const RoutesConfig = () => {

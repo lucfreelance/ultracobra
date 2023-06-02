@@ -2,6 +2,7 @@
 import ultraHead from '../img/ultra-head-square.png';
 import { Link } from 'react-router-dom';
 import TarjetaFront from "./TarjetaFront";
+import '../App.css';
 
 const Header = () => {
   return (

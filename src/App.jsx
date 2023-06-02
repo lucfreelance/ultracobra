@@ -8,7 +8,7 @@ import TarjetaFront from './components/TarjetaFront';
 import Contacto from './components/Contacto';
 import Footer from './components/Footer';
 import BotonVolverArriba from './components/BotonVolverArriba';
-import Services from './pages/Services';
+import Services from './pages/Spaces';
 // import ultraHead from './img/ultra-head-square.png';
 // import TarjetaFront from "./components/TarjetaFront";
 // import imagenProgramacion from './img/ruta-programacion.jpg';
@@ -59,10 +59,10 @@ export const App = () => {
   <meta charSet="UTF-8" />
   <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ultracobra Ⓤ Digital services in Programming and Assistances 🐍</title>
+  <title>Digital love, life and joy in just one place with ultracobra Ⓤ 🐍</title>
   <meta
     name="description"
-    content="Servicios digitales y soluciones en Programación + Contenidos. Estamos en web, foros, social y pronto más!"
+    content="Ultracobra website on Netlify"
   />
   <meta property="og:image" content="https://i.imgur.com/cCphed4.png" />
 </Helmet>
@@ -71,17 +71,17 @@ export const App = () => {
   <div className="column">
     <h3 className="intro-title">Ignite Your Imagination</h3>
     <p className="intro-description">
-      Explore a world of inspiration and fun with Ultracobra's digital services designed to spark your creative ideas and bring them to life.
+      Explore a world of inspiration and fun with Ultracobra website and Spaces to spark your ideas and bring them to life.
     </p>
   </div>
   <div className="column">
-    <h3 className="intro-title">Embrace Adventure</h3>
+    <h3 className="intro-title">Embrace Adventures</h3>
     <p className="intro-description">
-      Embark on a thrilling journey of discovery and innovation with Ultracobra's web development solutions and captivating content creation.
+      Embark on a thrilling journey of discovery and joyful with Ultracobra besides of chill stuff and picking sunny stages.
     </p>
   </div>
 </section>
-          <main><Blog-frf/> <Blog-Ho /> <BlogHi /> <Blog1 />
+          <main><Blog1 />
           </main>
           <section>      
           {/* <div className="service">
@@ -309,7 +309,7 @@ export const App = () => {
         <Footer />
         <Contacto />
         <Routes>
-        <Route path="*" element={<div>NOT FOUND</div>} />
+        {/* <Route path="*" element={<div>NOT FOUND</div>} /> */}
         <Route path="/components/Header" element={<Header />} />
         <Route path="/components/TarjetaFront" element={<TarjetaFront />} />
     </Routes>

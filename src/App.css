@@ -77,10 +77,8 @@ header {
 }
 
 .ultra-head {
-  width: 70%;
-  /* max-width: 100%; */
-  /* height: 66%; */
-  margin-bottom: -5px;
+  width: 50%;  
+  margin-bottom: -15px;
 }
 
 @keyframes ultraAnimation {
@@ -91,19 +89,14 @@ header {
     color: gold;
   }
   100% {
-    color: black;
+    color: rgb(110, 64, 197);
   }
 }
 
-.ultra-meme {
-  width: 70%;
-  margin-bottom: 20px;
-  margin-top: 10px;
-}
 
-.divisory-line {
+/* .divisory-line {
   margin-top: 15px;
-}
+} */
 
 .service {
   border: 1px solid #ccc;
@@ -241,10 +234,6 @@ header {
     color: #6c9a2b;
     justify-items: center;
   }
-  .grid-container {
-    grid-template-columns: 1fr 1fr;
-    color: #addcad; 
-  }
   .emoji {
     display: inline-block;
   }
@@ -257,5 +246,20 @@ header {
   .technologies-list {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+  .ultra-head {
+    width: 50%;  
+  }
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    color: #addcad; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  .button {
+    /* Styles for smaller devices */
+    /* Adjust the height, padding, or other properties as needed */
+    height: 30px;
+    padding: 5px 10px;
   }
 }

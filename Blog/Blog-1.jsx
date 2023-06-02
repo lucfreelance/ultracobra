@@ -1,5 +1,5 @@
-import { Helmet } from 'react-helmet';
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import '../src/custom.css';
 
 const Blog1 = () => {
@@ -10,7 +10,7 @@ const Blog1 = () => {
   };
 
   const getRandomTitle = () => {
-    const phrases = [
+    const titles = [
       'Welcome to the Wonderland!',
       'Discover a world of magic!',
       'Unleash your imagination!',
@@ -18,16 +18,26 @@ const Blog1 = () => {
       'Embrace the extraordinary!',
       'Where dreams come alive!'
     ];
-    const randomIndex = Math.floor(Math.random() * phrases.length);
-    return phrases[randomIndex];
+    const randomIndex = Math.floor(Math.random() * titles.length);
+    return titles[randomIndex];
   };
 
   const getRandomImage = () => {
-    const randomIndex = Math.floor(Math.random() * 6) + 1; // Random number between 1 and 6
-    return `../src/assets/blog-1-${randomIndex}.png`; // Assuming the image file names follow the pattern: blog-1-1.png, blog-1-2.png, ...
+    const images = [
+      '/Blog/assets/blog-1-1.gif',
+      '/Blog/assets/blog-1-2.gif',
+      '/Blog/assets/blog-1-3.gif',
+      '/Blog/assets/blog-1-4.gif',
+      '/Blog/assets/blog-1-5.gif',
+      '/Blog/assets/blog-1-6.gif'
+    ];
+  
+    const randomIndex = Math.floor(Math.random() * images.length);
+    return images[randomIndex];
   };
+  
 
-  const getLongParagraph = () => {
+  const getLongParagraph = () => {<h5 className="card-title custom-card-title">{title}</h5>
     const paragraphs = [
 'In the depths of our hearts lie the seeds of greatness, waiting to be nurtured and unleashed. It is in our pursuit of passion and purpose that we discover the true essence of our being. With every step we take, we are capable of creating ripples of change, transforming not only ourselves but also the world around us. Embrace the power within you and let it guide you towards a future filled with boundless opportunities.',
 'Life is a canvas, and we are the artists. With each brushstroke, we have the ability to paint a masterpiece that reflects our dreams, aspirations, and values. It is through our choices and actions that we shape our reality, leaving an indelible mark on the world. Believe in the power of your unique voice and let it resonate with authenticity and purpose. Your story is worth telling, and the world is waiting to be inspired by your artistry.',
@@ -41,7 +51,7 @@ return paragraphs[randomIndex];
   };
 
   const [color, setColor] = useState(getRandomColor());
-  const [phrase, setTitle] = useState(getRandomTitle());
+  const [title, setTitle] = useState(getRandomTitle());
   const [image, setImage] = useState(getRandomImage());
   const [paragraph, setParagraph] = useState(getLongParagraph());
 
@@ -82,14 +92,14 @@ return paragraphs[randomIndex];
       </Helmet>
       <div>
         <div className="card custom-card" style={cardStyle}>
-          <br />
           <img
             className="card-img-top custom-card-image"
             src={image}
-            alt="Card image"
+            alt="Embark on the Journey!"
+            title="Embark on the Journey!"
           />
           <div className="card-body">
-            <h5 className="card-title custom-card-title">{phrase}</h5>
+            <h5 className="card-title custom-card-title">{title}</h5>
             <p className="card-text custom-card-text">{paragraph}</p>
             <a href="#" className="btn btn-primary custom-card-button">
               Embark on the Journey!
