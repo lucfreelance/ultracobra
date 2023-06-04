@@ -23,6 +23,8 @@ header {
   border-radius: 9px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
   font-size: 18px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .slogan-prompt {
@@ -77,7 +79,7 @@ header {
 }
 
 .ultra-head {
-  width: 50%;  
+  height: 40vh; 
   margin-bottom: -15px;
 }
 
@@ -248,7 +250,7 @@ header {
     text-align: center;
   }
   .ultra-head {
-    width: 50%;  
+    height: 45vh; 
   }
   .grid-container {
     grid-template-columns: 1fr 1fr;
@@ -261,5 +263,14 @@ header {
     /* Adjust the height, padding, or other properties as needed */
     height: 30px;
     padding: 5px 10px;
+  }
+  .tarjeta-front {
+    padding: 2px;
+    background-color: #f2f2f2;
+    border-radius: 9px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }

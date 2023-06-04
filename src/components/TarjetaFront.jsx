@@ -1,7 +1,9 @@
 // import React from 'react';
 import { Link } from 'react-router-dom';
-import '../App.css';
 import { motion } from 'framer-motion';
+// import Spaces from '../pages/Spaces'
+import '../App.css';
+
 
 const TarjetaFront = () => {
   return (

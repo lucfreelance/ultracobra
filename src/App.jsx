@@ -16,6 +16,7 @@ import BotonVolverArriba from './components/BotonVolverArriba';
 // import imagenContenidos from './img/ruta-de-contenidos.jpg';
 // import { FaReact, FaNodeJs, FaCss3, FaBootstrap } from 'react-icons/fa';
 import Blog1 from '../Blog/Blog-1'
+import BlogNewTryForThisBlog from '../Blog/entries/Blog-New-try-for-this-Blog'
 // import BlogHi from '../Blog/entries/Blog-hi'
 
 
@@ -68,7 +69,7 @@ export const App = () => {
   <meta property="og:image" content="https://i.imgur.com/cCphed4.png" />
 </Helmet>
 <Header />
-          <main><Blog1 />
+          <main><BlogNewTryForThisBlog/><Blog1 />
           </main>
         <BotonVolverArriba />
         <Pitch />

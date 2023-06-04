@@ -7,7 +7,12 @@ import Blog1Tree from './assets/blog-1-3.gif';
 import Blog1Four from './assets/blog-1-4.gif';
 import Blog1Five from './assets/blog-1-5.gif';
 import Blog1Six from './assets/blog-1-6.gif';
-
+import Blog1Seven from './assets/blog-1-7.gif';
+import Blog1Eight from './assets/blog-1-8.gif';
+import Blog1Nine from './assets/blog-1-9.webp';
+import Blog1Ten from './assets/blog-1-10.webp';
+import Blog1Eleven from './assets/blog-1-11.webp';
+import Blog1Twelve from './assets/blog-1-12.webp';
 
 const Blog1 = () => {
   const getRandomColor = () => {
@@ -23,7 +28,10 @@ const Blog1 = () => {
       'Unleash your imagination!',
       'Journey into the unknown!',
       'Embrace the extraordinary!',
-      'Where dreams come alive!'
+      'Where dreams come alive!',
+      'Are you ready for outpost?',
+      'You are spacial, important',
+      'Do what it takes to better'
     ];
     const randomIndex = Math.floor(Math.random() * titles.length);
     return titles[randomIndex];
@@ -36,7 +44,13 @@ const Blog1 = () => {
       Blog1Tree,
       Blog1Four,
       Blog1Five,
-      Blog1Six
+      Blog1Six,
+      Blog1Seven,
+      Blog1Eight,
+      Blog1Nine,
+      Blog1Ten,
+      Blog1Eleven,
+      Blog1Twelve
     ];
   
     const randomIndex = Math.floor(Math.random() * images.length);
@@ -46,12 +60,35 @@ const Blog1 = () => {
 
   const getLongParagraph = () => {<h5 className="card-title custom-card-title">{title}</h5>
     const paragraphs = [
-'In the depths of our hearts lie the seeds of greatness, waiting to be nurtured and unleashed. It is in our pursuit of passion and purpose that we discover the true essence of our being. With every step we take, we are capable of creating ripples of change, transforming not only ourselves but also the world around us. Embrace the power within you and let it guide you towards a future filled with boundless opportunities.',
-'Life is a canvas, and we are the artists. With each brushstroke, we have the ability to paint a masterpiece that reflects our dreams, aspirations, and values. It is through our choices and actions that we shape our reality, leaving an indelible mark on the world. Believe in the power of your unique voice and let it resonate with authenticity and purpose. Your story is worth telling; the world is waiting for being even more inspiring.',
-'The path to success is not always smooth, but it is in the face of challenges that we discover our true strength and resilience. Embrace the obstacles as opportunities for growth and transformation. Let each setback fuel your determination to rise above limitations and push the boundaries of what is possible. Remember, it is through perseverance and unwavering belief in your abilities that you can turn adversity into triumph.',
-'Within you lies a wellspring of untapped potential, waiting to be unleashed. Do not let fear or doubt hold you back from pursuing your dreams. Embrace the unknown with courage and step outside of your comfort zone. It is in the moments of uncertainty that you discover your true capabilities and unleash your hidden talents. Trust in yourself and the journey that lies ahead, for greatness awaits those who dare to take the first step.',
-'Life is a symphony, and you are the conductor. With each choice, you compose a melody that reverberates throughout your existence. Embrace the rhythm of life and let your passion guide your baton. Surround yourself with harmonious relationships and cultivate a sense of gratitude for every note in your journey. Remember, it is through the harmony of purpose, passion, and perseverance that you create a masterpiece worth celebrating.',
-'The world is whole diverse of stories and perspectives. Embrace the richness of human experiences and seek to understand the narratives that differ from your own. Let empathy be your guiding light. By embracing inclusivity and celebrating diversity, we create a world where every voice is heard, every story is valued, and every individual is recognized for their unique contribution. We can weave a brighter future for generations to come.'
+'In the depths of our hearts lie the seeds of greatness, waiting to be nurtured and unleashed. Pursue your passion and purpose to discover the essence of your being. Each step creates ripples of change, transforming yourself and the world. Embrace the power within to guide you towards boundless opportunities.',
+
+'Life is a magnificent canvas where we hold the brush that paints our existence. Each stroke shapes the masterpiece of our lives. Manifest your dreams with passion, leaving an indelible mark on the world. Believe in your unique voice, leading to a life of significance and inspiration.',
+
+'Life is a journey of exploration, an adventure into the unknown. Embrace uncertainty to discover your true potential. Embrace curiosity and change, knowing each twist is an opportunity for growth. Embrace the thrill of the unknown, opening doors to endless possibilities.',
+
+'Unleash your hidden potential and embrace boundless opportunities. Your unique talents hold the key to a fulfilling life. Each step allows positive change in your life and the world. Believe in yourself and make a difference with your light.',
+
+'The path to success may be challenging, but it reveals our strength and resilience. Embrace obstacles as opportunities for growth. Let setbacks fuel determination to rise above limitations. Your character shines in moments of difficulty, leading to victory.',
+
+'Life unfolds as a canvas, inviting us to be artisans. Each choice and action shapes our reality, leaving a mark. Believe in the power of your unique voice, resonating with purpose. Your story is worth telling; inspire others.',
+
+'Life is a grand symphony; you hold the baton of your destiny. Embrace the rhythm, infuse passion into every note. Surround yourself with harmonious relationships, gratitude for the symphony unfolding. Purpose, passion, and perseverance create a resplendent masterpiece.',
+
+'Within you lies untapped potential, waiting to be unleashed. Embrace the unknown, step outside your comfort zone. Moments of uncertainty reveal capabilities and hidden talents. Trust yourself; greatness awaits.',
+
+'Embrace the journey of self-discovery and growth. Life is a constant process of learning and evolving. Explore new horizons, challenge beliefs, and embrace change. Every experience offers an opportunity for expansion. Embrace the unknown and discover beauty beyond your comfort zone.',
+
+'The world unfolds as a tapestry woven from diverse stories and perspectives. Embrace the beauty arising from differences. Seek understanding and appreciation, celebrating inclusivity and diversity. We pave the way for a compassionate future.',
+
+'Life is a symphony, and you are the conductor. Each choice composes a melody that reverberates. Embrace the rhythm, let passion guide your baton. Cultivate harmonious relationships, gratitude for every note. Create a masterpiece worth celebrating.',
+
+'Find solace in the beauty of simplicity. Pause, breathe, and reconnect with what truly matters. Embrace stillness, be present in the moment. Find contentment in simple pleasures. Savor each experience and find joy.',
+
+'Embrace the path to success, knowing it may not always be smooth. Challenges reveal our strength and resilience. Embrace obstacles as opportunities for growth. Let setbacks fuel determination and push boundaries. Perseverance turns adversity into triumph.',
+
+'Tap into your inner reservoir of greatness, waiting to be unleashed upon the world. Nourish your potential and create a lasting impact. Embrace the power within you, shaping a future filled with purpose and fulfillment.',
+
+'Experience the world as a tapestry of diverse stories and perspectives. Embrace the richness of human experiences, seeking understanding beyond your own. Let empathy guide your steps, celebrating inclusivity and diversity. We weave a brighter future.'
 ];
 const randomIndex = Math.floor(Math.random() * paragraphs.length);
 return paragraphs[randomIndex];
@@ -104,14 +141,14 @@ return paragraphs[randomIndex];
         />
         <meta property="og:image" content="https://i.imgur.com/cCphed4.png" />
       </Helmet>
-      <button onClick={handleChangeColor}>Change Color</button>
       <button onClick={handleChangeImage}>Change Image</button>
+      <button onClick={handleChangeColor}>Change Color</button>
       <button onClick={handleChangeTitle}>Change Title</button>
       <button onClick={handleChangeParagraph}>Change Paragraph</button>
       <div>
-        <div className="card custom-card" style={cardStyle}>
+        <div className="card-custom-card" style={cardStyle}>
           <img
-            className="card-img-top custom-card-image"
+            className="custom-card-image"
             src={image}
             alt="Embark on the Journey!"
             title="Embark on the Journey!"
