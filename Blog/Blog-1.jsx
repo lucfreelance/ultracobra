@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import '../src/custom.css';
 import Blog1One from './assets/blog-1-1.gif';
@@ -9,7 +9,7 @@ import Blog1Five from './assets/blog-1-5.gif';
 import Blog1Six from './assets/blog-1-6.gif';
 import Blog1Seven from './assets/blog-1-7.gif';
 import Blog1Eight from './assets/blog-1-8.gif';
-import Blog1Nine from './assets/blog-1-9.webp';
+import Blog1Nine from './assets/blog-1-9.gif';
 import Blog1Ten from './assets/blog-1-10.webp';
 import Blog1Eleven from './assets/blog-1-11.webp';
 import Blog1Twelve from './assets/blog-1-12.webp';

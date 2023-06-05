@@ -7,17 +7,10 @@ import Header from './components/Header';
 import TarjetaFront from './components/TarjetaFront';
 import Contacto from './components/Contacto';
 import Footer from './components/Footer';
-import Pitch	from './components/Pitch';
-import BotonVolverArriba from './components/BotonVolverArriba';
 // import Spaces from './pages/Spaces';
-// import ultraHead from './img/ultra-head-square.png';
-// import TarjetaFront from "./components/TarjetaFront";
-// import imagenProgramacion from './img/ruta-programacion.jpg';
-// import imagenContenidos from './img/ruta-de-contenidos.jpg';
-// import { FaReact, FaNodeJs, FaCss3, FaBootstrap } from 'react-icons/fa';
+// import Pitch	from './components/Pitch';
+import BotonVolverArriba from './components/BotonVolverArriba';
 import Blog1 from '../Blog/Blog-1'
-import BlogNewTryForThisBlog from '../Blog/entries/Blog-New-try-for-this-Blog'
-// import BlogHi from '../Blog/entries/Blog-hi'
 
 
 export const App = () => {
@@ -69,10 +62,11 @@ export const App = () => {
   <meta property="og:image" content="https://i.imgur.com/cCphed4.png" />
 </Helmet>
 <Header />
-          <main><BlogNewTryForThisBlog/><Blog1 />
-          </main>
+<main>
+  <Blog1 />
+</main>
         <BotonVolverArriba />
-        <Pitch />
+        {/* <Pitch /> */}
         <Footer />
         <Contacto />
         <Routes>
