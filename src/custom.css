@@ -9,24 +9,31 @@ html {
   }
 
   /* Block 2 */
-.text-center {
-	width: 80%;
-}
+  .blog2-container {
+	border: 5px solid rgb(50, 188, 91);
+	padding: 15px;
+	background-color: rgb(198, 71, 136);
+  }
+input {
+	width: 100%;
+	max-width: 400px; /* Adjust the maximum width as needed */
+	margin-bottom: 10px;
+	padding: 10px;
+	font-size: 16px; /* Adjust the font size as needed */
+  }
+  
+
 
   .ball {
 	width: 50%;
-	position: center;	
-  }
-  .blog2-container {
-	border: 3px solid black;
-	padding: 20px;
+	margin: 0 auto;
+	border-radius: 30%;
   }
   
   .result-message {
 	margin-top: 20px;
-	font-size: 16px;
+	font-size: 18px;
 	color: black;
-	font-weight: bold;
   }
 
 

@@ -64,7 +64,7 @@ export const App = () => {
 </Helmet>
 <Header />
 <main>
-<Blog2 /><Blog1 />
+<Blog2 /> <br /> <br /> <Blog1 />
 </main>
         {/* <Pitch /> */}
         <Footer />

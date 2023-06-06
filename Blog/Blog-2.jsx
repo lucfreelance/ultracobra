@@ -56,53 +56,53 @@ const Blog2 = () => {
           <img className="ball" src="https://i.imgur.com/V9J9qBt.png" alt="Crystal Ball - Comic" />
         </div>
       </header>
-      <h2>Write...</h2>
+      <h2>Type...</h2>
       <main>
         <input
           id="trozo1"
-          placeholder="Your favorite actor/actress 🎭"
+          placeholder="🎭 Your favorite actor / actress"
           value={input1}
           onChange={(e) => setInput1(e.target.value)}
         /><br />
         <input
           id="trozo2"
-          placeholder="Best vacation destination 🌠"
+          placeholder="🌠 Best vacation destination"
           value={input2}
           onChange={(e) => setInput2(e.target.value)}
         /><br />
         <input
           id="trozo3"
-          placeholder="Your favorite hobby 🧗‍♂️"
+          placeholder="🧗‍♂️ Your favorite hobby"
           value={input3}
           onChange={(e) => setInput3(e.target.value)}
         /><br />
         <input
           id="trozo4"
-          placeholder="Famous who annoys you most 🤬"
+          placeholder="🤬 Famous person who annoys you that most"
           value={input4}
           onChange={(e) => setInput4(e.target.value)}
         /><br />
         <input
           id="trozo5"
-          placeholder="Your deepest fear 😱"
+          placeholder="😱 Your deepest fear [If possible to say]"
           value={input5}
           onChange={(e) => setInput5(e.target.value)}
         /><br />
         <input
           id="trozo6"
-          placeholder="Most intense experienced event 😭"
+          placeholder="😭 Most intense event ever ⬆️ Same thing"
           value={input6}
           onChange={(e) => setInput6(e.target.value)}
         /><br />
         <input
           id="trozo7"
-          placeholder="Favorite Saturday activity 🥳"
+          placeholder="🥳 Favorite Saturday activity"
           value={input7}
           onChange={(e) => setInput7(e.target.value)}
         /><br />
         <input
           id="trozo8"
-          placeholder="Favorite Sunday activity 😄"
+          placeholder="😎 Favorite Sunday activity"
           value={input8}
           onChange={(e) => setInput8(e.target.value)}
         /><br />
@@ -118,16 +118,13 @@ const Blog2 = () => {
           </p>
         )}
       </main>
-      <footer className="footer">
-        <button onClick={resetInputs}>Start over...</button>
-      </footer>
+      <button onClick={resetInputs}>Start over...</button>
         <span className="oculto">
-          Made with ❤<br />
         </span>
     </div>
   );
 };
-
+<br />
 export default Blog2;
 
 
