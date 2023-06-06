@@ -1,5 +1,9 @@
 # Ⓤ ultracobra
 
+# How to run / start / launch / deploy
+
+npm run dev
+
 ## Descripción del proyecto
 
 ultracobra es una página de servicios digitales que ofrece soluciones y servicios en el ámbito digital. El objetivo principal de este proyecto es proporcionar a los clientes una variedad de servicios de alta calidad, desde desarrollo de aplicaciones web y móviles hasta generación de contenido y asistencia virtual.

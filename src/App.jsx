@@ -9,8 +9,9 @@ import Contacto from './components/Contacto';
 import Footer from './components/Footer';
 // import Spaces from './pages/Spaces';
 // import Pitch	from './components/Pitch';
-import BotonVolverArriba from './components/BotonVolverArriba';
+// import BotonVolverArriba from './components/BotonVolverArriba';
 import Blog1 from '../Blog/Blog-1'
+import Blog2 from '../Blog/Blog-2'
 
 
 export const App = () => {
@@ -63,20 +64,16 @@ export const App = () => {
 </Helmet>
 <Header />
 <main>
-  <Blog1 />
+<Blog2 /><Blog1 />
 </main>
-        <BotonVolverArriba />
         {/* <Pitch /> */}
         <Footer />
         <Contacto />
         <Routes>
-        {/* <Route path="*" element={<div>NOT FOUND</div>} /> */}
         <Route path="/components/Header" element={<Header />} />
         <Route path="/components/TarjetaFront" element={<TarjetaFront />} />
     </Routes>
       </div>
-      {/* Mostrar modal. Va con el codigo useContext useEffect inactivo arriba... 
-            <button onClick={toggleModal}>Mostrar Modal</button> */}
     </BrowserRouter>
   );
 };
