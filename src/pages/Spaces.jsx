@@ -1,11 +1,10 @@
 // import React from 'react';
 import { Helmet } from 'react-helmet';
-import Header from '../components/Header';
 import imagenProgramacion from '../img/ruta-programacion.jpg';
 import imagenContenidos from '../img/ruta-de-contenidos.jpg';
 import '../App.css' 
 
-const Services = () => {
+const Spaces = () => {
   return (
     <>
       <Helmet>
@@ -29,7 +28,6 @@ const Services = () => {
         />
         <meta property="og:image" content="https://i.imgur.com/cCphed4.png" />
       </Helmet>
-      <Header />
       <main>
       <section id="intro-promises" className="grid-container">
   <div className="column">
@@ -122,4 +120,4 @@ const Services = () => {
     );
   };
   
-  export default Services;
+  export default Spaces;

@@ -1,28 +1,20 @@
-// import React from 'react';
 import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './App.css';
+import Home from './pages/Home';
+import Spaces from './pages/Spaces';
 import Header from './components/Header';
-import TarjetaFront from './components/TarjetaFront';
 import Contacto from './components/Contacto';
 import Footer from './components/Footer';
-// import Spaces from './pages/Spaces';
 // import Pitch	from './components/Pitch';
+import TarjetaFront from './components/TarjetaFront';
 // import BotonVolverArriba from './components/BotonVolverArriba';
 import Blog1 from '../Blog/Blog-1'
 import Blog2 from '../Blog/Blog-2'
 
 
 export const App = () => {
-  // // Estado del modal
-  // const [showModal, setShowModal] = useState(false);
-
-  // // Función para abrir y cerrar el modal
-  // const toggleModal = () => {
-  //   setShowModal(!showModal);
-  // };
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -69,9 +61,10 @@ export const App = () => {
         {/* <Pitch /> */}
         <Footer />
         <Contacto />
-        <Routes>
-        <Route path="/components/Header" element={<Header />} />
-        <Route path="/components/TarjetaFront" element={<TarjetaFront />} />
+    <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/spaces" element={<Spaces />} />
+        <Route path="/tarjetaFront" element={<TarjetaFront />} />
     </Routes>
       </div>
     </BrowserRouter>

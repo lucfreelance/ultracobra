@@ -1,12 +1,12 @@
 html {
 	scroll-behavior: smooth;
-  }
-  
+  }  
   body {
 	width: 100%;
 	height: 100%;
 
   }
+
 
   /* Block 2 */
   .blog2-container {
@@ -21,15 +21,11 @@ input {
 	padding: 10px;
 	font-size: 16px; /* Adjust the font size as needed */
   }
-  
-
-
   .ball {
-	width: 50%;
+	width: 33%;
 	margin: 0 auto;
 	border-radius: 30%;
-  }
-  
+  }  
   .result-message {
 	margin-top: 20px;
 	font-size: 18px;
@@ -45,14 +41,12 @@ input {
 	margin: 20px;
 	padding: 20px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
+  }  
   .custom-card-1 {
 	border: 2px solid var(--primary);
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
+  }  
   .custom-card-image {
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
@@ -60,37 +54,31 @@ input {
 	object-fit: cover;
 	height: 35vh;
 	margin: 10px;
-  }
-  
+  }  
   .custom-card-title {
 	font-size: 1.3rem;
 	font-weight: bold;
 	color: var(--primary);
 	margin-bottom: 5px;
-  }
-  
+  }  
 .division-line {
 	width: 30%;
 	height: 1.5px;
 	background-color: var(--primary);
 	margin-left: 30%;
 	margin-right: 30%;
-  }
-  
+  }  
   .custom-card-text {
 	color: var(--gray-600);
 	font-size: 16px;
 	margin-bottom: 10px;
   }
-
   .card-body {
 	margin: 15px;
   }
-
   .card-custom-card {
 	margin: 10px;
-  }
-  
+  }  
   .custom-card-button {
 	background-color: var(--primary);
 	border-color: var(--primary);
@@ -102,13 +90,13 @@ input {
 	text-decoration: none;
 	border-radius: 5px;
 	padding: 10px;
-  }
-  
+  }  
   .custom-card-button:hover {
 	background-color: var(--primary-dark);
 	border-color: var(--primary-dark);
 	background-color: #72dcd1;
   }
+  
   
   /* Media Queries */
   @media (max-width: 767px)  {
