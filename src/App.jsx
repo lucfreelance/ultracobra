@@ -7,9 +7,7 @@ import Spaces from './pages/Spaces';
 import Header from './components/Header';
 import Contacto from './components/Contacto';
 import Footer from './components/Footer';
-// import Pitch	from './components/Pitch';
 import TarjetaFront from './components/TarjetaFront';
-// import BotonVolverArriba from './components/BotonVolverArriba';
 import Blog1 from '../Blog/Blog-1'
 import Blog2 from '../Blog/Blog-2'
 
@@ -58,7 +56,6 @@ export const App = () => {
 <main>
 <Blog2 /> <br /> <br /> <Blog1 />
 </main>
-        {/* <Pitch /> */}
         <Footer />
         <Contacto />
     <Routes>

@@ -1,8 +1,14 @@
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import '../App.css';
 
 const TarjetaFront = () => {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/spaces');
+  };
+
   return (
     <div className="tarjeta-container">
       <motion.div
@@ -11,9 +17,7 @@ const TarjetaFront = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}
       >
-        <Link to="/spaces" title="Ultracobra Spaces">
-          <p>Spaces and times to get fun!</p>
-        </Link>
+        <button onClick={handleButtonClick}>Go to Spaces</button>
       </motion.div>
     </div>
   );
