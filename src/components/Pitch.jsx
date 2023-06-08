@@ -1,17 +1,31 @@
+import React from 'react';
 import styled from 'styled-components';
+import { FaHeart } from 'react-icons/fa';
 
 const PitchSection = styled.section`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   align-items: center;
   text-align: center;
   margin-top: 2rem;
 `;
 
-const PitchColumn = styled.div`
+const PitchCard = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #eaeaea;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+  }
 `;
 
 const IntroContent = styled.div`
@@ -21,20 +35,24 @@ const IntroContent = styled.div`
 const PitchText = styled.div`
   font-size: 1.5rem;
   font-weight: bold;
+  margin-top: 1rem;
 `;
 
 const Pitch = () => {
   return (
     <PitchSection>
-      <PitchColumn>
-        <IntroContent>{/* Your visual component or graphic for the first space */}</IntroContent>
+      <PitchCard>
+        <IntroContent>
+          <FaHeart size={32} />
+        </IntroContent>
         <PitchText>Digital love, life and joy in just one place</PitchText>
-      </PitchColumn>
-      <PitchColumn>
+      </PitchCard>
+      <PitchCard>
         <IntroContent>{/* Your visual component or graphic for the second space */}</IntroContent>
-      </PitchColumn>
+      </PitchCard>
+      {/* Repeat PitchCard component for the remaining cards */}
     </PitchSection>
   );
-}
+};
 
 export default Pitch;

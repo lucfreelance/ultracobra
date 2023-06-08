@@ -2,14 +2,12 @@ import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './App.css';
-import Banner from './pages/Banner';
 import Spaces from './pages/spaces/Spaces';
 import Header from './components/Header';
 import Contacto from './components/Contacto';
 import Pitch from './components/Pitch';
+import Banner from './components/Banner';
 import Footer from './components/Footer';
-import Blog1 from '../Blog/Blog-1';
-import Blog2 from '../Blog/Blog-2';
 
 export const App = () => {
   useEffect(() => {
@@ -37,14 +35,13 @@ export const App = () => {
           <meta name="description" content="Ultracobra website on Netlify" />
           <meta property="og:image" content="https://i.imgur.com/cCphed4.png" />
         </Helmet>
-        <Pitch />
+        <Banner />
         <Header />
         <main>
           <Routes>
             <Route path="/Pitch" element={<Pitch />} />
             <Route path="/spaces" element={<Spaces />} />
           </Routes>
-          {/* <Blog2 /> <br /> <br /> <Blog1 /> */}
         </main>
         <Contacto />
         <Footer />
