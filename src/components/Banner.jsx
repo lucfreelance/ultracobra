@@ -1,8 +1,7 @@
 import UltracobraBanner from '../img/ultracobra-banner.png';
-
 import '../App.css';
 
-const Home = () => {
+const Banner = () => {
   return (
     <div>
       <img src={UltracobraBanner} alt="UltracobraBanner" className="ultracobra-banner" />
@@ -10,4 +9,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Banner;

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './App.css';
-import Home from './pages/Home';
+import Banner from './pages/Banner';
 import Spaces from './pages/spaces/Spaces';
 import Header from './components/Header';
 import Contacto from './components/Contacto';
@@ -41,7 +41,7 @@ export const App = () => {
         <Header />
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Banner />} />
             <Route path="/spaces" element={<Spaces />} />
           </Routes>
           <Blog2 /> <br /> <br /> <Blog1 />

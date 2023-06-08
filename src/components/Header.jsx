@@ -15,7 +15,7 @@ const Header = () => {
             <div>
             <img
               src={UltraHead}
-              alt="Relax and contact ultracobra services"
+              alt="Relax and comfort"
               className="ultra-head"
             />
     <hr className="divisory-line" />

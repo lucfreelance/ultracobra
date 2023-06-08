@@ -72,9 +72,9 @@ header {
 }
 
 .ultracobra-banner {
-  border-radius: 30%;
-  margin-top: 0.3rem;
-  size: 25%;
+  border-radius: 20%;
+  margin: 0.3rem;
+  width: 25%;
 }
 
 @keyframes ultraAnimation {
