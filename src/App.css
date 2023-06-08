@@ -72,8 +72,9 @@ header {
 }
 
 .ultracobra-banner {
-  border-radius: 50%;
-  margin-top: 3rem;
+  border-radius: 30%;
+  margin-top: 0.3rem;
+  size: 25%;
 }
 
 @keyframes ultraAnimation {
@@ -262,4 +263,20 @@ header {
     padding-top: 5px;
     padding-bottom: 5px;
   }
+  .ultracobra-banner {
+  border-radius: 20%;
+  margin-top: 2rem;
+}
+
+@keyframes ultraAnimation {
+  0% {
+    color: black;
+  }
+  50% {
+    color: gold;
+  }
+  100% {
+    color: rgb(110, 64, 197);
+  }
+}
 }
