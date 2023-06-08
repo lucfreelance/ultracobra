@@ -8,14 +8,14 @@ const Header = () => {
   return (
     <header>
       <h1>
-      <Link to="/"><span className="ultra">Ⓤ</span> ultracobra{' '}
+      <Link to="/Pitch"><span className="ultra">Ⓤ</span> ultracobra{' '}
         <span className="emoji">🐍</span></Link>
       </h1>          
     <TarjetaFront />
             <div>
             <img
               src={UltraHead}
-              alt="Relax and comfort"
+              alt="Relax and contact ultracobra services"
               className="ultra-head"
             />
     <hr className="divisory-line" />

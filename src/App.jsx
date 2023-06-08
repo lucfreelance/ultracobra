@@ -41,10 +41,10 @@ export const App = () => {
         <Header />
         <main>
           <Routes>
-            <Route path="/" element={<Banner />} />
+            <Route path="/Pitch" element={<Pitch />} />
             <Route path="/spaces" element={<Spaces />} />
           </Routes>
-          <Blog2 /> <br /> <br /> <Blog1 />
+          {/* <Blog2 /> <br /> <br /> <Blog1 /> */}
         </main>
         <Contacto />
         <Footer />
