@@ -25,12 +25,14 @@ const Title = styled.h1`
   font-size: 28px;
   margin-bottom: 10px;
   text-align: center;
+  color: #222; /* Set the color for dark mode */
 `;
 
 const Subtitle = styled.h2`
   font-size: 18px;
   margin-bottom: 20px;
   text-align: center;
+  color: #777; /* Set the color for dark mode */
 `;
 
 const Image = styled.img`

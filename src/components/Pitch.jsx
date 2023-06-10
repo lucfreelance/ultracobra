@@ -36,6 +36,7 @@ const PitchText = styled.div`
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 1rem;
+  color: #222; /* Set the color for dark mode */
 `;
 
 const Pitch = () => {
