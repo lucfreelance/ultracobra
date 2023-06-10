@@ -6,7 +6,6 @@ import Spaces from './pages/spaces/Spaces';
 import Header from './components/Header';
 import Contacto from './components/Contacto';
 import Pitch from './components/Pitch';
-import Banner from './components/Banner';
 import Footer from './components/Footer';
 
 export const App = () => {
@@ -35,7 +34,6 @@ export const App = () => {
           <meta name="description" content="Ultracobra website on Netlify" />
           <meta property="og:image" content="https://i.imgur.com/cCphed4.png" />
         </Helmet>
-        <Banner />
         <Header />
         <main>
           <Routes>

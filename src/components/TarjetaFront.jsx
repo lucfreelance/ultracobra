@@ -13,11 +13,11 @@ const TarjetaFront = () => {
     <div className="tarjeta-container">
       <motion.div
         className="tarjeta-front"
-        initial={{ opacity: 0, y: -90 }}
+        initial={{ opacity: 0, y: -60 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}
       >
-        <button onClick={handleButtonClick}>Go to Spaces</button>
+        <button onClick={handleButtonClick}>Spaces</button>
       </motion.div>
     </div>
   );
