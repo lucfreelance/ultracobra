@@ -19,6 +19,7 @@ const Header = () => {
               className="ultra-head"
             />
     <hr className="divisory-line" />
+    <p>Ultracobra is where you have some fun and a space break</p>
     </div>
     </header> 
   );

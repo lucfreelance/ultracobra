@@ -79,11 +79,11 @@ const Blog3 = () => {
     <Container>
       <Card>
         <Title>Random Cats 😹</Title>
-        <Subtitle>Everybody deserves a pussycat 🐈</Subtitle>
+        <Subtitle>Because everybody deserves a pussycat 🐈</Subtitle>
         <Button type="button" onClick={handleClick}>
           ¡Give me another 😺!
         </Button>
-        <Image id="img-cat" src={catImageUrl} alt="Gatito aleatorio" />
+        <Image id="img-cat" src={catImageUrl} alt="Random cat by thecatapi.com" type="Random cat by thecatapi dot com" />
       </Card>
     </Container>
   );

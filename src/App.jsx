@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import './App.css';
 import Spaces from './pages/spaces/Spaces';
 import Header from './components/Header';
-import Contacto from './components/Contacto';
+import Contact from './components/Contact';
 import Pitch from './components/Pitch';
 import Footer from './components/Footer';
 
@@ -41,7 +41,7 @@ export const App = () => {
             <Route path="/spaces" element={<Spaces />} />
           </Routes>
         </main>
-        <Contacto />
+        <Contact />
         <Footer />
       </div>
     </BrowserRouter>

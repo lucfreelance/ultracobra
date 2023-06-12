@@ -11,7 +11,7 @@ const PitchSection = styled.section`
   margin-top: 2rem;
 `;
 
-const PitchCard = styled.div`
+const PitchCard = styled.button`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,6 +20,8 @@ const PitchCard = styled.div`
   background-color: #f0f0f0;
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
+  border: none;
+  cursor: pointer;
 
   &:hover {
     background-color: #eaeaea;
@@ -42,15 +44,15 @@ const PitchText = styled.div`
 const Pitch = () => {
   return (
     <PitchSection>
-      <PitchCard>
+      <PitchCard onClick={() => console.log("Card 1 clicked")}>
         <IntroContent>
           <FaHeart size={32} />
         </IntroContent>
-        <PitchText>Digital love, life and joy in just one place</PitchText>
+        <PitchText>Digital love, life, and joy in just one place</PitchText>
       </PitchCard>
-      <PitchCard>
+      <PitchCard onClick={() => console.log("Card 2 clicked")}>
         <IntroContent>{/* Your visual component or graphic for the second space */}</IntroContent>
-      </PitchCard>
+      </PitchCard><br />
       {/* Repeat PitchCard component for the remaining cards */}
     </PitchSection>
   );

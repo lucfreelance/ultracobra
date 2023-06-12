@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Blog2Top from './assets/block-2.png';
 import '../../custom.css';
 
-const Blog2 = () => {
+const Blog1 = () => {
   const [input1, setInput1] = useState('');
   const [input2, setInput2] = useState('');
   const [input3, setInput3] = useState('');
@@ -49,14 +49,13 @@ const Blog2 = () => {
 
   return (
     <div className="blog2-container">
-        <h2>Crystal Ball SAID</h2>
-      <h3>Answer questions to the Ball and receive a fun interactive comic based on you:</h3>
+        <h2>Crystal Ball Story</h2>
+      <h3>Answer questions to the Ball and receive a fun interactive story based on your answers:</h3>
       <header>
         <div className="text-center">
           <img className="ball" src="https://i.imgur.com/V9J9qBt.png" alt="Crystal Ball - Comic" />
         </div>
       </header>
-      <h2>Type...</h2>
       <main>
         <input
           id="trozo1"
@@ -108,8 +107,7 @@ const Blog2 = () => {
         /><br />
         <p className="resultado">
           <button id="btnCalcular" onClick={btnOnClick}>
-          🔥 Press the button 🔥 <br />
-            for the REVELATION❗
+          🔥 Press the button 🔥 for the story❗
           </button>
         </p>
         {result && (
@@ -125,4 +123,4 @@ const Blog2 = () => {
   );
 };
 <br />
-export default Blog2;
+export default Blog1;

@@ -9,9 +9,9 @@ const Spaces = () => {
   return (
     <>
       <div>
-      <Blog3 /> <br /> <br />
-      <Blog2 /> <br /> <br />
-      <Blog1 />
+      <Blog3 /> <br />
+      <Blog2 /> <br />
+      <Blog1 /> <br />
       </div>
     </>
   );
