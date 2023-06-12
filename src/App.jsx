@@ -2,11 +2,14 @@ import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './App.css';
-import Spaces from './pages/spaces/Spaces';
 import Header from './components/Header';
-import Contact from './components/Contact';
+import Spaces from './pages/spaces/Spaces';
 import Pitch from './components/Pitch';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Blog3 from '././pages/spaces/blog3/Blog-3.jsx';
+import Blog2 from '././pages/spaces/Blog-2.jsx';
+import Blog1 from './pages/spaces/Blog-1.jsx';
 
 export const App = () => {
   useEffect(() => {
@@ -39,6 +42,9 @@ export const App = () => {
           <Routes>
             <Route path="/Pitch" element={<Pitch />} />
             <Route path="/spaces" element={<Spaces />} />
+            <Route path="/spaces/blog3" element={<Blog3 />} />
+            <Route path="/spaces/blog2" element={<Blog2 />} />
+            <Route path="/spaces/blog1" element={<Blog1 />} />
           </Routes>
         </main>
         <Contact />

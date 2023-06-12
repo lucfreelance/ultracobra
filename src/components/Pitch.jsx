@@ -8,7 +8,8 @@ const PitchSection = styled.section`
   gap: 2rem;
   align-items: center;
   text-align: center;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
+  
 `;
 
 const PitchCard = styled.button`
