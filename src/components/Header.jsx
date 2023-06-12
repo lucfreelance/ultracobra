@@ -39,7 +39,9 @@ const Header = () => {
           transition={{ duration: isTransitioned ? 2 : 4 }}
         />
         <hr className="divisory-line" />
-        <p>Ultracobra is where you have some fun and a space break</p>
+        <p className="fun-line">
+          Where you can have some fun and take a break
+        </p>
       </div>
     </header>
   );

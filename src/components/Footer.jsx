@@ -5,47 +5,41 @@ const Footer = () => {
   return (
     <footer className="footer-container">
       <section className="footer-signature">
-        Ⓤ UltraCobra &copy; MMXXIII | Designed by{' '}
+        <span className="brand">Ⓤ UltraCobra &copy; MMXXIII</span> | Designed by{' '}
         <a
           href="https://github.com/lucfreelance"
           alt="@lucfreelance en GitHub"
           title="lucfreelance en GitHub"
           rel="noopener noreferrer"
           target="_blank"
+          className="designer"
         >
           @lucfreelance
         </a>
       </section>
       <section className="footer-signature">
-        Relative to author websites: {' '}
+        Relative to author websites:{' '}
         <a
           href="https://oportunidadesilimitadas.com/#table-board-top"
           alt="Oportunidades Ilimitadas | Directorio web y app de #InteligenciaArtificial"
           title="Oportunidades Ilimitadas Directorio web y app de Inteligencia Artificial"
           rel="noopener noreferrer"
           target="_blank"
+          className="author-website"
         >
           oi-ia
         </a>{' | '}
         <a
-          href="https://oportunidadesilimitadas.com/blogs/_site/index.html"
-          alt="Blogs de Oportunidades Ilimitadas | Blog sobre #InteligenciaArtificial"
-          title="Blogs de Oportunidades Ilimitadas"
-          rel="noopener noreferrer"
-          target="_blank"
+          href="https://ultracobra.netlify.app/spaces"
+          alt="ultracobra SPACES"
+          title="ultracobra SPACES"
+          className="author-website"
         >
-          Blogs
-        </a>{' | '}
-        <a
-          href="./Blog/templates/index.html"
-          alt="Ultracobra Blog"
-          title="Ultracobra Blog"
-        >
-          Blogs
+          ultracobra SPACES
         </a>
       </section>
       <section className="footer-logos">
-        <ul style={{ listStyleType: 'none', padding: 20 }}>
+        <ul className="social-media-list">
           <li>
             <a
               href="https://wa.me/573166054533"

@@ -91,6 +91,14 @@ header {
 
 .line-text
 
+.fun-line {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+}
+
 .service {
   border: 1px solid #ccc;
   padding: 20px;
