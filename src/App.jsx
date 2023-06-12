@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './App.css';
+import Home from './components/Home';
 import Header from './components/Header';
 import Spaces from './pages/spaces/Spaces';
 import Pitch from './components/Pitch';

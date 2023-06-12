@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FaHeart } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const PitchSection = styled.section`
   display: grid;
@@ -9,10 +10,9 @@ const PitchSection = styled.section`
   align-items: center;
   text-align: center;
   margin-bottom: 2rem;
-  
 `;
 
-const PitchCard = styled.button`
+const PitchCard = styled(Link)`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,6 +23,7 @@ const PitchCard = styled.button`
   transition: all 0.3s ease-in-out;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
     background-color: #eaeaea;
@@ -45,16 +46,24 @@ const PitchText = styled.div`
 const Pitch = () => {
   return (
     <PitchSection>
-      <PitchCard onClick={() => console.log("Card 1 clicked")}>
+      <PitchCard to="/" onClick={() => console.log("Card 1 clicked")}>
         <IntroContent>
           <FaHeart size={32} />
         </IntroContent>
-        <PitchText>Digital love, life, and joy in just one place</PitchText>
+        <PitchText>Love, life, and joy in just one place</PitchText>
       </PitchCard>
-      <PitchCard onClick={() => console.log("Card 2 clicked")}>
-        <IntroContent>{/* Your visual component or graphic for the second space */}</IntroContent>
-      </PitchCard><br />
-      {/* Repeat PitchCard component for the remaining cards */}
+      <PitchCard to="/" onClick={() => console.log("Card 2 clicked")}>
+        <PitchText>Life, joy and love <br />
+      <IntroContent>
+          <FaHeart size={32} />
+        </IntroContent>in just one place</PitchText>
+      </PitchCard>
+      <PitchCard to="/" onClick={() => console.log("Card 3 clicked")}>
+        <PitchText>Joy, love and life in just one place</PitchText>
+      <IntroContent>
+          <FaHeart size={32} />
+        </IntroContent>
+      </PitchCard>
     </PitchSection>
   );
 };
