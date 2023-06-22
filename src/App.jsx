@@ -7,7 +7,8 @@ import Spaces from './pages/spaces/Spaces';
 import Pitch from './components/Pitch';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Space4 from '././pages/spaces/space4/Space-4.jsx';
+import Space5 from '././pages/spaces/space5/Space-5.jsx';
+// import Space4 from '././pages/spaces/space4/Space-4.jsx';
 import Blog3 from '././pages/spaces/blog3/Blog-3.jsx';
 import Blog2 from '././pages/spaces/Blog-2.jsx';
 import Blog1 from './pages/spaces/Blog-1.jsx';
@@ -54,7 +55,8 @@ export const App = () => {
           <Routes>
             <Route path="/Pitch" element={<Pitch />} />
             <Route path="/spaces" element={<Spaces />} />
-            <Route path="/spaces/space4" element={<Space4 />} />
+            <Route path="/spaces/space5" element={<Space5 />} />
+            {/* <Route path="/spaces/space4" element={<Space4 />} /> */}
             <Route path="/spaces/blog3" element={<Blog3 />} />
             <Route path="/spaces/blog2" element={<Blog2 />} />
             <Route path="/spaces/blog1" element={<Blog1 />} />

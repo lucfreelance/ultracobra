@@ -22,7 +22,8 @@
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.12.0",
     "square": "^28.0.1",
-    "styled-components": "^5.3.11"
+    "styled-components": "^5.3.11",
+    "tictactoe": "^0.1.0"
   },
   "devDependencies": {
     "@testing-library/react": "^14.0.0",
