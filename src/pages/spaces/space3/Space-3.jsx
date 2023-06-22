@@ -54,7 +54,7 @@ const Button = styled.button`
   margin-bottom: 10px;
 `;
 
-const Blog3 = () => {
+const Space3 = () => {
   const URL = 'https://api.thecatapi.com/v1/images/search';
   const [catImageUrl, setCatImageUrl] = useState('');
 
@@ -90,4 +90,4 @@ const Blog3 = () => {
   );
 };
 
-export default Blog3;
+export default Space3;

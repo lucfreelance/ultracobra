@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-
-import Blog2Top from './assets/block-2.png';
-import '../../custom.css';
+// import Blog2Top from './block-2.png';
+import './custom.css';
 
 const CardContainer = styled.div`
   display: flex;
@@ -76,7 +75,7 @@ const Title = styled.h2`
   margin-bottom: 20px;
 `;
 
-const Blog1 = () => {
+const Space1 = () => {
   const [input1, setInput1] = useState('');
   const [input2, setInput2] = useState('');
   const [input3, setInput3] = useState('');
@@ -193,4 +192,4 @@ const Blog1 = () => {
   );
 };
 
-export default Blog1;
+export default Space1;

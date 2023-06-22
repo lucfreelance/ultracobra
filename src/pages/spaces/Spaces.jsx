@@ -1,10 +1,8 @@
 import Space5 from '../spaces/space5/Space-5';
 // import Space4 from '../spaces/space4/Space-4';
-import Blog3 from '../spaces/blog3/Blog-3';
-// import Blog2 from '../spaces/blog2/Blog-2';
-import Blog2 from './Blog-2';
-// import Blog1 from '../spaces/blog1/Blog-1';
-import Blog1 from './Blog-1';
+import Space3 from './space3/Space-3';
+import Space2 from './space2/Space-2';
+import Space1 from './space1/Space-1';
 
 const Spaces = () => {
   return (
@@ -12,9 +10,9 @@ const Spaces = () => {
       <div>
       <Space5 /> <br />
       {/* <Space4 /> <br /> */}
-      <Blog3 /> <br />
-      <Blog2 /> <br />
-      <Blog1 /> <br />
+      <Space3 /> <br />
+      <Space2 /> <br />
+      <Space1 /> <br />
       </div>
     </>
   );
