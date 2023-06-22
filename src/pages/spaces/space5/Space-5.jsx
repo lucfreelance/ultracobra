@@ -8,7 +8,6 @@ const Space5 = () => {
   const [winner, setWinner] = useState(null);
   const [gameMode, setGameMode] = useState('solo');
   const [darkMode, setDarkMode] = useState(false);
-  const [showConfetti, setShowConfetti] = useState(false);
 
   useEffect(() => {
     if (gameMode === 'machine' && turn === 'O' && !winner) {
@@ -29,7 +28,6 @@ const Space5 = () => {
     const newWinner = checkWinner(newBoard);
     if (newWinner) {
       setWinner(newWinner);
-      setShowConfetti(true);
     }
   };
 
@@ -126,7 +124,6 @@ const Space5 = () => {
     setBoard(Array(9).fill(null));
     setTurn('X');
     setWinner(null);
-    setShowConfetti(false);
   };
 
   const handleGameModeChange = (mode) => {
@@ -144,14 +141,15 @@ const Space5 = () => {
 
   return (
     <div className={`space5 card ${getThemeClass()}`}>
-      {showConfetti && <Confetti
-  width={window.innerWidth}
-  height={window.innerHeight + 600}
-  recycle={false}
-  run={showConfetti}
-  numberOfPieces={600}
-  gravity={0.1}
-/>}
+      {winner === 'X' && (
+        <Confetti
+          width={window.innerWidth}
+          height={window.innerHeight + 600}
+          recycle={false}
+          numberOfPieces={600}
+          gravity={0.1}
+        />
+      )}
       <h1>Tic Tac Toe</h1>
       <h2>Play Alone or Against</h2>
       <div className="game-mode">
@@ -190,7 +188,7 @@ const Space5 = () => {
           {winner === 'draw' ? (
             <h2>It is a draw!</h2>
           ) : (
-            <h2>{winner} wins! CONGRATS! </h2>
+            <h2>{winner} wins! CONGRATS!</h2>
           )}
           <button onClick={resetGame}>Restart Game</button>
         </div>
@@ -207,6 +205,7 @@ const Space5 = () => {
 };
 
 export default Space5;
+
 
 
 
