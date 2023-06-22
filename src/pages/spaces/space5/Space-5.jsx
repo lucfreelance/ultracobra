@@ -17,10 +17,10 @@ const Space5 = () => {
   }, [turn, winner, gameMode]);
 
   useEffect(() => {
-    if (winner) {
+    if (winner && (gameMode === 'twoPlayers' || (gameMode === 'machine' && winner === 'X'))) {
       setShowConfetti(true);
     }
-  }, [winner]);
+  }, [winner, gameMode]);
 
   const handleClick = (index) => {
     if (board[index] || winner) return;
@@ -149,7 +149,7 @@ const Space5 = () => {
 
   return (
     <div className={`space5 card ${getThemeClass()}`}>
-      {showConfetti && winner && (
+      {showConfetti && (
         <Confetti
           width={window.innerWidth}
           height={window.innerHeight + 600}
@@ -207,6 +207,7 @@ const Space5 = () => {
 };
 
 export default Space5;
+
 
 
 
