@@ -1,0 +1,165 @@
+.space5 {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .space5 h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  .card {
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 400px;
+    margin-bottom: 40px;
+  }
+
+  .card h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .card .game-mode {
+    margin-bottom: 20px;
+  }  
+
+  .card button {
+    margin-top: 10px;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 4px;
+    padding: 8px 16px;
+  }
+  
+  .card button:hover {
+    background-color: #1976d2;
+  }
+  
+  .card button.active {
+    background-color: #f44336;
+  }
+  
+  .card .game-mode {
+    margin-bottom: 20px;
+  }
+
+  .card::after {
+    content: "Play alone or against! become smarter with";
+    margin-top: 1rem; 
+    margin-bottom: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .card::after:hover {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .game-mode {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .game-mode button {
+    background-color: #3f51b5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 18px;
+    margin-bottom: 15px; 
+    cursor: pointer;
+    gap: 20px;
+    width: 120px;
+    height: 60px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .game-mode button.active {
+    background-color: #f50057;
+  }
+  
+  .square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #333;
+    font-size: 24px;
+    height: 80px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .square.X {
+    color: #f44336;
+  }
+  
+  .square.O {
+    color: #4caf50;
+  }
+  
+  .square:hover {
+    background-color: #eee;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .space5 h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .space5 button {
+    background-color: #82c596;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .space5 button:hover {
+    background-color: #5f9e74;
+  }
+  
