@@ -188,7 +188,7 @@ const Space5 = () => {
           {winner === 'draw' ? (
             <h2>It is a draw!</h2>
           ) : (
-            <h2>{winner} wins! CONGRATS!</h2>
+            <h2>{winner} wins!</h2>
           )}
           <button onClick={resetGame}>Restart Game</button>
         </div>
