@@ -10,9 +10,9 @@ const Spaces = () => {
   return (
     <>
       <div>
-      <Space5 /> <br /><br /><br /><br /><br />
+      <Space5 /> <br /><br /><br /><br />
       {/* <Space4 /> <br /> */}
-      <Blog3 /> <br />
+      <Blog3 /> <br /><br />
       <Blog2 /> <br />
       <Blog1 /> <br />
       </div>

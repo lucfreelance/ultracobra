@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 const ContactFormContainer = styled.div`
+  margin-top: '40px';
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;

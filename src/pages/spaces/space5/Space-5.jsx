@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Confetti from 'react-confetti';
 import './Space5.css';
 
 const Space5 = () => {
@@ -6,6 +7,8 @@ const Space5 = () => {
   const [turn, setTurn] = useState('X');
   const [winner, setWinner] = useState(null);
   const [gameMode, setGameMode] = useState('solo');
+  const [darkMode, setDarkMode] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
 
   useEffect(() => {
     if (gameMode === 'machine' && turn === 'O' && !winner) {
@@ -26,6 +29,7 @@ const Space5 = () => {
     const newWinner = checkWinner(newBoard);
     if (newWinner) {
       setWinner(newWinner);
+      setShowConfetti(true);
     }
   };
 
@@ -122,6 +126,7 @@ const Space5 = () => {
     setBoard(Array(9).fill(null));
     setTurn('X');
     setWinner(null);
+    setShowConfetti(false);
   };
 
   const handleGameModeChange = (mode) => {
@@ -129,9 +134,26 @@ const Space5 = () => {
     resetGame();
   };
 
+  const handleThemeChange = () => {
+    setDarkMode(!darkMode);
+  };
+
+  const getThemeClass = () => {
+    return darkMode ? 'dark' : 'light';
+  };
+
   return (
-    <div className="space5 card">
+    <div className={`space5 card ${getThemeClass()}`}>
+      {showConfetti && <Confetti
+  width={window.innerWidth}
+  height={window.innerHeight + 600}
+  recycle={false}
+  run={showConfetti}
+  numberOfPieces={600}
+  gravity={0.1}
+/>}
       <h1>Tic Tac Toe</h1>
+      <h2>Play Alone or Against</h2>
       <div className="game-mode">
         <button
           className={gameMode === 'solo' ? 'active' : ''}
@@ -164,20 +186,29 @@ const Space5 = () => {
         ))}
       </div>
       {winner && (
-        <div>
+        <div className="winner">
           {winner === 'draw' ? (
             <h2>It is a draw!</h2>
           ) : (
-            <h2>{winner} wins!</h2>
+            <h2>{winner} wins! CONGRATS! </h2>
           )}
           <button onClick={resetGame}>Restart Game</button>
         </div>
       )}
+      <div className="theme-toggle">
+        <span>Toggle Theme: </span>
+        <label className="switch">
+          <input type="checkbox" checked={darkMode} onChange={handleThemeChange} />
+          <span className="slider round"></span>
+        </label>
+      </div>
     </div>
   );
 };
 
 export default Space5;
+
+
 
 
 
