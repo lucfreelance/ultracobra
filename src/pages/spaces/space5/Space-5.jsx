@@ -30,17 +30,66 @@ const Space5 = () => {
   };
 
   const makeAIMove = () => {
-    const emptySquares = board.reduce((acc, value, index) => {
-      if (!value) {
-        acc.push(index);
+    const bestMove = findBestMove(board);
+    handleClick(bestMove);
+  };
+
+  const findBestMove = (board) => {
+    let bestScore = -Infinity;
+    let bestMove = null;
+
+    for (let i = 0; i < board.length; i++) {
+      if (!board[i]) {
+        board[i] = 'O';
+        const score = minimax(board, 0, false);
+        board[i] = null;
+
+        if (score > bestScore) {
+          bestScore = score;
+          bestMove = i;
+        }
       }
-      return acc;
-    }, []);
+    }
 
-    const randomIndex = Math.floor(Math.random() * emptySquares.length);
-    const selectedSquare = emptySquares[randomIndex];
+    return bestMove;
+  };
 
-    handleClick(selectedSquare);
+  const minimax = (board, depth, isMaximizing) => {
+    const scores = {
+      X: -1,
+      O: 1,
+      draw: 0,
+    };
+
+    const result = checkWinner(board);
+
+    if (result) {
+      return scores[result];
+    }
+
+    if (isMaximizing) {
+      let bestScore = -Infinity;
+      for (let i = 0; i < board.length; i++) {
+        if (!board[i]) {
+          board[i] = 'O';
+          const score = minimax(board, depth + 1, false);
+          board[i] = null;
+          bestScore = Math.max(score, bestScore);
+        }
+      }
+      return bestScore;
+    } else {
+      let bestScore = Infinity;
+      for (let i = 0; i < board.length; i++) {
+        if (!board[i]) {
+          board[i] = 'X';
+          const score = minimax(board, depth + 1, true);
+          board[i] = null;
+          bestScore = Math.min(score, bestScore);
+        }
+      }
+      return bestScore;
+    }
   };
 
   const checkWinner = (board) => {
@@ -94,7 +143,7 @@ const Space5 = () => {
           className={gameMode === 'machine' ? 'active' : ''}
           onClick={() => handleGameModeChange('machine')}
         >
-          Against Machine
+          Against Robot
         </button>
         <button
           className={gameMode === 'twoPlayers' ? 'active' : ''}
@@ -129,6 +178,8 @@ const Space5 = () => {
 };
 
 export default Space5;
+
+
 
 
 
