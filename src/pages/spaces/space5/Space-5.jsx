@@ -9,6 +9,7 @@ const Space5 = () => {
   const [gameMode, setGameMode] = useState('machine');
   const [darkMode, setDarkMode] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
+  const [robotBadMoveCount, setRobotBadMoveCount] = useState(0);
 
   useEffect(() => {
     if (gameMode === 'machine' && turn === 'O' && !winner) {
@@ -17,10 +18,10 @@ const Space5 = () => {
   }, [turn, winner, gameMode]);
 
   useEffect(() => {
-    if (winner && (gameMode === 'twoPlayers' || (gameMode === 'machine' && winner === 'X'))) {
+    if (winner && winner === 'X') {
       setShowConfetti(true);
     }
-  }, [winner, gameMode]);
+  }, [winner]);
 
   const handleClick = (index) => {
     if (board[index] || winner) return;
@@ -39,11 +40,11 @@ const Space5 = () => {
   };
 
   const makeAIMove = () => {
-    const bestMove = findBestMove(board);
+    const bestMove = gameMode === 'machine' ? findBestMove() : getRandomMove();
     handleClick(bestMove);
   };
 
-  const findBestMove = (board) => {
+  const findBestMove = () => {
     let bestScore = -Infinity;
     let bestMove = null;
 
@@ -101,6 +102,16 @@ const Space5 = () => {
     }
   };
 
+  const getRandomMove = () => {
+    const availableMoves = [];
+    for (let i = 0; i < board.length; i++) {
+      if (!board[i]) {
+        availableMoves.push(i);
+      }
+    }
+    return availableMoves[Math.floor(Math.random() * availableMoves.length)];
+  };
+
   const checkWinner = (board) => {
     const winningCombos = [
       [0, 1, 2],
@@ -132,6 +143,7 @@ const Space5 = () => {
     setTurn('X');
     setWinner(null);
     setShowConfetti(false);
+    setRobotBadMoveCount(0);
   };
 
   const handleGameModeChange = (mode) => {
@@ -147,9 +159,23 @@ const Space5 = () => {
     return darkMode ? 'dark' : 'light';
   };
 
+  const isRobotBadMove = () => {
+    return gameMode === 'machine' && robotBadMoveCount < 8 && Math.random() < 0.9;
+  };
+
+  const updateRobotBadMoveCount = () => {
+    if (isRobotBadMove()) {
+      setRobotBadMoveCount(robotBadMoveCount + 1);
+    }
+  };
+
+  useEffect(() => {
+    updateRobotBadMoveCount();
+  }, [turn]);
+
   return (
     <div className={`space5 card ${getThemeClass()}`}>
-      {showConfetti && (
+      {showConfetti && winner && (
         <Confetti
           width={window.innerWidth}
           height={window.innerHeight + 600}
@@ -190,7 +216,7 @@ const Space5 = () => {
           {winner === 'draw' ? (
             <h2>It is a draw!</h2>
           ) : (
-            <h2>{winner} wins!</h2>
+            <h2>{winner} wins! CONGRATS!</h2>
           )}
           <button onClick={resetGame}>Restart Game</button>
         </div>
