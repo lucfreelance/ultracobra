@@ -184,8 +184,8 @@ const Space5 = () => {
           gravity={0.1}
         />
       )}
-      <h1>Tic Tac Toe</h1>
-      <h2>Play Alone or Against</h2>
+      <h1>Ultracobra Tic Tac Toe</h1>
+      <h2>Play against robot or with 2 humans players between also.</h2>
       <div className="game-mode">
         <button
           className={gameMode === 'machine' ? 'active' : ''}

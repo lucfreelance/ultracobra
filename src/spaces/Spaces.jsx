@@ -1,5 +1,5 @@
-import Space5 from '../spaces/space5/Space-5';
-// import Space4 from '../spaces/space4/Space-4';
+import Space5 from './space5/Space-5';
+// import Space4 from './space4/Space-4';
 import Space3 from './space3/Space-3';
 import Space2 from './space2/Space-2';
 import Space1 from './space1/Space-1';

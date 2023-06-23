@@ -3,15 +3,15 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './App.css';
 import Header from './components/Header';
-import Spaces from './pages/spaces/Spaces';
+import Spaces from './spaces/Spaces';
 import Pitch from './components/Pitch';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Space5 from '././pages/spaces/space5/Space-5.jsx';
-// import Space4 from '././pages/spaces/space4/Space-4.jsx';
-import Space3 from './pages/spaces/space3/Space-3.jsx';
-import Space2 from './pages/spaces/space2/Space-2.jsx';
-import Space1 from './pages/spaces/space1/Space-1.jsx';
+import Space5 from '././spaces/space5/Space-5.jsx';
+// import Space4 from '././spaces/space4/Space-4.jsx';
+import Space3 from './spaces/space3/Space-3.jsx';
+import Space2 from './spaces/space2/Space-2.jsx';
+import Space1 from './spaces/space1/Space-1.jsx';
 
 export const App = () => {
   useEffect(() => {

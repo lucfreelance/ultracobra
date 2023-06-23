@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-// import Blog2Top from './block-2.png';
+// import Blog1Top from './block-1.png';
 import './custom.css';
 
 const CardContainer = styled.div`
