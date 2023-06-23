@@ -190,7 +190,7 @@ const Space5 = () => {
           {winner === 'draw' ? (
             <h2>It is a draw!</h2>
           ) : (
-            <h2>{winner} wins! CONGRATS!</h2>
+            <h2>{winner} wins!</h2>
           )}
           <button onClick={resetGame}>Restart Game</button>
         </div>
@@ -207,6 +207,215 @@ const Space5 = () => {
 };
 
 export default Space5;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Esta con el nuevo formato pero el robot es una hueva de player en todas
+// import { useState, useEffect } from 'react';
+// import Confetti from 'react-confetti';
+// import './Space5.css';
+
+// const Space5 = () => {
+//   const [board, setBoard] = useState(Array(9).fill(null));
+//   const [turn, setTurn] = useState('X');
+//   const [winner, setWinner] = useState(null);
+//   const [gameMode, setGameMode] = useState('machine');
+//   const [darkMode, setDarkMode] = useState(false);
+//   const [showConfetti, setShowConfetti] = useState(false);
+//   const [robotBadMoves, setRobotBadMoves] = useState(0);
+
+//   useEffect(() => {
+//     if (gameMode === 'machine' && turn === 'O' && !winner) {
+//       setTimeout(makeAIMove, 500);
+//     }
+//   }, [turn, winner, gameMode]);
+
+//   useEffect(() => {
+//     if (winner === 'X') {
+//       setShowConfetti(true);
+//     }
+//   }, [winner]);
+
+//   const handleClick = (index) => {
+//     if (board[index] || winner) return;
+
+//     const newBoard = [...board];
+//     newBoard[index] = turn;
+//     setBoard(newBoard);
+
+//     const newTurn = turn === 'X' ? 'O' : 'X';
+//     setTurn(newTurn);
+
+//     const newWinner = checkWinner(newBoard);
+//     if (newWinner) {
+//       setWinner(newWinner);
+//     }
+//   };
+
+//   const makeAIMove = () => {
+//     const bestMove = findBestMove(board);
+//     handleClick(bestMove);
+//   };
+
+//   const findBestMove = (board) => {
+//     const availableMoves = [];
+//     for (let i = 0; i < board.length; i++) {
+//       if (!board[i]) {
+//         availableMoves.push(i);
+//       }
+//     }
+
+//     const randomIndex = Math.floor(Math.random() * availableMoves.length);
+//     const selectedMove = availableMoves[randomIndex];
+//     return selectedMove;
+//   };
+
+//   const checkWinner = (board) => {
+//     const winningCombos = [
+//       [0, 1, 2],
+//       [3, 4, 5],
+//       [6, 7, 8],
+//       [0, 3, 6],
+//       [1, 4, 7],
+//       [2, 5, 8],
+//       [0, 4, 8],
+//       [2, 4, 6],
+//     ];
+
+//     for (const combo of winningCombos) {
+//       const [a, b, c] = combo;
+//       if (board[a] && board[a] === board[b] && board[a] === board[c]) {
+//         return board[a];
+//       }
+//     }
+
+//     if (!board.includes(null)) {
+//       return 'draw';
+//     }
+
+//     return null;
+//   };
+
+//   const resetGame = () => {
+//     setBoard(Array(9).fill(null));
+//     setTurn('X');
+//     setWinner(null);
+//     setShowConfetti(false);
+//     setRobotBadMoves(0);
+//   };
+
+//   const handleGameModeChange = (mode) => {
+//     setGameMode(mode);
+//     resetGame();
+//   };
+
+//   const handleThemeChange = () => {
+//     setDarkMode(!darkMode);
+//   };
+
+//   const getThemeClass = () => {
+//     return darkMode ? 'dark' : 'light';
+//   };
+
+//   const handleHumanWin = () => {
+//     if (gameMode === 'machine') {
+//       setShowConfetti(true);
+//     }
+//   };
+
+//   useEffect(() => {
+//     if (winner === 'X') {
+//       handleHumanWin();
+//     }
+//   }, [winner]);
+
+//   useEffect(() => {
+//     if (gameMode === 'machine') {
+//       const remainingMoves = 8 - robotBadMoves;
+//       const shouldMakeBadMove = Math.floor(Math.random() * remainingMoves) === 0;
+//       if (shouldMakeBadMove) {
+//         setRobotBadMoves(0);
+//       } else {
+//         setRobotBadMoves((prevCount) => prevCount + 1);
+//       }
+//     }
+//   }, [turn]);
+
+//   return (
+//     <div className={`space5 card ${getThemeClass()}`}>
+//       {showConfetti && winner && (
+//         <Confetti
+//           width={window.innerWidth}
+//           height={window.innerHeight + 600}
+//           recycle={false}
+//           numberOfPieces={600}
+//           gravity={0.1}
+//         />
+//       )}
+//       <h1>Tic Tac Toe</h1>
+//       <h2>Play Alone or Against</h2>
+//       <div className="game-mode">
+//         <button
+//           className={gameMode === 'machine' ? 'active' : ''}
+//           onClick={() => handleGameModeChange('machine')}
+//         >
+//           Against Robot
+//         </button>
+//         <button
+//           className={gameMode === 'twoPlayers' ? 'active' : ''}
+//           onClick={() => handleGameModeChange('twoPlayers')}
+//         >
+//           2 Players
+//         </button>
+//       </div>
+//       <div className="board">
+//         {board.map((value, index) => (
+//           <div
+//             key={index}
+//             className={`square ${value}`}
+//             onClick={() => handleClick(index)}
+//           >
+//             {value}
+//           </div>
+//         ))}
+//       </div>
+//       {winner && (
+//         <div className="winner">
+//           {winner === 'draw' ? (
+//             <h2>It is a draw!</h2>
+//           ) : (
+//             <h2>{winner} wins!</h2>
+//           )}
+//           <button onClick={resetGame}>Restart Game</button>
+//         </div>
+//       )}
+//       <div className="theme-toggle">
+//         <span>Toggle Theme: </span>
+//         <label className="switch">
+//           <input type="checkbox" checked={darkMode} onChange={handleThemeChange} />
+//           <span className="slider round"></span>
+//         </label>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Space5;
+
+
+
+
 
 
 
@@ -571,6 +780,3 @@ export default Space5;
 // };
 
 // export default Space5;
-
-
- 
